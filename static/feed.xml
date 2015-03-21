@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Jeffrey Godwyll</title>
+        <link>http://jeffgodwyll.com/</link>
+        <description>Jeffrey Godwyll's personal website.</description>
+        <language>en-us</language>
+        <pubDate>2015-03-21 00:02:12.684122</pubDate>
+        <lastBuildDate>2015-03-21 00:02:12.684122</lastBuildDate>
+        <copyright>Copyright 2015 Jeffrey Godwyll</copyright>
+        <webMaster>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</webMaster>
+        <managingEditor>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</managingEditor>
+        <ttl>3600</ttl>
+        
+        <item>
+            <author>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</author>
+            <title>Installing Chrome on Ubuntu!</title>
+            <link>http://jeffgodwyll.com/posts/2014/install-chrome-linux/</link>
+            <description>&lt;p&gt;On the &lt;a href=&#34;https://productforums.google.com/forum/#!categories/chrome/linux&#34;&gt;Google Chrome Help Forum&lt;/a&gt;
+, I usually run into Ubuntu users who sometimes have issues installing 
+or reinstalling Google Chrome. This post is to help fill that void.&lt;/p&gt;
+&lt;h2&gt;Some Prerequisites&lt;/h2&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;err&#34;&gt;$&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;apt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;get&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;purge&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;google&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;chrome&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;stable&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and then&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;err&#34;&gt;$&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;apt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;get&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;autoremove&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now we&#39;ll first install some necessary libraries for Chrome.&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;err&#34;&gt;$&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;apt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;get&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;libxss1&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;libappindicator1&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;libindicator7&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Let&#39;s download Chrome&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt; For 64 bit system: &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Stable:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;err&#34;&gt;$&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;wget&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;//dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Beta:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;err&#34;&gt;$&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;wget&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;//dl.google.com/linux/direct/google-chrome-beta_current_amd64.deb&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Dev/Unstable:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;err&#34;&gt;$&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;wget&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;//dl.google.com/linux/direct/google-chrome-unstable_current_amd64.deb&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt; For 32-bit system: &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Stable:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;err&#34;&gt;$&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;wget&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;//dl.google.com/linux/direct/google-chrome-stable_current_i386.deb&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Beta:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;err&#34;&gt;$&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;wget&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;//dl.google.com/linux/direct/google-chrome-beta_current_i386.deb&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Dev/Unstable:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;err&#34;&gt;$&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;wget&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;//dl.google.com/linux/direct/google-chrome-unstable_current_i386.deb&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Install and Run Chrome:&lt;/h2&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;err&#34;&gt;$&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dpkg&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;google&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;chrome&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;deb&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Installing it this way ensures that a PPA is added to your system so that 
+Google Chrome receives the latest updates whenever you check for system updates.&lt;/p&gt;
+&lt;p&gt;Now run Chrome with&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;err&#34;&gt;$&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;google&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;chrome&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;stable&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;or &lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;err&#34;&gt;$&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;google&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;chrome&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;beta&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;or &lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;err&#34;&gt;$&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;google&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;chrome&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;unstable&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;depending on what you installed.&lt;/p&gt;
+&lt;p&gt;Happy Browsing!!!&lt;/p&gt;
+            </description>
+            <pubDate>2014-12-31</pubDate>
+            <guid>http://jeffgodwyll.com/posts/2014/install-chrome-linux/</guid>
+        </item>
+        <item>
+            <author>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</author>
+            <title>Codelab - Getting Started Building Scalable Mobile Apps with App Engine</title>
+            <link>http://jeffgodwyll.com/talks/2014/getting-started-google-cloud-endpoints/</link>
+            <description>&lt;p&gt;Presented at GDG UCC&#39;s Devfest Event. Developing a quick API backend for mobile
+(android) clients to make direct API calls.&lt;/p&gt;
+&lt;h2&gt;Presentation&lt;/h2&gt;
+&lt;p&gt;View presentation at 
+&lt;a href=&#34;https://jeff-cloudendpoints.appspot.com&#34;&gt;https://jeff-cloudendpoints.appspot.com&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;I won&#39;t begrudge you if you decide to view the presentation here though it&#39;s 
+not perfect. I&#39;ve tried to make it better. &lt;/p&gt;
+&lt;p&gt;Click on the below and hit &lt;kbd&gt;f&lt;/kbd&gt; to view in fullscreen. Press 
+&lt;kbd&gt;Enter&lt;/kbd&gt;, &lt;kbd&gt;   space   &lt;/kbd&gt;, &lt;kbd&gt;→&lt;/kbd&gt; to advance; 
+&lt;kbd&gt;Backspace&lt;/kbd&gt;, &lt;kbd&gt;←&lt;/kbd&gt; to go back.&lt;/p&gt;
+&lt;iframe src=&#34;https://jeff-cloudendpoints.appspot.com&#34; frameborder=&#34;0&#34; width=&#34;640&#34; height=&#34;389&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
+            </description>
+            <pubDate>2014-10-19</pubDate>
+            <guid>http://jeffgodwyll.com/talks/2014/getting-started-google-cloud-endpoints/</guid>
+        </item>
+        <item>
+            <author>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</author>
+            <title>Open Source Contribution - Tools of the Trade</title>
+            <link>http://jeffgodwyll.com/talks/2014/open-source-contribution-tools-of-the-trade/</link>
+            <description>&lt;p&gt;For Software Freedom Day. Touches on aspects of contributing and the basic skills 
+involved/needed, some examples and the 
+&lt;a href=&#34;https://github.com/jeffgodwyll/sfd-test&#34;&gt;demo repository&lt;/a&gt; used.&lt;/p&gt;
+&lt;h2&gt;Presentation&lt;/h2&gt;
+&lt;p&gt;View presentation at 
+&lt;a href=&#34;https://open-source-tott.appspot.com&#34;&gt;https://open-source-tott.appspot.com&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;I won&#39;t begrudge you if you decide to view the presentation here though it&#39;s 
+not perfect. I&#39;ve tried to make it better. &lt;/p&gt;
+&lt;p&gt;Click on the below and hit &lt;kbd&gt;f&lt;/kbd&gt; to view in fullscreen. Press 
+&lt;kbd&gt;Enter&lt;/kbd&gt;, &lt;kbd&gt;   space   &lt;/kbd&gt;, &lt;kbd&gt;→&lt;/kbd&gt; to advance; 
+&lt;kbd&gt;Backspace&lt;/kbd&gt;, &lt;kbd&gt;←&lt;/kbd&gt; to go back.&lt;/p&gt;
+&lt;iframe src=&#34;https://open-source-tott.appspot.com&#34; frameborder=&#34;0&#34; width=&#34;640&#34; height=&#34;389&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
+            </description>
+            <pubDate>2014-09-20</pubDate>
+            <guid>http://jeffgodwyll.com/talks/2014/open-source-contribution-tools-of-the-trade/</guid>
+        </item>
+        <item>
+            <author>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</author>
+            <title>Google I/O 14 Live Stream and Live Blog</title>
+            <link>http://jeffgodwyll.com/posts/2014/google-io-14-live-stream-and-live-blog/</link>
+            <description>&lt;!-- tags: [live] --&gt;
+
+&lt;iframe allowTransparency=&#34;true&#34; src=&#34;https://www.google.com/events/io/gadget/iframe.html?feed=true&amp;fh=300&amp;video=true&amp;w=420&amp;h=301&#34; style=&#34;width:100%;height:760px&#34;&gt;&lt;/iframe&gt;
+            </description>
+            <pubDate>2014-06-25</pubDate>
+            <guid>http://jeffgodwyll.com/posts/2014/google-io-14-live-stream-and-live-blog/</guid>
+        </item>
+        <item>
+            <author>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</author>
+            <title>DevCongress - Google App Engine Overview and Demo</title>
+            <link>http://jeffgodwyll.com/talks/2013/google-app-engine-overview/</link>
+            <description>&lt;p&gt;Slide presentation, demo and video of my talk about getting started on Google 
+App Engine.&lt;/p&gt;
+&lt;h2&gt;Presentation&lt;/h2&gt;
+&lt;iframe src=&#34;https://docs.google.com/presentation/d/16zQHq61ShMtUHP3KJMKamfnHTdI9By7JVE5hpuYJH-8/embed?start=false&amp;loop=false&amp;delayms=3000&#34; frameborder=&#34;0&#34; width=&#34;640&#34; height=&#34;389&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2&gt;Code for demo&lt;/h2&gt;
+&lt;p&gt;Reposting from https://gist.github.com/jeffgodwyll/6300282.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;app.yaml&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;cp&#34;&gt;# The Configuration File&lt;/span&gt;
+
+&lt;span class=&#34;nl&#34;&gt;application:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;your_app_id&lt;/span&gt;
+&lt;span class=&#34;nl&#34;&gt;version:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
+&lt;span class=&#34;nl&#34;&gt;runtime:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;python27&lt;/span&gt;
+&lt;span class=&#34;nl&#34;&gt;api_version:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
+&lt;span class=&#34;nl&#34;&gt;threadsafe:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;true&lt;/span&gt;
+
+&lt;span class=&#34;nl&#34;&gt;handlers:&lt;/span&gt;
+&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;favicon&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ico&lt;/span&gt;
+  &lt;span class=&#34;nl&#34;&gt;static_files:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;favicon&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ico&lt;/span&gt;
+  &lt;span class=&#34;nl&#34;&gt;upload:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;favicon&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ico&lt;/span&gt;
+
+&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;
+  &lt;span class=&#34;nl&#34;&gt;script:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;app&lt;/span&gt;
+
+&lt;span class=&#34;nl&#34;&gt;libraries:&lt;/span&gt;
+&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;webapp2&lt;/span&gt;
+  &lt;span class=&#34;nl&#34;&gt;version:&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;quot;2.5.1&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;main.py&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;cp&#34;&gt;# The main.py file is our controller where the core application logic goes&lt;/span&gt;
+
+&lt;span class=&#34;n&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;webapp2&lt;/span&gt;
+
+&lt;span class=&#34;n&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;MainHandler&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;webapp2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;RequestHandler&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;n&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;get&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;n&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;response&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;write&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Hello&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;world&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+
+&lt;span class=&#34;n&#34;&gt;app&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;webapp2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;WSGIApplication&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;([(&lt;/span&gt;&lt;span class=&#34;sc&#34;&gt;&amp;#39;/&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;MainHandler&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)],&lt;/span&gt;
+                              &lt;span class=&#34;n&#34;&gt;debug&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Video&lt;/h2&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;&lt;p&gt;Google AppEngine by Jeffrey Godwyll: &lt;a href=&#34;http://t.co/ALmCk6u9B6&#34;&gt;http://t.co/ALmCk6u9B6&lt;/a&gt; via &lt;a href=&#34;https://twitter.com/YouTube&#34;&gt;@YouTube&lt;/a&gt;&lt;/p&gt;&amp;mdash; DevCongress (@DevCongress) &lt;a href=&#34;https://twitter.com/DevCongress/status/443903694716018688&#34;&gt;March 13, 2014&lt;/a&gt;&lt;/blockquote&gt;
+            </description>
+            <pubDate>2013-08-21</pubDate>
+            <guid>http://jeffgodwyll.com/talks/2013/google-app-engine-overview/</guid>
+        </item>
+        <item>
+            <author>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</author>
+            <title>Google Africa Communities Summit – GSummit2013</title>
+            <link>http://jeffgodwyll.com/posts/2013/google-africa-communities-summit/</link>
+            <description>&lt;!-- tags: [social, random, life-event] --&gt;
+
+&lt;p&gt;&lt;em&gt;reposted with some personal touch and info ;) from the &lt;a href=&#34;http://jackiemoraa.blogspot.com/2013/08/gsummit2013.html?spref=bl&#34;&gt;That&#39;s so Jackie Blog&lt;/a&gt;&lt;/em&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh5.googleusercontent.com/ILFuO-X5zsfpEVjAAxecue8sF6Dzgfg99iT10SGChPI=w630-h227-no&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;The Google Student Ambassador Summit is an event that took place in Nairobi during the first week of July. It was an incredible opportunity to visit Kenya and experience a touch of its great and well-documented culture. Overall, it was an experience I won&#39;t ever forget =] &lt;/p&gt;
+&lt;p&gt;The main purpose of this summit was to introduce the new class of Google Student Ambassadors (GSAs) in Sub Saharan Africa (SSA).  This class constituted of about 150 students from over 80 universities around Africa. I was part of them representing team Ghana. &lt;/p&gt;
+&lt;p&gt;Apart from the GSAs, in attendance were also the GBGs and GDGs, &lt;a href=&#34;https://www.google.com/landing/gbg/&#34;&gt;Google Business Groups&lt;/a&gt; and &lt;a href=&#34;https://plus.google.com/104693551891691428892&#34;&gt;Google Developer Group&lt;/a&gt;s respectively. &lt;/p&gt;
+&lt;h3&gt;So, who is a GSA?&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;http://1.bp.blogspot.com/-5aRP-CuLcvE/UgnFpIqdQAI/AAAAAAAAB7w/jk7RtRBHz00/s320/20130703_132405.jpg&#34; /&gt;&lt;img alt=&#34;&#34; src=&#34;http://4.bp.blogspot.com/-9FtpUsyPU8E/UgognxqgXfI/AAAAAAAAB8Q/VYpzCP6aH1Y/s320/3.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;A &lt;a href=&#34;http://www.google.com/intl/en/jobs/students/proscho/programs/uscanada/ambassador/&#34;&gt;Google Student Ambassador&lt;/a&gt; is a student who acts as a liaison between Google and their university. They can be pursuing any major ranging from Computer Science, to Anthropology, to Business and even Zoology. Provided they are thrilled by new technology, are enthusiastic about Google, and are involved in their school communities. These ambassadors:  Learn about innovative Google products and programs, plan and host fun events on campus, act as a campus contact for Google teams and help Google better understand each university’s culture.&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;The summit was a three day hands-on training on the Google products and tools for education. It took place at the &lt;a href=&#34;http://www.oshwalnairobi.org/&#34;&gt;Visa Oshwal Community Centre&lt;/a&gt;. The place was nicely decorated and looked very Googley :)&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;http://4.bp.blogspot.com/-Zvosq8zpW6k/Ugou_hyKoVI/AAAAAAAAB98/-KBl5xbLJXg/s320/DSC00855.JPG&#34; /&gt;&lt;img alt=&#34;&#34; src=&#34;http://1.bp.blogspot.com/-5CZC3QtfWmA/Ugol-KqTI8I/AAAAAAAAB9A/eZAH4jJlAf8/s320/DSC00824.JPG&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Different Googlers (people who work in Google), took to the stage to talk about the products they are most proficient in. We were also trained on how to host good events which are one of the key tasks of being a GSA. And that was tested on the final day of the summit where in groups of ten, we were to demonstrate how to host an event! That was a hilarious demonstration. The best three teams were awarded with Google swag. They never told us, but I’m sure my group (group 7) came in fourth :)&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;In between speakers we had an opportunity to stretch and relax with coffee breaks and dance breaks. Shout out to &lt;a href=&#34;http://plus.google.com/109099002910738870200&#34;&gt;+Lethabo Ntshudisane&lt;/a&gt; who was probably the most memorable dancer of them all! He can bust a move. 
+Every night we had different activities to do, from bowling, playing pool, to watching a movie (&lt;a href=&#34;http://www.youtube.com/embed/cdnoqCVUo&#34;&gt;The internship&lt;/a&gt;) at the Planet Media Cinema.&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh3.googleusercontent.com/44tjbmhiqWpC7-jv-TfFALInC7JkSvpUsdBkwul5-vc=w276-h207-p-no&#34; /&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh3.googleusercontent.com/_YfQijkqJwM7GiMo8U-IKlijzbgrHZV_s3Nm9ghJjsE=w317-h211-p-no&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Then there was the carnival where we got to indulge our inner children, let go and have fun. There was cotton candy, ice cream, music, games and of course, crazy pictures.&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;http://1.bp.blogspot.com/-RbNgVag2WNQ/Ugo2Mq92VeI/AAAAAAAAB-8/QrelVHsdu-Q/s320/P7050118.JPG&#34; /&gt;&lt;img alt=&#34;&#34; src=&#34;http://1.bp.blogspot.com/-hW2FmeQ4JMc/Ugp51R4LNYI/AAAAAAAACAE/xW_DjtHMq3c/s320/IMG_4992+%25281%2529.JPG&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;But the crème of it all was the cultural night which was on the last night. It was held at Panari Hotel. &lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh5.googleusercontent.com/vAcgM4yoEoQHcYSFypat0Y4Lt-oelu9od5gW5y7Bhxk=w677-h508-no&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;We had a strict meat dinner. No carbohydrates, no vitamins…just meat! This was some sort of revenge because of all the vegetarian meals we were having during the day. &lt;/p&gt;
+&lt;p&gt;This night every one was required to come in their traditional regalia. &lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh5.googleusercontent.com/eWXXVWCrPunVPxnR_dhC4WjbaR5NZbtNO-H0aVFvv14p=w295-h196-p-no&#34; /&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh3.googleusercontent.com/p0evbh691Gbw9fY-vJ-jrLNp4osVOfAPW7xl3DYZ8Tic=w296-h196-p-no&#34; /&gt;&lt;/p&gt;
+&lt;h3&gt;Where we stayed&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh3.googleusercontent.com/OorH-3snDMcnvBL8Wa3eDEDDoMIBleNBfbNZxAdvP2g=w239-h179-p-no&#34; /&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh6.googleusercontent.com/-KfIEiGvhI529QCT7I1JT3WdBdQdas_RXZOx-mI2f6I=w239-h179-p-no&#34; /&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh5.googleusercontent.com/qycO22e-KyeNHdeO2JAz1q4tVg87cfbGKX856GRTNFQ=w239-h179-p-no&#34; /&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh6.googleusercontent.com/eYtLMXwCquUVRCpTflNcssSVhCqlsezD59SciDIiPPM=w240-h179-p-no&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;We were all checked in the &lt;a href=&#34;http://www.sunsafaris.com/city/kenya/nairobi/southern-sun-mayfair-hotel.html&#34;&gt;Southern Sun Mayfair&lt;/a&gt; which is one of the most historic hotels in Nairobi. It is a beautiful facility which is situated very close to the city center. The rooms were beautiful and had many features ranging from satellite TV, Designated work space, Phone and fax facilities, Tea and Coffee makers, and the most notable of all...High Speed WiFi. Sigh!&lt;br /&gt;
+&lt;/p&gt;
+&lt;h3&gt;What we ate&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh6.googleusercontent.com/tw6g1ACExHR88AhZvOGkKQk6KxPX8YkYnGt5hLdn0os=w287-h214-p-no&#34; /&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh6.googleusercontent.com/NzRgVnSEJWfosXLV6CJzMjPDKBKDsgSj7byW22rfXos=w295-h221-p-no&#34; /&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh4.googleusercontent.com/846DTn4uTrdxjdXj5S-jlcphms5otsfk-SD0WpUrAZo=w278-h208-p-no&#34; /&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh6.googleusercontent.com/l2Gi6lvtPuRkTHj9jttvVt1rewBFifWLSwxATnEq4_c=w278-h208-p-no&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Breakfast was a delight. It was served at the hotels dining area. It was a buffet so you can only imagine! Meat comprised about 2/3 of everyone’s plate with the occasional bread and muffin on the side. This was particularly so because lunch was served at Visa Oshwal, a Hindu facility, hence no meat! We went vegetarian, at least that was during the day. &lt;/p&gt;
+&lt;p&gt;A special shout out to &lt;a href=&#34;http://plus.google.com/106126739496626736178&#34;&gt;+charz maina&lt;/a&gt;  and &lt;a href=&#34;http://plus.google.com/118007882295551881495&#34;&gt;+betty mutimba&lt;/a&gt;  who took it upon themselves to direct and take out the GSAs to enjoy the city life in Nairobi. They are fully accountable for all the sleepy people we had during the days&#39; training! Haha :)&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;Congratulations to team South Africa that came in first in the overall challenge. Followed by team Cote d&#39;Ivoire which came in second. Team Kenya came in third and it tied with Cameroon, props guys. #gafricamoonshot&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;Some more pics:&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh5.googleusercontent.com/0Z31N-7lpD8HbZ8Dk5e7jARnND8jmEU1ksIi_EZ_y6U=w295-h196-p-no&#34; /&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh3.googleusercontent.com/kKzURjGZ9FiKJNxf0_1IUyeR30aSyckisAi0_sPQKuI=w296-h196-p-no&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh5.googleusercontent.com/vAYCe2srV9BCQzRGpwaTdgWRNRIALcn4itD24fnj6UV2=w295-h196-p-no&#34; /&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh3.googleusercontent.com/-vYT8ngetZSTQtXorKuUTiUWQUiFoKgm3yUS7T-pRWKK=w295-h196-p-no&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;This post would not be complete without the mention of bus #3! Bus 3 members, you guys are awesome. I doubt any other bus had more fun than us. A big thank you to the outgoing GSAs &lt;a href=&#34;http://plus.google.com/108332843114643572647&#34;&gt;+Chris C&#39;otewa&lt;/a&gt; and &lt;a href=&#34;http://plus.google.com/100996606089034065747&#34;&gt;+joshua eyaru&lt;/a&gt; who took their time to show us around and guide us through the process. And the Googlers are awesome, they taught us well. Plus they can dance too ( &lt;a href=&#34;http://plus.google.com/103703210853891175248&#34;&gt;+Chukwuemeka Afigbo&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/107682226479034681299&#34;&gt;+Jeminatu Alabi-Isama&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/115514920001019253626&#34;&gt;+Tayib Fall&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/110866627929241642909&#34;&gt;+Giacomo Gnecchi Ruscone&lt;/a&gt; ... I saw ya&#39;ll! Hehe...)&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;http://3.bp.blogspot.com/-Zan_7UNtdkE/UgtbTC9OLbI/AAAAAAAACCY/em5BwPgqJnM/s1600/DSC_1573.JPG&#34; /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;I told you they danced :)&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;What we shared with each other and obtained during the summit is truly irreplaceable. We learnt and gained a lot of insight from the training. The experience was remarkable. Apart from that, we all made so many new friends across the borders. And the fire of keeping in touch is still burning strongly. I miss everyone! Much love goes out to &lt;a href=&#34;http://plus.google.com/106222820904874996888&#34;&gt;+Success Maake&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/114930243151372848667&#34;&gt;+Jake Neethling&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/105417451871778492621&#34;&gt;+Jason Botha&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/106487511364381768049&#34;&gt;+chibi mosiea&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/117520497033022011982&#34;&gt;+Emmanuel Chenze&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/103915977016289071033&#34;&gt;+Victor Mutunga Mutua&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/108384905178708488948&#34;&gt;+Jeffrey Godwyll&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/102629321330263822422&#34;&gt;+Nonhlanhla Mkwanazi&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/109932349709645133287&#34;&gt;+Saviour Gidi&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/107995755490910332655&#34;&gt;+Jackson Isack&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/109296919415120548148&#34;&gt;+LAWAL MOSHOOD&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/115148644007815970302&#34;&gt;+Chintan Gohel&lt;/a&gt; (you answered all the questions dude, making us look bad!!) &lt;a href=&#34;http://plus.google.com/103650860072197253334&#34;&gt;+Pinky Mokemane&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/109003121971525566466&#34;&gt;+Shadrach David&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/107139999182708684839&#34;&gt;+Dorothy Elorm&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/113602065875380870586&#34;&gt;+cliff Ombiru&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/111794527651820423114&#34;&gt;+OUEDRAOGO DANIEL KENANIA&lt;/a&gt;&lt;a href=&#34;http://plus.google.com/110136822959156076600&#34;&gt;+Lubega Ham&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/116735401445764620796&#34;&gt;+Laban Ndwaru&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/107095832508293266731&#34;&gt;+IKANE Challengee&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/104331315977161485966&#34;&gt;+Abebe Assefa&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/101912600013554438050&#34;&gt;+Christina Sukop&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/102169718137328736666&#34;&gt;+Ajah David&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/117586534268425815900&#34;&gt;+ADESOJI BELLO&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/112161580732901971909&#34;&gt;+Nana Mensah&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/111907950527037974493&#34;&gt;+Khalifa Qwami&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/109209724553746475980&#34;&gt;+Gilbert Bosomtwe&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/103988343970732812435&#34;&gt;+Caleb Mbakwe&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/115377049039581120580&#34;&gt;+Aida Bezarediet&lt;/a&gt;  &lt;a href=&#34;http://plus.google.com/113375950149684624825&#34;&gt;+iyanuoluwa bolarinwa&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/101645673956934058670&#34;&gt;+Kesho Kioko&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/106534543095533361229&#34;&gt;+Dickens Otieno&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/116438631050479491591&#34;&gt;+Beryl Obiero&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/106435455784647221752&#34;&gt;+Ankwasa Bernadine&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/102169335847123046528&#34;&gt;+Ian Duncan m&lt;/a&gt;  &lt;a href=&#34;http://plus.google.com/111562008317324675279&#34;&gt;+Stephen Mudibo&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/117394749890609855034&#34;&gt;+Kate Njenga&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/101407893890157001619&#34;&gt;+Roderick KERRY OYUGA&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/106493639017148008313&#34;&gt;+Walter NGOUAMO&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/105972893874700092118&#34;&gt;+Emmanuel Osinaike&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/102781440230010907892&#34;&gt;+Timothy Mwirabua&lt;/a&gt;. Forgive me for not mentioning every one but we are sooo many, I couldn&#39;t have gotten all the names in. But just know...I got you all :)&lt;br /&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Are you on the line? :)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Presenting &lt;a href=&#34;http://plus.google.com/105335914835472595238&#34;&gt;+Google Student Ambassadors Sub-Saharan-Africa&lt;/a&gt; of year 2013-2014&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh3.googleusercontent.com/--Ztq5OXcfUw/Ud7IqBFuyLI/AAAAAAAASqk/JamY2AQYtYQ/w1039-h536-no/DSC_7176.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Theme song: &lt;a href=&#34;http://www.youtube.com/watch?v=sBoV1VSpKLo&#34;&gt;Kukere-Iyanya&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hashtag: &lt;a href=&#34;https://plus.google.com/explore/gsummit2013&#34;&gt;#gsummit2013&lt;/a&gt; It trended the whole time during the summit.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Doing cool things that matter!&lt;br /&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Happy Days! =]&lt;/p&gt;
+            </description>
+            <pubDate>2013-08-15</pubDate>
+            <guid>http://jeffgodwyll.com/posts/2013/google-africa-communities-summit/</guid>
+        </item>
+        <item>
+            <author>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</author>
+            <title>Literacy in Ghana</title>
+            <link>http://jeffgodwyll.com/posts/2013/literacy-in-ghana/</link>
+            <description>&lt;!-- tags: [social, random] --&gt;
+
+&lt;p&gt;&lt;em&gt;Data about the level of literacy of the people of Ghana is readily available on the web. Sadly even reputable sources like the Ghana Statistical Service (http://www.statsghana.gov.gh/edu_stats.html) fail to provide visual representation as to the actual locations especially those with an alarming rate of illiteracy. Hence my map is to bridge this gap and help volunteers as well as the government see this and act accordingly. See the full map &lt;a href=&#34;https://mapsengine.google.com/map/edit?mid=zG-UjNDkH-eY.k47JbOCF-bIY&#34;&gt;HERE&lt;/a&gt;&lt;br /&gt;
+&lt;/em&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;iframe src=&#34;https://mapsengine.google.com/map/u/0/embed?mid=zG-UjNDkH-eY.k47JbOCF-bIY&#34; width=&#34;640&#34; height=&#34;480&#34;&gt;&lt;/iframe&gt;
+            </description>
+            <pubDate>2013-06-23</pubDate>
+            <guid>http://jeffgodwyll.com/posts/2013/literacy-in-ghana/</guid>
+        </item>
+        <item>
+            <author>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</author>
+            <title>Good C++ Practices</title>
+            <link>http://jeffgodwyll.com/posts/2013/good-practices/</link>
+            <description>&lt;!-- tags: [Code] --&gt;
+
+&lt;p&gt;&#34;Refactored&#34; or “forked” from http://www.cplusplus.com/forum/lounge/6195/&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;You might want to check the original out or just go by these “commandments” and write better C++ code in general. These good practices will in one way or the other save you some headache like the ones I get at times &lt;/p&gt;
+&lt;p&gt;1. Always use header guards.&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;2. Always follow The Standard.&lt;br /&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Never include any header that&#39;s not one of these:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A standard header, &lt;/li&gt;
+&lt;li&gt;A header of a library you&#39;re using or &lt;/li&gt;
+&lt;li&gt;A system API header. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Never include compiler-specific headers. Compilers come and go, but the language and the systems stay.&#34;&lt;br /&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;3. Do not &lt;code&gt;#include&lt;/code&gt; cpp files in other cpp files (Especially when using IDEs).&lt;br /&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It&#39;s generally a better idea to use headers to declare class and function names, as multiple declarations don&#39;t cause the compiler to raise errors, while multiple definitions do.&lt;br /&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;4. Use indentation.&lt;br /&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For example, I indent using tab spaces(soft tabs) or 4 spaces inside each block.&lt;br /&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;5. Adopt a naming convention and be consistent.&lt;br /&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There are a whole bunch of advices out there for newbies but I feel the real advice should be: adopt a naming style and try to keep the naming consistent and meaningful especially when you are not the only one going to work with it. Remember not to touch reserved words. That’s about it.&lt;br /&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;6. Use whitespace.&lt;br /&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You know, for clarity! This is a no brainer really. Who wouldn’t use whitespace? Even text editors (except the crappy ones of course) and IDE’s include them whether you like it or YES ;p&lt;br /&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;7. &#34;Functionize!&#34;&lt;br /&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Inheritance becomes a breeze + makes everything simpler. The reason I love java atm.&lt;br /&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;8. Use &lt;code&gt;const&lt;/code&gt; correctly.&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;9. Include exceptions to handle runtime errors.&lt;br /&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You probably don’t want your program to hang during runtime so just include them and be free. Oh and always ignore that little voice that likes to start sentences like &#34;why would anyone want to...&#34; and &#34;what kind of “mental nerd” would try to...”. Unless you the programmer is also the user or the only user, there&#39;s always someone who wants to do it, and a “mental nerd” who tries to do it. It&#39;s advisable to obey users and punish “mental nerds”. Oh and finally you the programmer, please try to think like a “mental nerd” would. It helps in dealing with them in general.&lt;br /&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;10. Ask for help and advice.&lt;br /&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I believe this to be the best along with the next. Try to analyze what you&#39;ve put down for what it actually does and not what you expect it to do. Beginners (and not so beginners) all too often either fall into the habit of either asking for help the instant something isn&#39;t obvious, or spend days trying to solve a minor problem before asking for help. Remember the 30-minute-rule, &lt;a href=&#34;https://google.com&#34;&gt;google&lt;/a&gt; it or head over to &lt;a href=&#34;https://stackoverflow.com&#34;&gt;stackoverflow&lt;/a&gt;.&lt;br /&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;11. Take a break.&lt;br /&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There’s the tendency to spend hours on end coding or figuring out what something does. It can be fun (like seriously). Just don&#39;t be afraid to stop and walk away for a few when something is kicking your butt. If you stay, your frustration grows and the answer gets further from your mind (at least it does for me). Be sure to keep a video game in or nearby the system where you do your coding so that can relax you during these periods. Something not too exciting is preferable (Although I delight in beating someone to an &#34;exciting&#34; game or 2 of FIFA). It&#39;s also probably better if you don&#39;t need to think too much to play it. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Additionlly, when looking through code for errors, it&#39;s sometimes useful to go backwards. That way you look at each line for what it is rather than what you expect it to be.&lt;/p&gt;
+            </description>
+            <pubDate>2013-05-22</pubDate>
+            <guid>http://jeffgodwyll.com/posts/2013/good-practices/</guid>
+        </item>
+        <item>
+            <author>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</author>
+            <title>Google I/O 13 Live</title>
+            <link>http://jeffgodwyll.com/posts/2013/google-io-13-live/</link>
+            <description>&lt;!-- tags: [live] --&gt;
+
+&lt;h1&gt;Friday&#39;s event&lt;/h1&gt;
+&lt;iframe allowTransparency=true src=&#34;https://developers.google.com/events/announce/googleio2013/?a=on&amp;cn=Jeff&amp;cu=&amp;w=420&amp;h=301&#34; style=&#34;border:0;box-shadow:0 0px 20px #888;-webkit-box-shadow:0 0px 20px #888;-khtml-box-shadow:0 0px 20px #888;-moz-box-shadow:0 0px 20px #888;-ms-box-shadow:0 0px 20px #888;-o-box-shadow:0 0px 20px #888;width:100%;height:601px&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Edit: Thanks for watching&lt;/p&gt;
+            </description>
+            <pubDate>2013-05-15</pubDate>
+            <guid>http://jeffgodwyll.com/posts/2013/google-io-13-live/</guid>
+        </item>
+        <item>
+            <author>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</author>
+            <title>Don&#39;t Talk, Just Get It Done!</title>
+            <link>http://jeffgodwyll.com/posts/2013/dont-talk-just-get-it-done/</link>
+            <description>&lt;!-- tags: [social, random] --&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&#34;This whole grass-root activism of yours isn&#39;t changing the world, it&#39;s a 
+joke. Wanna change the world, you got to leave the living room&#34; 
+- From &lt;a href=&#34;https://plus.google.com/s/%23Continuum&#34;&gt;#Continuum&lt;/a&gt;.&lt;br /&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Or by extension the conference room or wherever it is you are continually 
+preaching your stuff. &#39;LOL&#39; I know I just ruined a wonderful quote. Just 
+couldn&#39;t resist.&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;I have seen this first hand on quite a number of occasions. Which conference 
+won&#39;t we attend? How many motivational speeches won&#39;t we applaud? And yet we 
+are always at square one. Let&#39;s collaborate on something, anything, so long as 
+it isn&#39;t just talking up plans with no execution in sight.&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;The number of amazing ideas shared in a presentation in class just got me 
+wondering about this really important topic. It&#39;s my hope that the many teams 
+that gave very brilliant presentations implement them.&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;My team is getting it done. Get it done too!&lt;/p&gt;
+            </description>
+            <pubDate>2013-04-07</pubDate>
+            <guid>http://jeffgodwyll.com/posts/2013/dont-talk-just-get-it-done/</guid>
+        </item>
+        <item>
+            <author>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</author>
+            <title>Official Google Africa Blog - Checking in with African developers</title>
+            <link>http://jeffgodwyll.com/posts/2012/official-google-africa-blog-checking-in/</link>
+            <description>&lt;!-- tags: [social, random] --&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://google-africa.blogspot.com/2012/08/checking-in-with-african-developers.html?utm_source=feedburner&amp;amp;utm_medium=feed&amp;amp;utm_campaign=Feed%3A+OfficialGoogleAfricaBlog+%28Official+Google+Africa+Blog%29&amp;amp;m=1&#34;&gt;Official Google Africa Blog: Checking in with African developers&lt;/a&gt;&lt;/p&gt;
+            </description>
+            <pubDate>2012-08-24</pubDate>
+            <guid>http://jeffgodwyll.com/posts/2012/official-google-africa-blog-checking-in/</guid>
+        </item>
+        <item>
+            <author>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</author>
+            <title>Voice Search Arrives in 13 New Languages</title>
+            <link>http://jeffgodwyll.com/posts/2012/voice-search-arrives-in-13-new-languages/</link>
+            <description>&lt;!-- tags: [random] --&gt;
+
+&lt;p&gt;Official Google Blog: Voice Search arrives in 13 new languages: &lt;a href=&#34;http://googleblog.blogspot.com/2012/08/voice-search-arrives-in-13-new-languages.html&#34;&gt;http://googleblog.blogspot.com/2012/08/voice-search-arrives-in-13-new-languages.html&lt;/a&gt;&lt;/p&gt;
+            </description>
+            <pubDate>2012-08-17</pubDate>
+            <guid>http://jeffgodwyll.com/posts/2012/voice-search-arrives-in-13-new-languages/</guid>
+        </item>
+        <item>
+            <author>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</author>
+            <title>The Era of Startups - Introducing NewMe</title>
+            <link>http://jeffgodwyll.com/posts/2012/era-of-startups-introducing-newme/</link>
+            <description>&lt;!-- tags: [random] --&gt;
+
+&lt;p&gt;Reposted from the official google blog. &lt;a href=&#34;http://googleblog.blogspot.com/2012/05/accelerating-diversity-in.html&#34;&gt;Accelerating diversity in entrepreneurship with NewME&lt;/a&gt;&lt;/p&gt;
+            </description>
+            <pubDate>2012-05-08</pubDate>
+            <guid>http://jeffgodwyll.com/posts/2012/era-of-startups-introducing-newme/</guid>
+        </item>
+        
+    </channel>
+</rss>

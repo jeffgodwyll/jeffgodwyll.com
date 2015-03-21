@@ -1,0 +1,5 @@
+*.pyc
+lib/
+.ropeproject/
+siteEnv/
+# this is a comment

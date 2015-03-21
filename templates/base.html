@@ -1,0 +1,67 @@
+<!doctype html>
+<html class="no-js" lang="{% block lang %}en{% endblock lang %}">
+<head>
+    <meta charset="utf-8">
+    {% block extra_head %}{% endblock %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{% block page_title %}Home{% endblock page_title %} | Jeffey Godwyll</title>
+    <meta name="description" content="The personal website of Jeffrey Godwyll: Student. Computer Engineer. Web Developer. Mapper. Google Student Ambassador Alum. GDG Ghana Outreach Lead. Football Pundit. Future Entreprenuer">
+    <meta name="viewport" content="width=device-width">
+    <link href="//fonts.googleapis.com/css?family=Asap:400,400italic,700,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/js/libs/prettify/tomorrow-night.css">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Everything (RSS)">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="{% block section %}home{% endblock %} {% block body_class %}{% endblock body_class %}" onload="prettyPrint()">
+    <!--[if lt IE 7]>
+    <p class="chromeframe">Your browser is <em>ancient!</em> Please <a href="http://www.quirksmode.org/upgrade.html">upgrade</a>.</p>
+    <![endif]-->
+    <div class="container">
+        <header class="main-title">
+            <h1><a href="{{ url_for("index") }}">I'm <strong>Jeffrey Godwyll</strong></a></h1>
+            <small>Student. Computer Engineer. Web Dev.</small>
+        </header>
+        <main class="contents" role="main">
+            {% block contents %}
+            <p>These are the default contents.</p>
+            {% endblock contents %}
+        </main>
+        <nav class="sidebar">
+            <ul>
+                <li><img src="/static/img/jeff.png" alt="Jeff's ummm, forget it" style="height: 130px; border-radius: 100px; -webkit-border-radius: 100px; -moz-border-radius: 100px; -webkit-box-shadow: 0 0 10px rgb(0, 136, 204); float: none; border-collapse: separate"></li><br> 
+                <li class="home"><a href="{{ url_for("index") }}" hreflang="en">Home</a></li>
+                <li class="posts"><a href="{{ url_for("section", section="posts") }}" hreflang="en">Posts</a></li>
+                <li class="projects"><a href="{{ url_for("projects") }}" hreflang="en">Projects</a></li>
+                <li class="talks"><a href="{{ url_for("section", section="talks") }}" hreflang="en">Talks</a></li>
+                <li class="about"><a href="{{ url_for("about") }}" hreflang="en">About</a></li>
+            </ul>
+        </nav>
+        <footer class="site-footer" style="text-align: center;">
+            <p>
+                &copy; 2015 Jeffrey Godwyll 
+                | Proudly hosted on <a href="http://appengine.google.com">GAE</a>
+                | Feel free to <a href="{{ url_for("about") }}#contact">Contact me</a>
+            </p>
+        </footer>
+    </div>
+    <!-- /container -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+    <script type="text/javascript" src="/static/js/libs/prettify/prettify.js"></script>
+    <script type="text/javascript" src="/static/js/app.js"></script>
+    <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-58437722-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>{% block title %}Jeffrey Godwyll{% endblock %}</title>
+        <link>{{ BASE_URL }}/</link>
+        <description>{% block description %}Jeffrey Godwyll's personal website.{% endblock %}</description>
+        <language>{% block lang %}en-us{% endblock %}</language>
+        <pubDate>{{ build_date }}</pubDate>
+        <lastBuildDate>{{ build_date }}</lastBuildDate>
+        <copyright>Copyright 2015 Jeffrey Godwyll</copyright>
+        <webMaster>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</webMaster>
+        <managingEditor>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</managingEditor>
+        <ttl>3600</ttl>
+        {% block content %}
+        {%- for page in pages %}
+        <item>
+            <author>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</author>
+            <title>{{ page.title|escape }}</title>
+            <link>{{ BASE_URL }}/{{ page.path }}/</link>
+            <description>
+                {{- page.html }}
+            </description>
+            <pubDate>{{ page.date }}</pubDate>
+            <guid>{{ BASE_URL }}/{{ page.path }}/</guid>
+        </item>
+        {%- endfor %}
+        {% endblock %}
+    </channel>
+</rss>

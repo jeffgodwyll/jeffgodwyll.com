@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/jeffgodwyll
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.jeffgodwyll.com
+  * I am jeffgodwyll (https://keybase.io/jeffgodwyll) on keybase.
+  * I have a public key with fingerprint 740E 80A5 3CA1 2B97 2389  2820 0C2C 7BDD 8790 843B
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "740e80a53ca12b97238928200c2c7bdd8790843b",
+            "host": "keybase.io",
+            "key_id": "0c2c7bdd8790843b",
+            "uid": "12cafd433cde9236e41fb93d2fbf9d00",
+            "username": "jeffgodwyll"
+        },
+        "service": {
+            "hostname": "www.jeffgodwyll.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1401235526,
+    "expire_in": 157680000,
+    "prev": "761d9374e478ff002a34d33a0c1506da5bb118cbde341af82b75abbde4ae49a8",
+    "seqno": 2,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.17
+Comment: https://keybase.io/crypto
+
+yMHtAnicbZFdSBRtFMfXb1rexVcoL+qV2snCYrP52p2ZpRYriaAiKl2prGVmnmfG
+p113dndmd11WiS7ESDLTIEgjTPqAqIi8MTIsvWpdksRuuiqMLE20KFFf0mcWgy6a
+m+Gc8/v//w/nDNtyLNasgvU/ulRHhZyVGlyKWo43l+1PEpIGEoQ7Sfhh5qegoAoj
+oQgKGoSb4FgS8qToZGSRoiWBoxleoHmaJGVa5iQAeE4geZaRCAdRp+mmAttIog7L
+kYZ7uPAhgLt/4aOZAUXLogJYhpEBFGjGBVlKkQQG0IqkCIAkTVCHkaBYDzF9FiqK
+qoF4IhAgmhwEHsSQjAfJTPoqFI/Hy/8Ay2WtHruEIpqhyVoAA3WGEXKbeiMRygig
+5Fu18kkoCPAGsCAGIzrSgoSbwqRsINObYkmKZpxO2uUgYEMIRaAPmYSTc/Ek/swY
+GDP35qKAwHAsZDleUUiSFhkWMIxIypSTdAHRKUkUxcsSgAxLiQpPS5xTlHDJipAV
+RB7n6zAc1Ag3jZ8pqthSR2pQNKIRSDS9HKzNtWRZLfl52eYNLdY1//6+7I7SgmXk
+B2/lxgOpslig6kvnQE/z501VC8ZIW2Wjok5MdS3MsP9/Y573MqXo0rj/ZO8x42jr
+sLfd9kA9vL22SAiPfi9carip5/en0JmpZ9kV7+OJxUBu2VhbfG4i3HJ3a+f8hbj3
+yuY9v6pL9u2S3VQPm2vPOzJ0UUnfSnpe2ZCaHlzsX/fPXLX9xtj5musVj56++1pT
+Mv3xWkd3iG9fu9hqT922Vt3LH9Vf5CSe+B8Xd9ff31k45qnZMtv637b0zIarnt0/
+vRs9D8+Nz052zJ/uOvhJbnG8qTt1qNhVNILsldOklw30cR8ug8m9r7loZzrccGKA
+tN1pm+9rUkuXh1YAHTQVRA==
+=gBhv
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jeffgodwyll
+
+==================================================================

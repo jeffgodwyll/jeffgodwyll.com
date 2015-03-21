@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block page_title %}Projects{% endblock %}
+{% block section %}projects{% endblock %}
+{% block contents %}
+
+{% filter markdown %}
+## Projects
+
+### [MonthApp](#MonthApp)
+
+A micro dev bootcamp. 
+
+[MonthApp](https://groups.google.com/forum/#!forum/monthappgtuc) is a module 
+that consists of four weeks of rapid training, 
+leading to a hackathon. Successful students have gone on to build basic but 
+cool products. Working to rewrite the training materials. 
+[v1](https://github.com/jeffgodwyll/MonthApp/tree/v1.0.0/Intro) points to the 
+old materials we used.
+
+### [AdClass](#AdClass)
+
+A project Simon and I pioneered. AdClass is now a 
+[WorldWide project](https://plus.google.com/s/adclass). Adclass has grown to 
+become  an interactive class to introduce students to online marketing using 
+Google's platform; AdWords, AdSense, Admob and Analytics.
+
+### [streamparse Docs](http://streamparse.readthedocs.org/en/latest/)
+
+[streamparse](https://github.com/Parsely/streamparse) lets you run Python code 
+against real-time streams of data
+
+### [tHelp](#tHelp)
+tHelp is an <strike>online</strike> volunteerism platform. 
+[Finalist](http://www.google.com/events/gcdc2013/finalists.html) in the 2013 
+Google Cloud Developer Challenge.
+
+##### Technologies Used
+
+[WebApp2][4] | [Jinja2][5] | [Google App Engine][1] | [Hangouts API][7] | 
+[Google API Client Lib][6] | [Google Drive API][8]
+
+### [jeffgodwyll.com](http://jeffgodwyll.com)
+
+The content and source of this site
+
+#####Technologies Used
+
+[Google App Engine][1] | [Flask][2] | [Flask-FlatPages][3] | [Jinja2][4]
+
+### Websites
+
+- [Wineloya Digital Advertising](wineloya.com)
+- [CIT SYS](http://www.citsys.com/)
+- Ask if you'll like to see more :)
+
+
+### Other Fun Projects
+
+I'll put up posts in due time
+
+- [My Dotfiles][12]: configuration files for my systems
+- Dumb Malaria Detector ([Arduino][9] | [PulseSensor][10])
+- 13V Adjustable Regulator ([Zener Diodes galore][11] :])
+
+[1]: http://appengine.google.com
+[2]: http://flask.pocoo.org/
+[3]: https://pythonhosted.org/Flask-FlatPages/
+[4]: https://webapp-improved.appspot.com/
+[5]: http://jinja.pocoo.org/docs/de
+[6]: https://developers.google.com/api-client-library/python/start/installation
+[7]: https://developers.google.com/+/hangouts/
+[8]: https://developers.google.com/drive/
+[9]: http://arduino.cc/en/Main/arduinoBoardUno
+[10]: http://pulsesensor.myshopify.com/products/pulse-sensor-amped
+[11]: http://en.wikipedia.org/wiki/Zener_diode
+[12]: https://github.com/jeffgodwyll/dotfiles
+
+{% endfilter %}
+{% endblock contents %}

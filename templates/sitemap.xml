@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- homepage -->
+    <url>
+        <loc>{{ BASE_URL }}/</loc>
+        <lastmod>{{ today }}</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>1</priority>
+    </url>
+    <!-- posts -->
+    <url>
+        <loc>{{ BASE_URL }}/posts/</loc>
+        <lastmod>{{ recently }}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <!-- projects -->
+    <url>
+        <loc>{{ BASE_URL }}/projects</loc>
+        <lastmod>{{ recently }}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <!-- talks -->
+    <url>
+        <loc>{{ BASE_URL }}/talks/</loc>
+        <lastmod>{{ recently }}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <!-- about -->
+    <url>
+        <loc>{{ BASE_URL }}/about/</loc>
+        <lastmod>{{ recently }}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1</priority>
+    </url>
+    <!-- all pages -->
+    {%- for page in pages %}
+    <url>
+        <loc>{{ BASE_URL }}/{{ page.path }}/</loc>
+        <lastmod>{{ page.date }}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1</priority>
+    </url>
+    {%- endfor %}
+</urlset>
