@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Jeffrey Godwyll</title>
+        <title>Jeffrey Godwyll's Personal Site</title>
         <link>http://jeffgodwyll.com/</link>
-        <description>Jeffrey Godwyll's personal website.</description>
+        <description>Jeffrey Godwyll's personal site.</description>
         <language>en-us</language>
-        <pubDate>2015-03-21 00:02:12.684122</pubDate>
-        <lastBuildDate>2015-03-21 00:02:12.684122</lastBuildDate>
+        <pubDate>2015-03-21 01:35:42.488780</pubDate>
+        <lastBuildDate>2015-03-21 01:35:42.488780</lastBuildDate>
         <copyright>Copyright 2015 Jeffrey Godwyll</copyright>
-        <webMaster>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</webMaster>
-        <managingEditor>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</managingEditor>
+        <author>
+            <name>Jeffrey Godwyll</name>
+            <email>jeffgodwyll+rss@gmail.com</email>
+        </author>
         <ttl>3600</ttl>
         
         <item>
-            <author>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</author>
+            <author>Jeffrey Godwyll</author>
             <title>Installing Chrome on Ubuntu!</title>
             <link>http://jeffgodwyll.com/posts/2014/install-chrome-linux/</link>
             <description>&lt;p&gt;On the &lt;a href=&#34;https://productforums.google.com/forum/#!categories/chrome/linux&#34;&gt;Google Chrome Help Forum&lt;/a&gt;
@@ -96,7 +98,7 @@ Google Chrome receives the latest updates whenever you check for system updates.
             <guid>http://jeffgodwyll.com/posts/2014/install-chrome-linux/</guid>
         </item>
         <item>
-            <author>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</author>
+            <author>Jeffrey Godwyll</author>
             <title>Codelab - Getting Started Building Scalable Mobile Apps with App Engine</title>
             <link>http://jeffgodwyll.com/talks/2014/getting-started-google-cloud-endpoints/</link>
             <description>&lt;p&gt;Presented at GDG UCC&#39;s Devfest Event. Developing a quick API backend for mobile
@@ -115,7 +117,7 @@ not perfect. I&#39;ve tried to make it better. &lt;/p&gt;
             <guid>http://jeffgodwyll.com/talks/2014/getting-started-google-cloud-endpoints/</guid>
         </item>
         <item>
-            <author>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</author>
+            <author>Jeffrey Godwyll</author>
             <title>Open Source Contribution - Tools of the Trade</title>
             <link>http://jeffgodwyll.com/talks/2014/open-source-contribution-tools-of-the-trade/</link>
             <description>&lt;p&gt;For Software Freedom Day. Touches on aspects of contributing and the basic skills 
@@ -135,7 +137,7 @@ not perfect. I&#39;ve tried to make it better. &lt;/p&gt;
             <guid>http://jeffgodwyll.com/talks/2014/open-source-contribution-tools-of-the-trade/</guid>
         </item>
         <item>
-            <author>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</author>
+            <author>Jeffrey Godwyll</author>
             <title>Google I/O 14 Live Stream and Live Blog</title>
             <link>http://jeffgodwyll.com/posts/2014/google-io-14-live-stream-and-live-blog/</link>
             <description>&lt;!-- tags: [live] --&gt;
@@ -146,7 +148,7 @@ not perfect. I&#39;ve tried to make it better. &lt;/p&gt;
             <guid>http://jeffgodwyll.com/posts/2014/google-io-14-live-stream-and-live-blog/</guid>
         </item>
         <item>
-            <author>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</author>
+            <author>Jeffrey Godwyll</author>
             <title>DevCongress - Google App Engine Overview and Demo</title>
             <link>http://jeffgodwyll.com/talks/2013/google-app-engine-overview/</link>
             <description>&lt;p&gt;Slide presentation, demo and video of my talk about getting started on Google 
@@ -200,7 +202,7 @@ App Engine.&lt;/p&gt;
             <guid>http://jeffgodwyll.com/talks/2013/google-app-engine-overview/</guid>
         </item>
         <item>
-            <author>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</author>
+            <author>Jeffrey Godwyll</author>
             <title>Google Africa Communities Summit – GSummit2013</title>
             <link>http://jeffgodwyll.com/posts/2013/google-africa-communities-summit/</link>
             <description>&lt;!-- tags: [social, random, life-event] --&gt;
@@ -272,7 +274,7 @@ Every night we had different activities to do, from bowling, playing pool, to wa
             <guid>http://jeffgodwyll.com/posts/2013/google-africa-communities-summit/</guid>
         </item>
         <item>
-            <author>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</author>
+            <author>Jeffrey Godwyll</author>
             <title>Literacy in Ghana</title>
             <link>http://jeffgodwyll.com/posts/2013/literacy-in-ghana/</link>
             <description>&lt;!-- tags: [social, random] --&gt;
@@ -286,7 +288,7 @@ Every night we had different activities to do, from bowling, playing pool, to wa
             <guid>http://jeffgodwyll.com/posts/2013/literacy-in-ghana/</guid>
         </item>
         <item>
-            <author>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</author>
+            <author>Jeffrey Godwyll</author>
             <title>Good C++ Practices</title>
             <link>http://jeffgodwyll.com/posts/2013/good-practices/</link>
             <description>&lt;!-- tags: [Code] --&gt;
@@ -363,7 +365,7 @@ Every night we had different activities to do, from bowling, playing pool, to wa
             <guid>http://jeffgodwyll.com/posts/2013/good-practices/</guid>
         </item>
         <item>
-            <author>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</author>
+            <author>Jeffrey Godwyll</author>
             <title>Google I/O 13 Live</title>
             <link>http://jeffgodwyll.com/posts/2013/google-io-13-live/</link>
             <description>&lt;!-- tags: [live] --&gt;
@@ -377,7 +379,7 @@ Every night we had different activities to do, from bowling, playing pool, to wa
             <guid>http://jeffgodwyll.com/posts/2013/google-io-13-live/</guid>
         </item>
         <item>
-            <author>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</author>
+            <author>Jeffrey Godwyll</author>
             <title>Don&#39;t Talk, Just Get It Done!</title>
             <link>http://jeffgodwyll.com/posts/2013/dont-talk-just-get-it-done/</link>
             <description>&lt;!-- tags: [social, random] --&gt;
@@ -407,7 +409,7 @@ that gave very brilliant presentations implement them.&lt;br /&gt;
             <guid>http://jeffgodwyll.com/posts/2013/dont-talk-just-get-it-done/</guid>
         </item>
         <item>
-            <author>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</author>
+            <author>Jeffrey Godwyll</author>
             <title>Official Google Africa Blog - Checking in with African developers</title>
             <link>http://jeffgodwyll.com/posts/2012/official-google-africa-blog-checking-in/</link>
             <description>&lt;!-- tags: [social, random] --&gt;
@@ -418,7 +420,7 @@ that gave very brilliant presentations implement them.&lt;br /&gt;
             <guid>http://jeffgodwyll.com/posts/2012/official-google-africa-blog-checking-in/</guid>
         </item>
         <item>
-            <author>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</author>
+            <author>Jeffrey Godwyll</author>
             <title>Voice Search Arrives in 13 New Languages</title>
             <link>http://jeffgodwyll.com/posts/2012/voice-search-arrives-in-13-new-languages/</link>
             <description>&lt;!-- tags: [random] --&gt;
@@ -429,7 +431,7 @@ that gave very brilliant presentations implement them.&lt;br /&gt;
             <guid>http://jeffgodwyll.com/posts/2012/voice-search-arrives-in-13-new-languages/</guid>
         </item>
         <item>
-            <author>jeffgodwyll+rss@gmail.com (Jeffrey Godwyll)</author>
+            <author>Jeffrey Godwyll</author>
             <title>The Era of Startups - Introducing NewMe</title>
             <link>http://jeffgodwyll.com/posts/2012/era-of-startups-introducing-newme/</link>
             <description>&lt;!-- tags: [random] --&gt;
