@@ -40,7 +40,7 @@ primarily. I'll say when it's time to branch off and go do your own thing :)
 First, you should have the [Chrome Remote Desktop App from the webstore](https://chrome.google.com/webstore/detail/chrome-remote-desktop/gbchcmhmhahfdphkhkmpfmihenigjmpp?hl=en) 
 enabled on each of your computers. 
 
-Or if you'll be accessing your computers from an android
+Also if you'll be accessing your computers from an android
 device, you'll need to install the [Chrome Remote Desktop Android App](https://play.google.com/store/apps/details?id=com.google.chromeremotedesktop)
 , open the app and select any of your online computers to start chromoting. It's
 that easy :) although you first need to make sure your computers are ready. The
@@ -50,7 +50,9 @@ You must be running the official Google Chrome browser, not Chromium.
 The Debian package installs some `manifest.json` files in 
 `/etc/opt/chrome/native-messaging-hosts/` but Chromium looks in 
 `/etc/chromium/native-messaging-hosts/`. That said, you could probably try 
-symlinking the appropriate files into place
+symlinking the appropriate files into place. For example:
+
+    $ sudo ln -s /etc/opt/chrome /etc/chromium
 
 Next do these in Chrome installed on Ubuntu or any other 
 [Debian derivatives](http://distrowatch.com/search.php?basedon=Debian&status=Active).
@@ -58,7 +60,7 @@ Next do these in Chrome installed on Ubuntu or any other
 At the time of writing this, there's no official rpm installable. But there's
 an [open issue](http://code.google.com/p/chromium/issues/detail?id=343329) 
 tracking this and it might be here sooner than you know... It'll be best if you
-star that if you're interested so you're among the first to know. 
+star it so you're among the first to know. 
 
 Anyway, on to the next one.
 
@@ -95,7 +97,7 @@ OK nice. You now have the Chrome Remote Host Service installed.
 
 
 Do you have a preferred editor? Use it for the following instructions. I'll be 
-using [Vim](http://en.wikipedia.org/wiki/Vim_(text(editor)),not that it makes 
+using [Vim](http://en.wikipedia.org/wiki/Vim_(text(editor)), not that it makes 
 any difference.
 
 ### Create a Virtual Session (For Linux users only)
@@ -111,9 +113,9 @@ post.
 For example I use [i3wm](http://i3wm.org/) and it's [great](https://github.com/jeffgodwyll/dotfiles/blob/master/.i3/config)
 , [really](https://github.com/jeffgodwyll/dotfiles/blob/master/.i3status.conf) 
 [great](https://github.com/jeffgodwyll/dotfiles/blob/master/i3-exit)... 
-but I'm yet to be convinced though that I can be as productive with it on a 
-touchscreen as I usually will since I remote from my nexus 7 quite often. 
-So instead I prefer to install a lightweight desktop window manager before
+but I'm yet to be convinced I can be as productive with it on a 
+touchscreen as I usually will since I 'chromote' from my nexus 7 quite often. 
+So instead I prefer to install a lightweight desktop environment before
 continuing. I'll be using [XFCE](http://www.xfce.org/).
     
     $ sudo apt-get install xfce4 xfce4-terminal
@@ -121,9 +123,9 @@ continuing. I'll be using [XFCE](http://www.xfce.org/).
 Edit your `.profile` file in your home directory and add 
 `export CHROME_REMOTE_DESKTOP_DEFAULT_DESKTOP_SIZES=1024x768` to the end of 
 the file. (Or better the resolution of your android device or the device you'll
-be using so that things fit into screen. It's hard scrolling around) 
+be using so that things fit into screen. It's frustrating scrolling around) 
 
-For example if Vim is your editor, just open your `~/.profile` with it: 
+So if Vim is your editor, just open your `~/.profile` with it: 
     
     $ vim ~/.profile
 
@@ -158,7 +160,7 @@ For windows this info might be helpful:
 > possible through the service manager. The software is designed to connect to 
 > the Internet and adds a Windows Firewall exception in order to do so without 
 > being interfered with. The primary executable is named `remoting_host.exe`.
-- Read more at [http://www.shouldiremoveit.com/Chrome-Remote-Desktop-Host-13249-program.aspx](http://www.shouldiremoveit.com/Chrome-Remote-Desktop-Host-13249-program.aspx)
+- [Should I Remove It](http://www.shouldiremoveit.com/Chrome-Remote-Desktop-Host-13249-program.aspx)
 
 
 For Linux folks let's now stop and start the session with the following still
@@ -167,7 +169,7 @@ in the terminal:
     $ sudo /etc/init.d/chrome-remote-desktop stop
     $ sudo /etc/init.d/chrome-remote-desktop start
 
-Next on our list is to *Enable Remote Connections*
+### Enable Remote Connections
 
 Open the Chrome Remote Desktop web app.
   
@@ -178,4 +180,4 @@ Open the Chrome Remote Desktop web app.
 Now, we've set up our machines to be accessed from literally anywhere. All 
 we'll do from there is fire up the Android app or Chrome app from the 
 device we'll be using, connect to our box we've just set up, key in the PIN 
-and voila. You can start using your remote machine :)
+and voilà. You can start using your remote machine :)
