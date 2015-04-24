@@ -1,5 +1,5 @@
 title: Chromoting 101
-date: 2015-03-24
+date: 2015-04-24
 published: true
 
 > Chrome Remote Desktop allows you to remotely access one computer from another
