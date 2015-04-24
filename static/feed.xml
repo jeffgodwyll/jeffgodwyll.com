@@ -5,8 +5,8 @@
         <link>http://jeffgodwyll.com/</link>
         <description>Jeffrey Godwyll's personal site.</description>
         <language>en-us</language>
-        <pubDate>2015-03-21 01:35:42.488780</pubDate>
-        <lastBuildDate>2015-03-21 01:35:42.488780</lastBuildDate>
+        <pubDate>2015-04-24 11:20:22.313330</pubDate>
+        <lastBuildDate>2015-04-24 11:20:22.313330</lastBuildDate>
         <copyright>Copyright 2015 Jeffrey Godwyll</copyright>
         <author>
             <name>Jeffrey Godwyll</name>
@@ -14,6 +14,181 @@
         </author>
         <ttl>3600</ttl>
         
+        <item>
+            <author>Jeffrey Godwyll</author>
+            <title>Chromoting 101</title>
+            <link>http://jeffgodwyll.com/posts/2015/chromoting/</link>
+            <description>&lt;blockquote&gt;
+&lt;p&gt;Chrome Remote Desktop allows you to remotely access one computer from another
+over the Internet. For example, you can use the app to securely access your
+files or applications from another computer problem.
+- &lt;a href=&#34;https://support.google.com/chrome/answer/1649523?hl=en&#34;&gt;Chrome Help Center&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Computers can be made available on a short-term basis such as when you need
+remote support, or on a more long-term basis for remote access to your
+applications and files. All connections are fully secured. Chrome Remote Desktop
+is cross-platform. (Windows, Mac and Linux).
+You can access your Windows, Mac and Linux devices at any time from your 
+Chrome browser. Chromebooks and Androids are included.&lt;/p&gt;
+&lt;p&gt;For emphasis CRD works in &lt;em&gt;2&lt;/em&gt; basic ways.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;h4&gt;Remote Assistance&lt;/h4&gt;
+User-to-user screen sharing best utilized in remote
+assistance tasks. It allows someone to access your computer, for those cases
+where you&#39;re having issues with your pc and you think a friend might be in the
+position to come to your aid. You first begin by sharing
+your computer. This is done when you generate an access code that you pass on
+to the other party. Once they have entered the code, your sharing session will
+begin.&lt;/li&gt;
+&lt;li&gt;&lt;h4&gt;Unattended access&lt;/h4&gt;
+To allow for longer periods of unattended access, there&#39;s this 2nd option where
+you get to add your computers to Chrome Remote Desktop so you can 
+access them from anywhere.
+It&#39;s not really complicated to set up but can be a bit intimidating 
+and not as straightforward, at least not on Linux devices(still in beta for a
+couple of reasons).
+For Windows and Mac users, this is fairly straightforward, so you can just skip
+ahead to the next instructions whenever the current ones do not apply to you.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The following apply to all 3 platforms. Ignore that I&#39;m focusing on Linux users
+primarily. I&#39;ll say when it&#39;s time to branch off and go do your own thing :)&lt;/p&gt;
+&lt;p&gt;First, you should have the &lt;a href=&#34;https://chrome.google.com/webstore/detail/chrome-remote-desktop/gbchcmhmhahfdphkhkmpfmihenigjmpp?hl=en&#34;&gt;Chrome Remote Desktop App from the webstore&lt;/a&gt; 
+enabled on each of your computers. &lt;/p&gt;
+&lt;p&gt;Also if you&#39;ll be accessing your computers from an android
+device, you&#39;ll need to install the &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.google.chromeremotedesktop&#34;&gt;Chrome Remote Desktop Android App&lt;/a&gt;
+, open the app and select any of your online computers to start chromoting. It&#39;s
+that easy :) although you first need to make sure your computers are ready. The
+next parts will ensure they are.&lt;/p&gt;
+&lt;p&gt;You must be running the official Google Chrome browser, not Chromium. 
+The Debian package installs some &lt;code&gt;manifest.json&lt;/code&gt; files in 
+&lt;code&gt;/etc/opt/chrome/native-messaging-hosts/&lt;/code&gt; but Chromium looks in 
+&lt;code&gt;/etc/chromium/native-messaging-hosts/&lt;/code&gt;. That said, you could probably try 
+symlinking the appropriate files into place. For example:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;err&#34;&gt;$&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ln&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;s&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;etc&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;opt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;chrome&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;etc&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;chromium&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Next do these in Chrome installed on Ubuntu or any other 
+&lt;a href=&#34;http://distrowatch.com/search.php?basedon=Debian&amp;amp;status=Active&#34;&gt;Debian derivatives&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;At the time of writing this, there&#39;s no official rpm installable. But there&#39;s
+an &lt;a href=&#34;http://code.google.com/p/chromium/issues/detail?id=343329&#34;&gt;open issue&lt;/a&gt; 
+tracking this and it might be here sooner than you know... It&#39;ll be best if you
+star it so you&#39;re among the first to know. &lt;/p&gt;
+&lt;p&gt;Anyway, on to the next one.&lt;/p&gt;
+&lt;h3&gt;Chrome Remote Desktop App&lt;/h3&gt;
+&lt;p&gt;You&#39;ll have to open the Chrome Remote Desktop app or &#34;extension&#34;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open a new tab.&lt;/li&gt;
+&lt;li&gt;Open the Chrome Remote Desktop app from the Apps tab, &lt;a href=&#34;chrome://apps&#34;&gt;chrome://apps&lt;/a&gt;
+or from your
+&lt;a href=&#34;https://support.google.com/chrome_webstore/answer/3060053?hl=en.&#34;&gt;Chrome Launcher&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;If the &lt;code&gt;Get Started&lt;/code&gt; button appears in the &#34;My Computers&#34; box, click it to 
+ display remote connection options.&lt;/li&gt;
+&lt;li&gt;Click &lt;code&gt;Enable remote connections&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Chrome Remote Desktop Host Service&lt;/h3&gt;
+&lt;p&gt;Next we&#39;ll install the Chrome Remote Host Service.&lt;/p&gt;
+&lt;p&gt;For Mac and Windows users, you&#39;ll need not do anything. The CRD host service will
+offer to install when you click &lt;code&gt;Enable remote connections&lt;/code&gt; from  the previous
+step.&lt;/p&gt;
+&lt;p&gt;For Linux users(deb systems), you should also be offered the install but I&#39;ve
+found that it&#39;s probably better to install using &lt;a href=&#34;http://en.wikipedia.org/wiki/Dpkg&#34;&gt;dpkg&lt;/a&gt;
+so I&#39;ll rather you download the host service&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For 64bit systems: &lt;a href=&#34;http://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb&#34;&gt;http://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;For 32bit systems: &lt;a href=&#34;http://dl.google.com/linux/direct/chrome-remote-desktop_current_i386.deb&#34;&gt;http://dl.google.com/linux/direct/chrome-remote-desktop_current_i386.deb&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So let&#39;s install with &lt;code&gt;dpkg&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;err&#34;&gt;$&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dpkg&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;to&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;chrome&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;remote&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;deb&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;OK nice. You now have the Chrome Remote Host Service installed.&lt;/p&gt;
+&lt;p&gt;Do you have a preferred editor? Use it for the following instructions. I&#39;ll be 
+using &lt;a href=&#34;http://en.wikipedia.org/wiki/Vim_(text(editor)&#34;&gt;Vim&lt;/a&gt;, not that it makes 
+any difference.&lt;/p&gt;
+&lt;h3&gt;Create a Virtual Session (For Linux users only)&lt;/h3&gt;
+&lt;p&gt;Not everyone will need these steps. Things are not quite stable at the moment,
+so if you find yourself facing issues trying to get CRD to work out of the box
+I&#39;ll strongly recommend that you do not skip this section.&lt;/p&gt;
+&lt;p&gt;There are so many &lt;a href=&#34;http://xwinman.org&#34;&gt;window managers&lt;/a&gt; out there and everyone will try to sell
+you on why you should try out theirs. I cannot cover all the various WMs in this
+post.&lt;/p&gt;
+&lt;p&gt;For example I use &lt;a href=&#34;http://i3wm.org/&#34;&gt;i3wm&lt;/a&gt; and it&#39;s &lt;a href=&#34;https://github.com/jeffgodwyll/dotfiles/blob/master/.i3/config&#34;&gt;great&lt;/a&gt;
+, &lt;a href=&#34;https://github.com/jeffgodwyll/dotfiles/blob/master/.i3status.conf&#34;&gt;really&lt;/a&gt; 
+&lt;a href=&#34;https://github.com/jeffgodwyll/dotfiles/blob/master/i3-exit&#34;&gt;great&lt;/a&gt;... 
+but I&#39;m yet to be convinced I can be as productive with it on a 
+touchscreen as I usually will since I &#39;chromote&#39; from my nexus 7 quite often. 
+So instead I prefer to install a lightweight desktop environment before
+continuing. I&#39;ll be using &lt;a href=&#34;http://www.xfce.org/&#34;&gt;XFCE&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;err&#34;&gt;$&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;apt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;get&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;xfce4&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;xfce4&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;terminal&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Edit your &lt;code&gt;.profile&lt;/code&gt; file in your home directory and add 
+&lt;code&gt;export CHROME_REMOTE_DESKTOP_DEFAULT_DESKTOP_SIZES=1024x768&lt;/code&gt; to the end of 
+the file. (Or better the resolution of your android device or the device you&#39;ll
+be using so that things fit into screen. It&#39;s frustrating scrolling around) &lt;/p&gt;
+&lt;p&gt;So if Vim is your editor, just open your &lt;code&gt;~/.profile&lt;/code&gt; with it: &lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;err&#34;&gt;$&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;vim&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;~/&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;profile&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And add the following to the end of that file and save&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;n&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;CHROME_REMOTE_DESKTOP_DEFAULT_DESKTOP_SIZES&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1024&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x768&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Create a file called &lt;code&gt;.chrome-remote-desktop-session&lt;/code&gt; in your home directory. 
+This should be a shell script that starts our preferred desktop environment, 
+XFCE.&lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;err&#34;&gt;$&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;vim&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;~/&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;chrome&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;remote&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;desktop&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;session&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Edit the file to contain this line at the beginning&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;n&#34;&gt;exec&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;usr&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sbin&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;lightdm&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;session&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;quot;startxfce4&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Remember to save your changes.&lt;/p&gt;
+&lt;h3&gt;Start the Host Service&lt;/h3&gt;
+&lt;p&gt;Again for the other platforms, the service should already be running in the
+background.&lt;/p&gt;
+&lt;p&gt;For windows this info might be helpful:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Upon being installed, the package adds a service which is designed to run 
+continuously in the background. Manually stopping the service has been seen to 
+cause the program to stop functioning properly. It adds a background controller 
+service that is set to automatically run. Delaying the start of this service is
+possible through the service manager. The software is designed to connect to 
+the Internet and adds a Windows Firewall exception in order to do so without 
+being interfered with. The primary executable is named &lt;code&gt;remoting_host.exe&lt;/code&gt;.
+- &lt;a href=&#34;http://www.shouldiremoveit.com/Chrome-Remote-Desktop-Host-13249-program.aspx&#34;&gt;Should I Remove It&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;For Linux folks let&#39;s now stop and start the session with the following still
+in the terminal:&lt;/p&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span class=&#34;err&#34;&gt;$&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;etc&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;init&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;chrome&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;remote&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;desktop&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;stop&lt;/span&gt;
+&lt;span class=&#34;err&#34;&gt;$&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;etc&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;init&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;chrome&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;remote&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;desktop&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;start&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Enable Remote Connections&lt;/h3&gt;
+&lt;p&gt;Open the Chrome Remote Desktop web app.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Click &lt;code&gt;Enable remote connections&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Enter a PIN and re-type the PIN. Then click OK.&lt;/li&gt;
+&lt;li&gt;Dismiss the confirmation dialog.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now, we&#39;ve set up our machines to be accessed from literally anywhere. All 
+we&#39;ll do from there is fire up the Android app or Chrome app from the 
+device we&#39;ll be using, connect to our box we&#39;ve just set up, key in the PIN 
+and voilà. You can start using your remote machine :)&lt;/p&gt;
+            </description>
+            <pubDate>2015-04-24</pubDate>
+            <guid>http://jeffgodwyll.com/posts/2015/chromoting/</guid>
+        </item>
         <item>
             <author>Jeffrey Godwyll</author>
             <title>Installing Chrome on Ubuntu!</title>
