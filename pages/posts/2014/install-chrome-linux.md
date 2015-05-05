@@ -1,6 +1,7 @@
 title: Installing Chrome on Ubuntu!
 date: 2014-12-31
 published: true
+tags: [chrome, linux]
 
 On the [Google Chrome Help Forum](https://productforums.google.com/forum/#!categories/chrome/linux)
 , I usually run into Ubuntu users who sometimes have issues installing 

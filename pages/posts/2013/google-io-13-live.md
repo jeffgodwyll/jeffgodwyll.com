@@ -1,8 +1,7 @@
 title: Google I/O 13 Live
 date: 2013-05-15
 published: true
-
-<!-- tags: [live] -->
+tags: [random, live]
 
 # Friday's event
 

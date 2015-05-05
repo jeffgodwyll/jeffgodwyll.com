@@ -1,8 +1,7 @@
 title: Google Africa Communities Summit – GSummit2013
 date: 2013-08-15
 published: true
-
-<!-- tags: [social, random, life-event] -->
+tags: [social, random, life-event]
 
 _reposted with some personal touch and info ;) from the [That's so Jackie Blog](http://jackiemoraa.blogspot.com/2013/08/gsummit2013.html?spref=bl)_  
   

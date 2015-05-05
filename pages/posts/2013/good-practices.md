@@ -1,8 +1,7 @@
 title: Good C++ Practices
 date: 2013-05-22
 published: true
-
-<!-- tags: [Code] -->
+tags: [code, c++]
 
 "Refactored" or “forked” from http://www.cplusplus.com/forum/lounge/6195/  
   

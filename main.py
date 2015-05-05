@@ -180,6 +180,12 @@ def section_archives_year(section, year):
     return render_template(template, pages=articles, years=years, year=year)
 
 
+@app.route('/tag/<string:tag>/')
+def tag(tag):
+    tagged = [p for p in pages if tag in p.meta.get('tags', [])]
+    return render_template('tag/archives.html', pages=tagged, tag=tag)
+
+
 @app.route('/403.html')
 def error403():
     return render_template('403.html')
