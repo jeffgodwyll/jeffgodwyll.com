@@ -1,8 +1,7 @@
 title: Don't Talk, Just Get It Done!
 date: 2013-04-07
 published: true
-
-<!-- tags: [social, random] -->
+tags: [social, random]
 
 > "This whole grass-root activism of yours isn't changing the world, it's a 
 > joke. Wanna change the world, you got to leave the living room" 
