@@ -53,12 +53,20 @@
             {%- endif %}
         </p>
     </aside>
+    {% if page.tags %}
+        <small>Tags:
+            {% for tag in page.tags %}
+            <a href="{{ url_for("tag", tag=tag ) }}">{{ tag|escape }}</a> |
+            {% endfor %}
+        </small>
+    {% endif %}
+    
     <hr>
     <nav>
         {% if page.prev -%}
             <a class="prev" href="{{ url_for("page", path=page.prev.path) }}">{{ page.prev.title }}</a>
         {%- endif %}
-        {% if page.prev and page.next %}|{% endif %}
+        {% if page.prev and page.next %}| |{% endif %}
         {% if page.next -%}
             <a class="next" href="{{ url_for("page", path=page.next.path) }}">{{ page.next.title }}</a>
         {%- endif %}
