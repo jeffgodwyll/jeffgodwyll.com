@@ -5,8 +5,8 @@
         <link>http://jeffgodwyll.com/</link>
         <description>Jeffrey Godwyll's personal site.</description>
         <language>en-us</language>
-        <pubDate>2015-04-24 11:20:22.313330</pubDate>
-        <lastBuildDate>2015-04-24 11:20:22.313330</lastBuildDate>
+        <pubDate>2015-05-05 00:40:39.670251</pubDate>
+        <lastBuildDate>2015-05-05 00:40:39.670251</lastBuildDate>
         <copyright>Copyright 2015 Jeffrey Godwyll</copyright>
         <author>
             <name>Jeffrey Godwyll</name>
@@ -315,9 +315,7 @@ not perfect. I&#39;ve tried to make it better. &lt;/p&gt;
             <author>Jeffrey Godwyll</author>
             <title>Google I/O 14 Live Stream and Live Blog</title>
             <link>http://jeffgodwyll.com/posts/2014/google-io-14-live-stream-and-live-blog/</link>
-            <description>&lt;!-- tags: [live] --&gt;
-
-&lt;iframe allowTransparency=&#34;true&#34; src=&#34;https://www.google.com/events/io/gadget/iframe.html?feed=true&amp;fh=300&amp;video=true&amp;w=420&amp;h=301&#34; style=&#34;width:100%;height:760px&#34;&gt;&lt;/iframe&gt;
+            <description>&lt;iframe allowTransparency=&#34;true&#34; src=&#34;https://www.google.com/events/io/gadget/iframe.html?feed=true&amp;fh=300&amp;video=true&amp;w=420&amp;h=301&#34; style=&#34;width:100%;height:760px&#34;&gt;&lt;/iframe&gt;
             </description>
             <pubDate>2014-06-25</pubDate>
             <guid>http://jeffgodwyll.com/posts/2014/google-io-14-live-stream-and-live-blog/</guid>
@@ -380,9 +378,7 @@ App Engine.&lt;/p&gt;
             <author>Jeffrey Godwyll</author>
             <title>Google Africa Communities Summit – GSummit2013</title>
             <link>http://jeffgodwyll.com/posts/2013/google-africa-communities-summit/</link>
-            <description>&lt;!-- tags: [social, random, life-event] --&gt;
-
-&lt;p&gt;&lt;em&gt;reposted with some personal touch and info ;) from the &lt;a href=&#34;http://jackiemoraa.blogspot.com/2013/08/gsummit2013.html?spref=bl&#34;&gt;That&#39;s so Jackie Blog&lt;/a&gt;&lt;/em&gt;&lt;br /&gt;
+            <description>&lt;p&gt;&lt;em&gt;reposted with some personal touch and info ;) from the &lt;a href=&#34;http://jackiemoraa.blogspot.com/2013/08/gsummit2013.html?spref=bl&#34;&gt;That&#39;s so Jackie Blog&lt;/a&gt;&lt;/em&gt;&lt;br /&gt;
 &lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh5.googleusercontent.com/ILFuO-X5zsfpEVjAAxecue8sF6Dzgfg99iT10SGChPI=w630-h227-no&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;The Google Student Ambassador Summit is an event that took place in Nairobi during the first week of July. It was an incredible opportunity to visit Kenya and experience a touch of its great and well-documented culture. Overall, it was an experience I won&#39;t ever forget =] &lt;/p&gt;
@@ -452,9 +448,7 @@ Every night we had different activities to do, from bowling, playing pool, to wa
             <author>Jeffrey Godwyll</author>
             <title>Literacy in Ghana</title>
             <link>http://jeffgodwyll.com/posts/2013/literacy-in-ghana/</link>
-            <description>&lt;!-- tags: [social, random] --&gt;
-
-&lt;p&gt;&lt;em&gt;Data about the level of literacy of the people of Ghana is readily available on the web. Sadly even reputable sources like the Ghana Statistical Service (http://www.statsghana.gov.gh/edu_stats.html) fail to provide visual representation as to the actual locations especially those with an alarming rate of illiteracy. Hence my map is to bridge this gap and help volunteers as well as the government see this and act accordingly. See the full map &lt;a href=&#34;https://mapsengine.google.com/map/edit?mid=zG-UjNDkH-eY.k47JbOCF-bIY&#34;&gt;HERE&lt;/a&gt;&lt;br /&gt;
+            <description>&lt;p&gt;&lt;em&gt;Data about the level of literacy of the people of Ghana is readily available on the web. Sadly even reputable sources like the Ghana Statistical Service (http://www.statsghana.gov.gh/edu_stats.html) fail to provide visual representation as to the actual locations especially those with an alarming rate of illiteracy. Hence my map is to bridge this gap and help volunteers as well as the government see this and act accordingly. See the full map &lt;a href=&#34;https://mapsengine.google.com/map/edit?mid=zG-UjNDkH-eY.k47JbOCF-bIY&#34;&gt;HERE&lt;/a&gt;&lt;br /&gt;
 &lt;/em&gt;&lt;br /&gt;
 &lt;/p&gt;
 &lt;iframe src=&#34;https://mapsengine.google.com/map/u/0/embed?mid=zG-UjNDkH-eY.k47JbOCF-bIY&#34; width=&#34;640&#34; height=&#34;480&#34;&gt;&lt;/iframe&gt;
@@ -466,9 +460,7 @@ Every night we had different activities to do, from bowling, playing pool, to wa
             <author>Jeffrey Godwyll</author>
             <title>Good C++ Practices</title>
             <link>http://jeffgodwyll.com/posts/2013/good-practices/</link>
-            <description>&lt;!-- tags: [Code] --&gt;
-
-&lt;p&gt;&#34;Refactored&#34; or “forked” from http://www.cplusplus.com/forum/lounge/6195/&lt;br /&gt;
+            <description>&lt;p&gt;&#34;Refactored&#34; or “forked” from http://www.cplusplus.com/forum/lounge/6195/&lt;br /&gt;
 &lt;/p&gt;
 &lt;p&gt;You might want to check the original out or just go by these “commandments” and write better C++ code in general. These good practices will in one way or the other save you some headache like the ones I get at times &lt;/p&gt;
 &lt;p&gt;1. Always use header guards.&lt;br /&gt;
@@ -543,9 +535,7 @@ Every night we had different activities to do, from bowling, playing pool, to wa
             <author>Jeffrey Godwyll</author>
             <title>Google I/O 13 Live</title>
             <link>http://jeffgodwyll.com/posts/2013/google-io-13-live/</link>
-            <description>&lt;!-- tags: [live] --&gt;
-
-&lt;h1&gt;Friday&#39;s event&lt;/h1&gt;
+            <description>&lt;h1&gt;Friday&#39;s event&lt;/h1&gt;
 &lt;iframe allowTransparency=true src=&#34;https://developers.google.com/events/announce/googleio2013/?a=on&amp;cn=Jeff&amp;cu=&amp;w=420&amp;h=301&#34; style=&#34;border:0;box-shadow:0 0px 20px #888;-webkit-box-shadow:0 0px 20px #888;-khtml-box-shadow:0 0px 20px #888;-moz-box-shadow:0 0px 20px #888;-ms-box-shadow:0 0px 20px #888;-o-box-shadow:0 0px 20px #888;width:100%;height:601px&#34;&gt;&lt;/iframe&gt;
 
 &lt;p&gt;Edit: Thanks for watching&lt;/p&gt;
@@ -557,9 +547,7 @@ Every night we had different activities to do, from bowling, playing pool, to wa
             <author>Jeffrey Godwyll</author>
             <title>Don&#39;t Talk, Just Get It Done!</title>
             <link>http://jeffgodwyll.com/posts/2013/dont-talk-just-get-it-done/</link>
-            <description>&lt;!-- tags: [social, random] --&gt;
-
-&lt;blockquote&gt;
+            <description>&lt;blockquote&gt;
 &lt;p&gt;&#34;This whole grass-root activism of yours isn&#39;t changing the world, it&#39;s a 
 joke. Wanna change the world, you got to leave the living room&#34; 
 - From &lt;a href=&#34;https://plus.google.com/s/%23Continuum&#34;&gt;#Continuum&lt;/a&gt;.&lt;br /&gt;
@@ -587,9 +575,7 @@ that gave very brilliant presentations implement them.&lt;br /&gt;
             <author>Jeffrey Godwyll</author>
             <title>Official Google Africa Blog - Checking in with African developers</title>
             <link>http://jeffgodwyll.com/posts/2012/official-google-africa-blog-checking-in/</link>
-            <description>&lt;!-- tags: [social, random] --&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://google-africa.blogspot.com/2012/08/checking-in-with-african-developers.html?utm_source=feedburner&amp;amp;utm_medium=feed&amp;amp;utm_campaign=Feed%3A+OfficialGoogleAfricaBlog+%28Official+Google+Africa+Blog%29&amp;amp;m=1&#34;&gt;Official Google Africa Blog: Checking in with African developers&lt;/a&gt;&lt;/p&gt;
+            <description>&lt;p&gt;&lt;a href=&#34;http://google-africa.blogspot.com/2012/08/checking-in-with-african-developers.html?utm_source=feedburner&amp;amp;utm_medium=feed&amp;amp;utm_campaign=Feed%3A+OfficialGoogleAfricaBlog+%28Official+Google+Africa+Blog%29&amp;amp;m=1&#34;&gt;Official Google Africa Blog: Checking in with African developers&lt;/a&gt;&lt;/p&gt;
             </description>
             <pubDate>2012-08-24</pubDate>
             <guid>http://jeffgodwyll.com/posts/2012/official-google-africa-blog-checking-in/</guid>
@@ -598,9 +584,7 @@ that gave very brilliant presentations implement them.&lt;br /&gt;
             <author>Jeffrey Godwyll</author>
             <title>Voice Search Arrives in 13 New Languages</title>
             <link>http://jeffgodwyll.com/posts/2012/voice-search-arrives-in-13-new-languages/</link>
-            <description>&lt;!-- tags: [random] --&gt;
-
-&lt;p&gt;Official Google Blog: Voice Search arrives in 13 new languages: &lt;a href=&#34;http://googleblog.blogspot.com/2012/08/voice-search-arrives-in-13-new-languages.html&#34;&gt;http://googleblog.blogspot.com/2012/08/voice-search-arrives-in-13-new-languages.html&lt;/a&gt;&lt;/p&gt;
+            <description>&lt;p&gt;Official Google Blog: Voice Search arrives in 13 new languages: &lt;a href=&#34;http://googleblog.blogspot.com/2012/08/voice-search-arrives-in-13-new-languages.html&#34;&gt;http://googleblog.blogspot.com/2012/08/voice-search-arrives-in-13-new-languages.html&lt;/a&gt;&lt;/p&gt;
             </description>
             <pubDate>2012-08-17</pubDate>
             <guid>http://jeffgodwyll.com/posts/2012/voice-search-arrives-in-13-new-languages/</guid>
@@ -609,9 +593,7 @@ that gave very brilliant presentations implement them.&lt;br /&gt;
             <author>Jeffrey Godwyll</author>
             <title>The Era of Startups - Introducing NewMe</title>
             <link>http://jeffgodwyll.com/posts/2012/era-of-startups-introducing-newme/</link>
-            <description>&lt;!-- tags: [random] --&gt;
-
-&lt;p&gt;Reposted from the official google blog. &lt;a href=&#34;http://googleblog.blogspot.com/2012/05/accelerating-diversity-in.html&#34;&gt;Accelerating diversity in entrepreneurship with NewME&lt;/a&gt;&lt;/p&gt;
+            <description>&lt;p&gt;Reposted from the official google blog. &lt;a href=&#34;http://googleblog.blogspot.com/2012/05/accelerating-diversity-in.html&#34;&gt;Accelerating diversity in entrepreneurship with NewME&lt;/a&gt;&lt;/p&gt;
             </description>
             <pubDate>2012-05-08</pubDate>
             <guid>http://jeffgodwyll.com/posts/2012/era-of-startups-introducing-newme/</guid>

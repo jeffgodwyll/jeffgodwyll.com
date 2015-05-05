@@ -225,7 +225,8 @@ def build():
 
     app.debug = False
     freezer.freeze()
-    print('Moving feeds and sitemap')
+    print('Regenerating feeds and sitemap')
+
     subprocess.call('cp ./build/*.xml ./static/', shell=True)
     print('Cleaning up')
     subprocess.call('rm -rf ./build/', shell=True)
