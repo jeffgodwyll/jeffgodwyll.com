@@ -1,7 +1,7 @@
 <article lang="{{ page.lang or "en" }}" class="{{ page.section }}" itemscope itemtype="http://schema.org/{{ item_type or "BlogPosting" }}">
     <link itemprop="url" href="{{ url_for("page", path=page.path) }}">
     <header>
-        <h2><a itemprop="name" href="{{ url_for("page", path=page.path) }}">{{ page.title }}</a></h2>
+        <h2 itemprop="name"><a href="{{ url_for("page", path=page.path) }}">{{ page.title }}</a></h2>
     {%- if page.subtitle -%}
         <h3>{{ page.subtitle }}</h3>
     {%- endif -%}
