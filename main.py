@@ -6,6 +6,7 @@ import argh
 import yaml
 
 # from argh import *
+from collections import OrderedDict
 from datetime import date, datetime
 from flask import Flask, render_template, abort
 from flask_frozen import Freezer
@@ -42,7 +43,9 @@ markdown_manager = Markdown(app,
 
 # social profiles
 with open("./social.yaml", "r") as f:
-    SOCIAL_URLS = yaml.load(f.read())
+    profiles = yaml.load(f.read())
+
+SOCIAL_PROFILES = OrderedDict(sorted(profiles.items()))
 
 ###############################################################################
 # Model helpers
@@ -135,7 +138,7 @@ def inject_ga():
 
 @app.route('/about/')
 def about():
-    return render_template('about.html', accounts=SOCIAL_URLS)
+    return render_template('about.html', accounts=SOCIAL_PROFILES)
 
 
 @app.route('/projects')

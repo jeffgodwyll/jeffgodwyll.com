@@ -6,7 +6,7 @@
 {% block contents %}
 
 {% filter markdown %}
-##About Me
+##<a name="aboutme">About Me</a>
 I'm a Computer Engineering Senior at [GTUC](http://gtuc.edu.gh),
   Co-Founder/Lead Dev at [thelp](), Backend guy(freelance) at
 [NibbleIT](http://nibbleitconsult.com/), GSA Alum, and currently Outreach Lead
@@ -47,7 +47,7 @@ Let me know what's on your mind!
 
 {% endfilter %}
 
-<h2 name="accounts">Public Accounts of Mine on the Interwebs</h2>
+<h2><a name="profiles">Public Accounts of Mine on the Interwebs</a></h2>
 <ul class="socialurls">
 {% for account in accounts.items() %}
   <li>
