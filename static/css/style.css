@@ -80,6 +80,12 @@ figure figcaption {
 .carnet figure {
   margin-top: 1.45em;
 }
+ul.socialurls li{
+  list-style-type: none;
+  float: left;
+  width: 200px;
+  margin: 5px 0;
+}
 h1,
 h2,
 h3,
@@ -375,6 +381,7 @@ kbd {
 }
 .site-footer {
   clear: both;
+  padding-top: 10px;
   margin-left: 300px;
   font-size: 15.400000000000002px;
 }

@@ -3,8 +3,10 @@ import os
 import re
 import subprocess
 import argh
+import yaml
 
 # from argh import *
+from collections import OrderedDict
 from datetime import date, datetime
 from flask import Flask, render_template, abort
 from flask_frozen import Freezer
@@ -39,9 +41,15 @@ markdown_manager = Markdown(app,
                             output_format='html5',)
 # asset_manager = AssetManager(app)
 
+# social profiles
+with open("./social.yaml", "r") as f:
+    profiles = yaml.load(f.read())
+
+SOCIAL_PROFILES = OrderedDict(sorted(profiles.items()))
 
 ###############################################################################
 # Model helpers
+
 
 def get_pages(pages, offset=None, limit=None, section=None, year=None):
     """ Retrieves pages matching passed criterias.
@@ -130,7 +138,7 @@ def inject_ga():
 
 @app.route('/about/')
 def about():
-    return render_template('about.html')
+    return render_template('about.html', accounts=SOCIAL_PROFILES)
 
 
 @app.route('/projects')
