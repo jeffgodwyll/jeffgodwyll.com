@@ -14,6 +14,14 @@ coderbits:
   value: https://coderbits.com/jeffgodwyll
   label: Coderbits
 
+openhub:
+  value: https://www.openhub.net/accounts/jeffgodwyll
+  label: OpenHub
+
+quizup:
+  value: https://www.quizup.com/profiles/342881888585284400
+  label: QuizUp
+
 goodreads:
   value: https://www.goodreads.com/user/show/32436986-jeffrey-godwyll
   label: Goodreads
