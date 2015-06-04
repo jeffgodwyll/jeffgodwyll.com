@@ -7,43 +7,56 @@
 
 {% filter markdown %}
 ##About Me
-I'm a Computer Engineering Senior at [GTUC](http://gtuc.edu.gh), 
-  Co-Founder/Lead Dev at [thelp](), Backend guy(freelance) at 
-[NibbleIT](http://nibbleitconsult.com/), GSA Alum, and currently Outreach Lead 
+I'm a Computer Engineering Senior at [GTUC](http://gtuc.edu.gh),
+  Co-Founder/Lead Dev at [thelp](), Backend guy(freelance) at
+[NibbleIT](http://nibbleitconsult.com/), GSA Alum, and currently Outreach Lead
 @ [GDG Ghana](https://developers.google.com/groups/chapter/117620641470438104052/).
 
-As a [TC](http://www.google.com/get/topcontributor/), I spend an hour or two 
-these days on the Chrome Help Forum helping people with 
-Chrome Linux and Android related issues. You'll find more in 
+As a [TC](http://www.google.com/get/topcontributor/), I spend an hour or two
+these days on the Chrome Help Forum helping people with
+Chrome Linux and Android related issues. You'll find more in
 [my activity](https://productforums.google.com/forum/#!profile/chrome/APn2wQfg27TSRB77jRSqXB-1-NM0WHoJrwp4zBtHn56Oz79tqhcC6t6drMRZtXh2tD7rBNyTUzW4) on there.
 
-I love the cloud(both), arduinos, and my terminal. 
-I [read](https://www.goodreads.com/user/show/32436986-jeffrey-godwyll) 
+I love the cloud(both), arduinos, and my terminal.
+I [read](https://www.goodreads.com/user/show/32436986-jeffrey-godwyll)
 way more than I write.
 
 My [coderbits profile](https://coderbits.com/jeffgodwyll)
 may say otherwise but I love python more than any other language :).
 
-I've been really fortunate to have quite a number of 
+I've been really fortunate to have quite a number of
 [lollipop moments](https://www.youtube.com/watch?v=hVCBrkrFrBE). I'll love to
 hear some of yours.
 
 
-    other = {'aliases': ['rey12rey', 'jeffgodwyll'], 
+    other = {'aliases': ['rey12rey', 'jeffgodwyll'],
              'biases': ['Manchester United Football Club', 'Python', 'Android', 'Anything Googly']}
 
 ##<a name="contact">Contact</a>
 
-Start a conversation with me via [Email](mailto:jeffgodwyll@gmail.com?Subject=Hello Jeff!), 
-[Google+](https://plus.google.com/+JeffreyGodwyll), 
-[Twitter](https://www.twitter.com/rey12rey), or 
+Start a conversation with me via [Email](mailto:jeffgodwyll@gmail.com?Subject=Hello Jeff!),
+[Google+](https://plus.google.com/+JeffreyGodwyll),
+[Twitter](https://www.twitter.com/rey12rey), or
 [LinkedIn](http://www.linkedin.com/in/jeffreygodwyll).
 
-If you feel the need to contact me **securely**, you can verify my identity on 
+If you feel the need to contact me **securely**, you can verify my identity on
 [Keybase.io](https://keybase.io/jeffgodwyll) and encrypt your communications
 using [my public key](https://keybase.io/jeffgodwyll/key.asc).
 
 Let me know what's on your mind!
 
 {% endfilter %}
+
+<h2 name="accounts">Public Accounts of Mine on the Interwebs</h2>
+<ul class="socialurls">
+{% for account in accounts.items() %}
+  <li>
+    <a href="{{ account[1].value }}">
+      <img height=16 width=16 src="https://plus.google.com/_/favicon?domain={{ account[1].value }}" />
+      {{ account[1].label }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
+
 {% endblock contents %}

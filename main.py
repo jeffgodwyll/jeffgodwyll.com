@@ -3,6 +3,7 @@ import os
 import re
 import subprocess
 import argh
+import yaml
 
 # from argh import *
 from datetime import date, datetime
@@ -39,9 +40,13 @@ markdown_manager = Markdown(app,
                             output_format='html5',)
 # asset_manager = AssetManager(app)
 
+# social profiles
+with open("./social.yaml", "r") as f:
+    SOCIAL_URLS = yaml.load(f.read())
 
 ###############################################################################
 # Model helpers
+
 
 def get_pages(pages, offset=None, limit=None, section=None, year=None):
     """ Retrieves pages matching passed criterias.
@@ -130,7 +135,7 @@ def inject_ga():
 
 @app.route('/about/')
 def about():
-    return render_template('about.html')
+    return render_template('about.html', accounts=SOCIAL_URLS)
 
 
 @app.route('/projects')
