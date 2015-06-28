@@ -3,39 +3,45 @@
     <!-- homepage -->
     <url>
         <loc>http://jeffgodwyll.com/</loc>
-        <lastmod>2015-05-05</lastmod>
+        <lastmod>2015-06-28</lastmod>
         <changefreq>hourly</changefreq>
         <priority>1</priority>
     </url>
     <!-- posts -->
     <url>
         <loc>http://jeffgodwyll.com/posts/</loc>
-        <lastmod>2015-05-01</lastmod>
+        <lastmod>2015-06-01</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <!-- projects -->
     <url>
         <loc>http://jeffgodwyll.com/projects</loc>
-        <lastmod>2015-05-01</lastmod>
+        <lastmod>2015-06-01</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <!-- talks -->
     <url>
         <loc>http://jeffgodwyll.com/talks/</loc>
-        <lastmod>2015-05-01</lastmod>
+        <lastmod>2015-06-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <!-- about -->
     <url>
         <loc>http://jeffgodwyll.com/about/</loc>
-        <lastmod>2015-05-01</lastmod>
+        <lastmod>2015-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1</priority>
     </url>
     <!-- all pages -->
+    <url>
+        <loc>http://jeffgodwyll.com/posts/2015/google-appegine-vendoring-done-right/</loc>
+        <lastmod>2015-06-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1</priority>
+    </url>
     <url>
         <loc>http://jeffgodwyll.com/posts/2015/chromoting/</loc>
         <lastmod>2015-04-24</lastmod>
