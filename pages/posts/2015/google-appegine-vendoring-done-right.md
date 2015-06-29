@@ -16,7 +16,7 @@ ensuring that application specific packages are isolated from system packages.
 
 This approach(the one outlined in the docs) is quite easy and better.
 But occasionally I just want to be able to quickly test some functionality from my python console and be sure too that this will work in my GAE dev environment. Some prefer to use
-[GAE's interactive console][gae-console]. I do too, but nothing beats cool
+[GAE's interactive console][gae-console]. I do too at times, but nothing beats cool
 [terminal colors][term-colors] and stuff :D.
 
 
@@ -63,6 +63,10 @@ To vendor like I do follow these:
 
         $ pip install -r requirements.txt
 
+      Even better this allows you to move about with your requirements file that I'm
+sure you've come to love and just can't live without.
+
+
 3. Edit or create `appengine_config.py` to enable vendoring
 
         from google.appengine.ext import vendor
@@ -80,9 +84,6 @@ To vendor like I do follow these:
         - ^(.*/)?.*/RCS/.*$
         - ^(.*/)?\..*$
         - ^env$ #virtual environment's folder
-
-Even better this allows you to move about with your requirements file that I'm
-sure you've come to love and just can't live without.
 
 Once the packages are properly set up for App Engine to access, you can just
 fire up a python shell in your virtualenv to test stuff out. We can thus be
