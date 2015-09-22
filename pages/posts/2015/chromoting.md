@@ -72,9 +72,9 @@ You'll have to open the Chrome Remote Desktop app or "extension"
  2. Open the Chrome Remote Desktop app from the Apps tab, [chrome://apps](chrome://apps)
 or from your
 [Chrome Launcher](https://support.google.com/chrome_webstore/answer/3060053?hl=en.)
- 3. If the `Get Started` button appears in the "My Computers" box, click it to 
+ 3. If the <span style="color: #222; background: #eee; padding: 0 .3em; border-radius: .3em;">Get Started</span> button appears in the "My Computers" box, click it to 
  display remote connection options.
- 4. Click `Enable remote connections`.
+ 4. Click <span style="color: #222; background: #eee; padding: 0 .3em; border-radius: .3em;">Enable remote connections</span>.
 
 ### Chrome Remote Desktop Host Service
 Next we'll install the Chrome Remote Host Service.
@@ -174,7 +174,7 @@ in the terminal:
 
 Open the Chrome Remote Desktop web app.
   
-  1. Click `Enable remote connections`
+  1. Click <span style="color: #222; background: #eee; padding: 0 .3em; border-radius: .3em;">Enable remote connections</span>
   2. Enter a PIN and re-type the PIN. Then click OK.
   3. Dismiss the confirmation dialog.
 
