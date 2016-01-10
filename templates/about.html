@@ -5,12 +5,15 @@
 
 {% block contents %}
 
+<article>
 {% filter markdown %}
 ##<a name="aboutme">About Me</a>
-I'm a Computer Engineering Senior at [GTUC](http://gtuc.edu.gh),
-  Co-Founder/Lead Dev at [thelp](), Backend guy(freelance) at
-[NibbleIT](http://nibbleitconsult.com/), GSA Alum, and currently Outreach Lead
+I'm a recent Computer Engineering grad from [GTUC](http://gtuc.edu.gh),
+  Co-Founder/Lead Dev at [thelp](), Former Backend guy at
+[NibbleIT](http://nibbleitconsult.com/), GSA Alum, currently the Outreach Lead
 @ [GDG Ghana](https://developers.google.com/groups/chapter/117620641470438104052/).
+Last but not least, I'm a Software Engineer @ [University of Ghana][1]'s 
+[Remote Sensing & Geographic Information Systems Labs][2].
 
 As a [TC](http://www.google.com/get/topcontributor/), I spend an hour or two
 these days on the Chrome Help Forum helping people with
@@ -22,7 +25,8 @@ I [read](https://www.goodreads.com/user/show/32436986-jeffrey-godwyll)
 way more than I write.
 
 My [coderbits profile](https://coderbits.com/jeffgodwyll)
-may say otherwise but I love python more than any other language :).
+may say otherwise but I love python more than any other language, even English
+;).
 
 I've been really fortunate to have quite a number of
 [lollipop moments](https://www.youtube.com/watch?v=hVCBrkrFrBE). I'll love to
@@ -32,6 +36,13 @@ hear some of yours.
     other = {'aliases': ['rey12rey', 'jeffgodwyll'],
              'biases': ['Manchester United Football Club', 'Python', 'Android', 'Anything Googly']}
 
+
+[1]: http://ug.edu.gh/
+[2]: http://rsgislab.ug.edu.gh/
+{% endfilter %}
+</article>
+
+{% filter markdown %}
 ##<a name="contact">Contact</a>
 
 Start a conversation with me via [Email](mailto:jeffgodwyll@gmail.com?Subject=Hello Jeff!),
