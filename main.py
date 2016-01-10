@@ -8,7 +8,7 @@ import yaml
 # from argh import *
 from collections import OrderedDict
 from datetime import date, datetime
-from flask import Flask, render_template, abort
+from flask import Flask, render_template, abort, send_from_directory
 from flask_frozen import Freezer
 from flaskext.flatpages import FlatPages
 from flaskext.markdown import Markdown
@@ -192,6 +192,12 @@ def section_archives_year(section, year):
 def tag(tag):
     tagged = [p for p in pages if tag in p.meta.get('tags', [])]
     return render_template('tag/archives.html', pages=tagged, tag=tag)
+
+
+@app.route('/.well-known/acme-challenge/<path:path>')
+def acme_challenge(path):
+    return send_from_directory('static/acme-challenge',
+                               path, mimetype='text/plain')
 
 
 @app.route('/403.html')
