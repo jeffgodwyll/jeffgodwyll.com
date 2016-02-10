@@ -2,4 +2,4 @@
 lib/
 .ropeproject/
 siteEnv/
-# this is a comment
+static/acme-challenge/
