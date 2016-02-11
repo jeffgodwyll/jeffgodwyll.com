@@ -342,7 +342,7 @@ kbd {
   width: 48%;
 }
 .sidebar {
-  position: fixed;
+  position: absolute;
   top: 10%;
   width: 250px;
   padding-right: 15px;
@@ -514,7 +514,7 @@ body.greyroom article.photography aside.help kbd {
     margin-left: 200px;
   }
   body .sidebar {
-    border: inherit
+    border: inherit;
     width: 150px;
   }
   body .sidebar ul {
