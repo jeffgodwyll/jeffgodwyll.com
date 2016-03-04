@@ -5,8 +5,8 @@
         <link>http://jeffgodwyll.com/</link>
         <description>Jeffrey Godwyll's personal site.</description>
         <language>en-us</language>
-        <pubDate>2016-02-10 22:45:17.343797</pubDate>
-        <lastBuildDate>2016-02-10 22:45:17.343797</lastBuildDate>
+        <pubDate>2016-03-04 17:01:59.251875</pubDate>
+        <lastBuildDate>2016-03-04 17:01:59.251875</lastBuildDate>
         <copyright>Copyright 2015 Jeffrey Godwyll</copyright>
         <author>
             <name>Jeffrey Godwyll</name>
@@ -14,6 +14,23 @@
         </author>
         <ttl>3600</ttl>
         
+        <item>
+            <author>Jeffrey Godwyll</author>
+            <title>NSBE Talk - Let&#39;s Talk Cloud Vision</title>
+            <link>http://jeffgodwyll.com/talks/2016/cloud-vision/</link>
+            <description>&lt;p&gt;First time back at my alma mater after graduation to speak about Google&#39;s newly
+introduced &lt;a href=&#34;https://cloud.google.com/vision/docs/&#34;&gt;Cloud Vision API&lt;/a&gt; and some awesome use cases for it in student
+projects and why they should be excited about it.&lt;/p&gt;
+&lt;p&gt;This was presented at GTUC&#39;s Florence Onny Auditorium on March 2nd, 2016.&lt;/p&gt;
+&lt;h2&gt;Presentation&lt;/h2&gt;
+&lt;iframe src=&#34;https://docs.google.com/presentation/d/1iQVwL7dj2sMTxtAA2ozGNV5Awkn0cvFdqOFH2jEe2CM/embed?start=false&amp;loop=false&amp;delayms=5000&#34; frameborder=&#34;0&#34; width=&#34;640&#34; height=&#34;509&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
+
+&lt;h3&gt;Extras&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh3.googleusercontent.com/wb0io2hNZ2CFx1pbUPsmSMQtQfBeZpXM-isPJmvtFcJ296IuS76rO4Rt2_wNGsQohbUvK_k0QbNi=w473-h668-no&#34; /&gt;&lt;/p&gt;
+            </description>
+            <pubDate>2016-03-02</pubDate>
+            <guid>http://jeffgodwyll.com/talks/2016/cloud-vision/</guid>
+        </item>
         <item>
             <author>Jeffrey Godwyll</author>
             <title>Let&#39;s Encrypt Google App Engine</title>
@@ -123,6 +140,51 @@ the interest, the faster this is worked on.&lt;/p&gt;
             </description>
             <pubDate>2016-01-02</pubDate>
             <guid>http://jeffgodwyll.com/posts/2016/letsencrypt/</guid>
+        </item>
+        <item>
+            <author>Jeffrey Godwyll</author>
+            <title>3 in 1 - App Engine, Flask, Cloud Endpoints</title>
+            <link>http://jeffgodwyll.com/talks/2015/app-engine-flask-endpoints/</link>
+            <description>&lt;p&gt;Building scalable web applications by deploying flask on App Engine, while
+touching on the usefulness of Cloud Endpoints for API engineering.&lt;/p&gt;
+&lt;p&gt;This was presented at GDG Accra&#39;s 2015 DevFest that took place on November 21st,
+2015.&lt;/p&gt;
+&lt;h2&gt;Presentation&lt;/h2&gt;
+&lt;p&gt;&lt;iframe src=&#34;https://docs.google.com/presentation/d/11QxVubj7zux2qtvDH2FmiKCH-XU90-diy3HPLh64mfk/embed?start=false&amp;loop=false&amp;delayms=3000&#34; frameborder=&#34;0&#34; width=&#34;640&#34; height=&#34;389&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;h3&gt;Extras&lt;/h3&gt;
+&lt;p&gt;More about the event can be found in the following posts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.gdgghana.com/gdg-devfest-accra-2015/&#34;&gt;GDG DevFest Accra 2015&lt;/a&gt;, by
+  GDG Ghana&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.techkiosk.org/devfest-ghana-2015/&#34;&gt;DevFest, Ghana 2015&lt;/a&gt;, by P.K.
+  Opoku&lt;/li&gt;
+&lt;/ul&gt;
+            </description>
+            <pubDate>2015-11-21</pubDate>
+            <guid>http://jeffgodwyll.com/talks/2015/app-engine-flask-endpoints/</guid>
+        </item>
+        <item>
+            <author>Jeffrey Godwyll</author>
+            <title>Native vs Hybrid - The Case for Native</title>
+            <link>http://jeffgodwyll.com/talks/2015/native-vs-hybrid/</link>
+            <description>&lt;p&gt;An attempt at making a case for which is better, native or hybrid development
+for mobile applications.&lt;/p&gt;
+&lt;p&gt;This was presented at GDG Accra&#39;s 2015 DevFest that took place on November 21st,
+2015.&lt;/p&gt;
+&lt;h2&gt;Presentation&lt;/h2&gt;
+&lt;iframe src=&#34;https://docs.google.com/presentation/d/1-5B3esHPCDz0Lvi0kELCTR1FdwnyFQrdSG_6OZS1qNY/embed?start=false&amp;loop=false&amp;delayms=3000&#34; frameborder=&#34;0&#34; width=&#34;640&#34; height=&#34;389&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
+
+&lt;h3&gt;Extras&lt;/h3&gt;
+&lt;p&gt;More about the event can be found in the following posts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.gdgghana.com/gdg-devfest-accra-2015/&#34;&gt;GDG DevFest Accra 2015&lt;/a&gt;, by
+  GDG Ghana&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.techkiosk.org/devfest-ghana-2015/&#34;&gt;DevFest, Ghana 2015&lt;/a&gt;, by P.K.
+  Opoku&lt;/li&gt;
+&lt;/ul&gt;
+            </description>
+            <pubDate>2015-11-21</pubDate>
+            <guid>http://jeffgodwyll.com/talks/2015/native-vs-hybrid/</guid>
         </item>
         <item>
             <author>Jeffrey Godwyll</author>

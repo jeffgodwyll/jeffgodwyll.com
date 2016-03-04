@@ -3,42 +3,60 @@
     <!-- homepage -->
     <url>
         <loc>http://jeffgodwyll.com/</loc>
-        <lastmod>2016-02-10</lastmod>
+        <lastmod>2016-03-04</lastmod>
         <changefreq>hourly</changefreq>
         <priority>1</priority>
     </url>
     <!-- posts -->
     <url>
         <loc>http://jeffgodwyll.com/posts/</loc>
-        <lastmod>2016-02-01</lastmod>
+        <lastmod>2016-03-01</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <!-- projects -->
     <url>
         <loc>http://jeffgodwyll.com/projects</loc>
-        <lastmod>2016-02-01</lastmod>
+        <lastmod>2016-03-01</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <!-- talks -->
     <url>
         <loc>http://jeffgodwyll.com/talks/</loc>
-        <lastmod>2016-02-01</lastmod>
+        <lastmod>2016-03-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <!-- about -->
     <url>
         <loc>http://jeffgodwyll.com/about/</loc>
-        <lastmod>2016-02-01</lastmod>
+        <lastmod>2016-03-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1</priority>
     </url>
     <!-- all pages -->
     <url>
+        <loc>http://jeffgodwyll.com/talks/2016/cloud-vision/</loc>
+        <lastmod>2016-03-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1</priority>
+    </url>
+    <url>
         <loc>http://jeffgodwyll.com/posts/2016/letsencrypt/</loc>
         <lastmod>2016-01-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1</priority>
+    </url>
+    <url>
+        <loc>http://jeffgodwyll.com/talks/2015/app-engine-flask-endpoints/</loc>
+        <lastmod>2015-11-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1</priority>
+    </url>
+    <url>
+        <loc>http://jeffgodwyll.com/talks/2015/native-vs-hybrid/</loc>
+        <lastmod>2015-11-21</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1</priority>
     </url>
