@@ -15,6 +15,8 @@ from flaskext.markdown import Markdown
 # from flaskext.assets import Environment as AssetManager
 from unicodedata import normalize
 
+import figcaption
+
 # Configuration
 
 if os.environ.get('SERVER_SOFTWARE', '').startswith('Development'):
@@ -27,7 +29,8 @@ BASE_URL = 'http://jeffgodwyll.com'
 FLATPAGES_AUTO_RELOAD = True
 FLATPAGES_EXTENSION = '.md'
 FLATPAGES_ROOT = 'pages'
-
+FLATPAGES_MARKDOWN_EXTENSIONS = ['fenced_code',
+                                 'figcaption.FigcaptionExtension()']
 # App configuration
 FEED_MAX_LINKS = 25
 SECTION_MAX_LINKS = 12
