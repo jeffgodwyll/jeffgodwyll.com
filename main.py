@@ -47,9 +47,9 @@ with open("./social.yaml", "r") as f:
 
 SOCIAL_PROFILES = OrderedDict(sorted(profiles.items()))
 
+
 ###############################################################################
 # Model helpers
-
 
 def get_pages(pages, offset=None, limit=None, section=None, year=None):
     """ Retrieves pages matching passed criterias.

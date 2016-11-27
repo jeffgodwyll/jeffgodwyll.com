@@ -5,8 +5,8 @@
         <link>http://jeffgodwyll.com/</link>
         <description>Jeffrey Godwyll's personal site.</description>
         <language>en-us</language>
-        <pubDate>2016-03-04 17:01:59.251875</pubDate>
-        <lastBuildDate>2016-03-04 17:01:59.251875</lastBuildDate>
+        <pubDate>2016-11-27 22:31:08.787994</pubDate>
+        <lastBuildDate>2016-11-27 22:31:08.787994</lastBuildDate>
         <copyright>Copyright 2015 Jeffrey Godwyll</copyright>
         <author>
             <name>Jeffrey Godwyll</name>
@@ -14,6 +14,306 @@
         </author>
         <ttl>3600</ttl>
         
+        <item>
+            <author>Jeffrey Godwyll</author>
+            <title>Dotfile Goodness, Vim!</title>
+            <link>http://jeffgodwyll.com/posts/2016/dotfile-goodness-vim/</link>
+            <description>&lt;p&gt;This post focuses on Vim and is a part of a series of posts describing my
+development environment: zsh, Vim, tmux, etc.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh3.googleusercontent.com/f2mD6BI3t2ox4UiD5hsGd_f4G6SxQmc3KbNSgLzmeMBDF2u7dHdJ6183-rZI90G-j1mhJt7t7GLJ5R6HqtBDiQ5Orz4V8NTB7NSjdID7kkyFfDL7gdSCJTozOIxBTNXvuY4b6TB06-OchhZGI5WlzSDUk6ejmPGCgoMoDU59Gdda3ccBG7zgj2BFJ_2UBV1LxxEk5Jt-7-FawLZ1jFSQg6Jf06MuVZu7N5CTX4Q65SOPB9SOtiMgAuzgnh6e4uB-22ZhqGrAhRn5VSfkVDTciHWqXlSeFImUyIvG8I8KOPBX7_jWAwAlaZ642wyIFq5ha4zMp-bHGFnQsUBzBc8-im5YLdMzXq5J628XooPqs4Wnybyva-PTcLnR39OkkGn6a4v8U6auPMfT4zETeQu1bDMbUE0CbVQiMUfbLHrSEHp_FuT70EjEMhn9sypmb3xRuwb6q3p4nFoX3p7SfgjHfWHLgIV6HngXUwrtsiQmcpROWUCGMB3YyQVBJqMgI-hXwe6uySz0Uu_xpEmdAvukFVdir4hiIfxk4PRqqAPu9J1OIFwxN1jmXcrnBB5TPVvPAfyU6FzPzh1Kxg55yS-ao-xUEWbo48i6VybqEQf33CihK_Ac6Q=w2290-h1800-no&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;This is my primary motivation for this post:&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh3.googleusercontent.com/7VCKhYj5PK9UpFbl1AIZhYMkcANYvu9ueeNC67GEB2VKLU-Fwq2Kucn5iC8oq1cIbjwjESYC-TZSyZAiv1NXIwmvbu7GjxAdjaLUoZcAwPqyCqctMoAbQEmy-GsVg-Nb2T7Ia5kFGyh56k-eKtIUdNmvfWowsBeLhH3pz8fRTfyybP2SBXysE6SQeV5WRvip1kguYAidFvXJhq8Fj-Odyda1_s1XmpxZJ3F_3WnDfpb8DqrRvZdbKcGXD9xti_WMYgeWl6J2IwnPkuws_KOh57hdKOpm5FSy13eqlWaI3cS_I6YH_1qdAoiABCuyPH85zsWdY67hLNG4OT367vwUuu-1yoQt6XHz2t7OSqmvJTu0ypCgBbrJDFRoNVk1psLRlZIf0FIr6A7-eXX76EYR9vMAXO0ZQWAiijEbJpSV7jcQgG1JNri9YX-CWGN9JtMrB6M6psOVJwGaVnHI_w9pHkwoQ9X8GEdKY1qAD26feVyiNc56fsdY1PMR31KefeMnmCcdQ2CYMTtiPjikJCOLMv5W_kebxiZOGWvGgYltkEwh9XqEZ2Qp5Nq_xYq5LiC0ZbyeEHEIVurdkT0q5qTXKlA5B4YyyabJOk2Cwd6XQ7aXJwivbQ=w2838-h1800-no&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;So let&#39;s get started&lt;/p&gt;
+&lt;h3&gt;⇛ Installing Vim (optional)&lt;/h3&gt;
+&lt;p&gt;Chances are you already have Vim on your system if you&#39;re on a Unix or Unix-like
+system.&lt;/p&gt;
+&lt;p&gt;On a Mac, you can get the most recent version of Vim with &lt;a href=&#34;http://brew.sh/&#34;&gt;Homebrew&lt;/a&gt;,
+the one and only package manager :p.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ brew install vim
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ubuntu:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo apt-get install vim
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;⇛ Vim Modes&lt;/h3&gt;
+&lt;p&gt;People in the Vi(m) community do not really agree on how many modes there are,
+but hey let me add to the &lt;del&gt;confusion&lt;/del&gt;/debate.&lt;/p&gt;
+&lt;p&gt;The main things you&#39;ll find yourself doing include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;entering some sort of command or key combos which manipulate text, files...&lt;/li&gt;
+&lt;li&gt;actually entering text, that&#39;s what a text editor should do right&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With that out of the way, there&#39;s the:&lt;/p&gt;
+&lt;h4&gt;Normal Mode&lt;/h4&gt;
+&lt;p&gt;This is the default mode you&#39;ll find yourself in, each time you&#39;re in Vim. In
+this mode you can navigate your way through text with &lt;kbd&gt;h&lt;/kbd&gt;&lt;kbd&gt;j&lt;/kbd&gt;
+&lt;kbd&gt;k&lt;/kbd&gt;&lt;kbd&gt;l&lt;/kbd&gt;. These conveniently happen to be home row keys as well.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;kbd&gt;h&lt;/kbd&gt; moves one character to the left.&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;j&lt;/kbd&gt; moves down a line.&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;k&lt;/kbd&gt; moves up a line.&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;l&lt;/kbd&gt; moves one character to the right.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The following keys make movement simpler as well&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;kbd&gt;0&lt;/kbd&gt; moves the cursor to the beginning of the line.&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;$&lt;/kbd&gt; moves the cursor to the end of the line.&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;w&lt;/kbd&gt; move forward one word.&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;b&lt;/kbd&gt; move backward one word.&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;G&lt;/kbd&gt; move to the end of the file.&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;H&lt;/kbd&gt; move to the top of the screen&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;M&lt;/kbd&gt; move to the middle the screen&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;L&lt;/kbd&gt; move to the bottom of the screen&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;g&lt;/kbd&gt;&lt;kbd&gt;g&lt;/kbd&gt; move to the beginning of the file.&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;`&lt;/kbd&gt;&lt;kbd&gt;.&lt;/kbd&gt; move to the last edit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;`
+It&#39;s in this mode that you can perform a number of verbs and modifiers on
+nouns(to borrow heavily from &lt;a href=&#34;https://yanpritzker.com/learn-to-speak-vim-verbs-nouns-and-modifiers-d7bfed1f6b2d#.lvdazz2rt&#34;&gt;Yan Pritzker&#39;s Vim lingo&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Then there&#39;s the:&lt;/p&gt;
+&lt;h4&gt;Insert Mode&lt;/h4&gt;
+&lt;p&gt;This mode allows you to enter text. While you can use commands in a special mode–insert normal
+mode(&lt;code&gt;C-o&lt;/code&gt; i.e &lt;kbd&gt;ctrl&lt;/kbd&gt;&lt;kbd&gt;o&lt;/kbd&gt;), Vim&#39;s insert mode is specialized
+for one task–entering text.&lt;/p&gt;
+&lt;p&gt;Enter insert mode with &lt;kbd&gt;i&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;You can use one of the following to get back to normal mode:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;kbd&gt;esc&lt;/kbd&gt;&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;ctrl&lt;/kbd&gt;&lt;kbd&gt;[&lt;/kbd&gt;&lt;span style=&#34;font-size:0;&#34;&gt;]&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Visual Mode&lt;/h4&gt;
+&lt;p&gt;In this mode we can define a selection of text and then perform some operations
+on the text. This mode is accessible with the &lt;kbd&gt;v&lt;/kbd&gt; key, when coming from
+the normal mode. There are 3 visual modes though depending on what you&#39;re
+trying to achieve.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Character-wise,&lt;kbd&gt;v&lt;/kbd&gt;&lt;/li&gt;
+&lt;li&gt;Line-wise, &lt;kbd&gt;V&lt;/kbd&gt; i.e (&lt;kbd&gt;⇧&lt;/kbd&gt; + &lt;kbd&gt;v&lt;/kbd&gt;)&lt;/li&gt;
+&lt;li&gt;Block-wise,&lt;kbd&gt;ctrl&lt;/kbd&gt;&lt;kbd&gt;v&lt;/kbd&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Hitting &lt;kbd&gt;esc&lt;/kbd&gt; will almost always get you back into normal mode.&lt;/p&gt;
+&lt;p&gt;And finally if you haven&#39;t found how to exit Vim yet, you&#39;re not alone.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;I&amp;#39;ve
+been using Vim for about 2 years now, mostly because I can&amp;#39;t figure out how
+to exit it.&lt;/p&gt;&amp;mdash; I Am Devloper (@iamdevloper) &lt;a
+href=&#34;https://twitter.com/iamdevloper/status/435555976687923200&#34;&gt;February 17,
+2014&lt;/a&gt;&lt;/blockquote&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To exit vim:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;kbd&gt;:&lt;/kbd&gt;&lt;kbd&gt;q&lt;/kbd&gt; to quit&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;:&lt;/kbd&gt;&lt;kbd&gt;w&lt;/kbd&gt;&lt;kbd&gt;q&lt;/kbd&gt; to save changes and quit&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;:&lt;/kbd&gt;&lt;kbd&gt;q&lt;/kbd&gt;&lt;kbd&gt;!&lt;/kbd&gt; to quit discarding changes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;⇛ Vimtutor&lt;/h3&gt;
+&lt;p&gt;If you&#39;re trying out Vim for the first time though, I can&#39;t recommend vimtutor
+enough. It&#39;s by far the quickest way to get familiar with basic key movements,
+verbs, etc. etc...&lt;/p&gt;
+&lt;p&gt;It comes as part of the vim installation process. Just invoke it at the terminal:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ vimtutor
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;⇛ General Customizations&lt;/h3&gt;
+&lt;p&gt;I always remap my &lt;kbd&gt;⇪&lt;/kbd&gt; into an extra &lt;kbd&gt;esc&lt;/kbd&gt; key. I don&#39;t use the
+caps lock key anyway.&lt;/p&gt;
+&lt;p&gt;On a Linux system, I do this with &lt;a href=&#34;https://linux.die.net/man/1/xmodmap&#34;&gt;xmodmap&lt;/a&gt;.
+On a Mac, I achieve something similar with a combination of
+&lt;a href=&#34;https://pqrs.org/osx/karabiner/&#34;&gt;Karabiner&lt;/a&gt;, formerly known as KeyRemap4MacBook, &amp;amp; &lt;a href=&#34;https://pqrs.org/osx/karabiner/seil.html.en&#34;&gt;Seil&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;⇛ My Vim Configuration&lt;/h3&gt;
+&lt;p&gt;In this section I&#39;ll attempt at explaining some of the general settings I&#39;ve set
+up in my &lt;a href=&#34;https://github.com/jeffgodwyll/dotfiles/blob/master/.vimrc&#34;&gt;vimrc&lt;/a&gt;–Vim&#39;s config file.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ vim ~/.vimrc
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Within vim, I also remap &lt;kbd&gt;;&lt;/kbd&gt; to &lt;kbd&gt;:&lt;/kbd&gt; in normal mode.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;nnoremap ; :
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;not using the mouse in vim is so 1970. in the 1980 we also stop moving around
+with the arrow keys 😎 beat that!
+&lt;a href=&#34;https://devcongress-community.slack.com/archives/general/p1479392600006855&#34;&gt;Posted in #general Nov 17th at 2:23 PM&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It helps to just get rid of the mouse. While at it, get rid of the arrow keys as
+well. You&#39;ll become a pro in moving with the &#34;right&#34; keys in no time at all.&lt;/p&gt;
+&lt;p&gt;Adding this to your &lt;code&gt;.vimrc&lt;/code&gt; disables the arrow keys in insert and normal mode&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;nnoremap &amp;lt;up&amp;gt; &amp;lt;nop&amp;gt;
+nnoremap &amp;lt;down&amp;gt; &amp;lt;nop&amp;gt;
+nnoremap &amp;lt;left&amp;gt; &amp;lt;nop&amp;gt;
+nnoremap &amp;lt;right&amp;gt; &amp;lt;nop&amp;gt;
+inoremap &amp;lt;up&amp;gt; &amp;lt;nop&amp;gt;
+inoremap &amp;lt;down&amp;gt; &amp;lt;nop&amp;gt;
+inoremap &amp;lt;left&amp;gt; &amp;lt;nop&amp;gt;
+inoremap &amp;lt;right&amp;gt; &amp;lt;nop&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Although I don&#39;t agree with the mouse part, it can come in handy:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;set mouse=a
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Some sane defaults for searching:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;set hlsearch    &#34; highlight searches &#34;
+set ignorecase  &#34; ignore case &#34;
+set smartcase   &#34; smart search &#34;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;With both &lt;code&gt;ignorecase&lt;/code&gt; and &lt;code&gt;smartcase&lt;/code&gt; set, if a pattern contains an uppercase
+letter, the returned search becomes case sensitive, otherwise it isn&#39;t. Comes in
+pretty handy.&lt;/p&gt;
+&lt;p&gt;Show status line:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;set laststatus=2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Show line numbers:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;set number
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Show row and column:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;set ruler
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Smarter backspacing:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;set backspace=indent,eol,start
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I make use of the &lt;code&gt;&amp;lt;leader&amp;gt;&lt;/code&gt; key as a prefix key for a number of custom key mappings
+so as not to mess too much with Vim&#39;s defaults. By default this is mapped to
+&lt;kbd&gt;\&lt;/kbd&gt;.&lt;/p&gt;
+&lt;p&gt;It&#39;s a good idea to use the &lt;code&gt;&amp;lt;leader&amp;gt;&lt;/code&gt;, as it&#39;s a way of extending the
+power of vim shortcuts, in fact many plugins create their own mappings that
+start with the &lt;code&gt;leader&lt;/code&gt;. But &lt;kbd&gt;\&lt;/kbd&gt; is awkward to reach so I remap it.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;let mapleader = &#34;,&#34;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That way if you have a map of &lt;code&gt;&amp;lt;leader&amp;gt;jd&lt;/code&gt;, you can perform that action with
+&lt;kbd&gt;,&lt;/kbd&gt;&lt;kbd&gt;j&lt;/kbd&gt;&lt;kbd&gt;d&lt;/kbd&gt;&lt;/p&gt;
+&lt;h4&gt;Plugins FTW!&lt;/h4&gt;
+&lt;p&gt;There are countless Vim plugins lying all over the web. And coming from other
+editors, you might start to feel left out. But hey don&#39;t fret it. There&#39;s always
+a plugin for it :)&lt;/p&gt;
+&lt;p&gt;I use &lt;a href=&#34;https://github.com/VundleVim/Vundle.vim&#34;&gt;Vundle&lt;/a&gt; to manage &lt;a href=&#34;https://github.com/jeffgodwyll/dotfiles/blob/master/.vimrc#L191&#34;&gt;my plugins&lt;/a&gt;. It&#39;s feature packed
+but then allows you to never think about the process of managing plugins ever
+once it&#39;s set up. Just plug &#39;em in, even personal plugins.&lt;/p&gt;
+&lt;p&gt;Installing Vundle:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once you&#39;ve added a plugin to your config, you can install it in vim with:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;:PluginInstall
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;My Vim configuration is heavily geared towards Python Development, but there&#39;s
+some love thrown in there for JavaScript, CSS, HTML, TypeScript(read: Angular2)
+and Markdown. Oh and Java when I&#39;m feeling tipsy at times :D&lt;/p&gt;
+&lt;p&gt;For appearances, I manage my colours myself, but you can easily use one of the
+many colour scheme plugins available. If the terminal is capable of displaying
+&#39;colours&#39;, all 256 of them, then I load my custom colour scheme:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;if &amp;amp;t_Co &amp;gt;= 256 || has(&#34;gui_running&#34;)
+    color mustang
+endif
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And to install a plugin is super simple. Lots of &lt;a href=&#34;https://github.com/jeffgodwyll/dotfiles/blob/master/.vimrc#L191&#34;&gt;examples here&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/bling/vim-airline&#34;&gt;vim-airline&lt;/a&gt;, a better status line.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;let g:airline_theme = &#39;laederon&#39;
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#branch#enabled = 1
+let g:airline#extensions#syntastic#enabled = 1
+let g:airline#extensions#virtualenv#enabled = 1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For File Navigation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/kien/ctrlp.vim.git&#34;&gt;ctrlp&lt;/a&gt;, for quick file opening. Sometimes, the only file navigation I need
+  really. I use a leader key mapping because the default kinda conflicts with
+  some other plugins I&#39;ve set up ;). It intelligently knows where to look for
+  the root of the project you&#39;re currently working in. You can extend it too.
+  It&#39;s just awesome.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;let g:ctrlp_show_hidden = 1
+let g:ctrlp_working_path_mode = &#39;r&#39;  &#34; r=nearest.git,.hg,.svn,.bzr,_darcs dirs&#34;
+let g:ctrlp_open_new_file = &#39;v&#39;  &#34; in a new vertical split&#34;
+
+nmap &amp;lt;leader&amp;gt;p :CtrlP&amp;lt;cr&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/scrooloose/nerdtree&#34;&gt;NERDTree&lt;/a&gt;, for file navigation&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&#34; toggle nerdtree file/folder tree &#34;
+nmap &amp;lt;C-n&amp;gt;&amp;lt;C-t&amp;gt; :NERDTreeToggle&amp;lt;CR&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/majutsushi/tagbar&#34;&gt;tagbar&lt;/a&gt;, for improved code outlines / navigations.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Python specific:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/davidhalter/jedi-vim&#34;&gt;jedi-vim&lt;/a&gt;, awesome Python autocompletion with Vim&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;let g:jedi#goto_command = &#39;&amp;lt;leader&amp;gt;jd&#39;  &#34; goto definition or assignment
+let g:jedi#goto_assignments_command = &#39;&amp;lt;leader&amp;gt;jg&#39;  &#34; goto assignments
+let g:jedi#rename_command = &#39;&amp;lt;leader&amp;gt;jr&#39; &#34; rename variables
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/mitsuhiko/vim-jinja&#34;&gt;vim-jinja&lt;/a&gt;, jinja support.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jmcantrell/vim-virtualenv&#34;&gt;vim-virtualenv&lt;/a&gt;, for Python virtualenv support.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/klen/python-modei&#34;&gt;python-mode&lt;/a&gt;, static analysis, refactoring, folding, completion, documentation, etc.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nvie/vim-flake8&#34;&gt;vim-flake8&lt;/a&gt;, static syntax and style checker for Python.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Autocompletion:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Valloric/YouCompleteMe&#34;&gt;YouCompleteMe&lt;/a&gt;, is a fast, as-you-type, fuzzy-search code
+  completion engine for Vim.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Snippets:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/SirVer/ultisnips&#34;&gt;UltiSnips&lt;/a&gt;, is the ultimate solution for snippets in Vim.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For git:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://github.com/tpope/vim-fugitive.git&#34;&gt;fugitive&lt;/a&gt;, for git integration, I find it more convenient using git
+  directly from the terminal as I have heavily customised my git experience
+  there.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Editing markdown documents:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/shime/vim-livedown&#34;&gt;vim-livedown&lt;/a&gt;, for live preview of Markdown files&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/junegunn/goyo.vim&#34;&gt;Goyo&lt;/a&gt;, distraction-free writing&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/junegunn/limelight.vim&#34;&gt;limelight&lt;/a&gt;, hyperfocus-writing in Vim&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Other files:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/scrooloose/syntastic&#34;&gt;syntastic&lt;/a&gt;, syntax checking for various file formats. You can allow Vim to
+  check your syntax&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/elzr/vim-json&#34;&gt;vim-json&lt;/a&gt;, distinct highlighting of keywords vs values, JSON-specific (non-JS) warnings, quote concealing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Valloric/MatchTagAlways&#34;&gt;MatchTagAlways&lt;/a&gt;, always highlight tag pairs. Makes it easier to find
+  closing tags in html-like filetypes.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;let g:mta_filetypes = {
+    \ &#39;html&#39;: 1,
+    \ &#39;xhtml&#39;: 1,
+    \ &#39;xml&#39;: 1,
+    \ &#39;jinja&#39;: 1,
+    \ &#39;htmljinja&#39;: 1,
+    \}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/mattn/emmet-vim&#34;&gt;emmet-vim&lt;/a&gt;, html code completion.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I&#39;ve left a couple of the plugins I use out of this post. You&#39;ll find them
+in &lt;a href=&#34;https://github.com/jeffgodwyll/dotfiles/blob/master/.vimrc#L191&#34;&gt;my vim configuration&lt;/a&gt;. But a more exhaustive list of
+plugins to install can be found @ vim awesome, linked below in Resources.&lt;/p&gt;
+&lt;h3&gt;⇛ Conclusion&lt;/h3&gt;
+&lt;p&gt;It&#39;s my hope that at this point, I&#39;ve helped demystify Vim and that your
+experience getting started in Vim is a lot more awesome and painless.&lt;/p&gt;
+&lt;h3&gt;⇛ Resources&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/Practical-Vim-Thought-Pragmatic-Programmers/dp/1934356980&#34;&gt;Practical Vim: Edit Text at the speed of Thought&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/VundleVim/Vundle.vim&#34;&gt;Vundle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://vimawesome.com/&#34;&gt;Vim awesome, awesome vim plugins from across the universe&lt;/a&gt; :)&lt;/li&gt;
+&lt;/ol&gt;
+            </description>
+            <pubDate>2016-11-21</pubDate>
+            <guid>http://jeffgodwyll.com/posts/2016/dotfile-goodness-vim/</guid>
+        </item>
         <item>
             <author>Jeffrey Godwyll</author>
             <title>NSBE Talk - Let&#39;s Talk Cloud Vision</title>
@@ -143,28 +443,6 @@ the interest, the faster this is worked on.&lt;/p&gt;
         </item>
         <item>
             <author>Jeffrey Godwyll</author>
-            <title>3 in 1 - App Engine, Flask, Cloud Endpoints</title>
-            <link>http://jeffgodwyll.com/talks/2015/app-engine-flask-endpoints/</link>
-            <description>&lt;p&gt;Building scalable web applications by deploying flask on App Engine, while
-touching on the usefulness of Cloud Endpoints for API engineering.&lt;/p&gt;
-&lt;p&gt;This was presented at GDG Accra&#39;s 2015 DevFest that took place on November 21st,
-2015.&lt;/p&gt;
-&lt;h2&gt;Presentation&lt;/h2&gt;
-&lt;p&gt;&lt;iframe src=&#34;https://docs.google.com/presentation/d/11QxVubj7zux2qtvDH2FmiKCH-XU90-diy3HPLh64mfk/embed?start=false&amp;loop=false&amp;delayms=3000&#34; frameborder=&#34;0&#34; width=&#34;640&#34; height=&#34;389&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
-&lt;h3&gt;Extras&lt;/h3&gt;
-&lt;p&gt;More about the event can be found in the following posts:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.gdgghana.com/gdg-devfest-accra-2015/&#34;&gt;GDG DevFest Accra 2015&lt;/a&gt;, by
-  GDG Ghana&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.techkiosk.org/devfest-ghana-2015/&#34;&gt;DevFest, Ghana 2015&lt;/a&gt;, by P.K.
-  Opoku&lt;/li&gt;
-&lt;/ul&gt;
-            </description>
-            <pubDate>2015-11-21</pubDate>
-            <guid>http://jeffgodwyll.com/talks/2015/app-engine-flask-endpoints/</guid>
-        </item>
-        <item>
-            <author>Jeffrey Godwyll</author>
             <title>Native vs Hybrid - The Case for Native</title>
             <link>http://jeffgodwyll.com/talks/2015/native-vs-hybrid/</link>
             <description>&lt;p&gt;An attempt at making a case for which is better, native or hybrid development
@@ -185,6 +463,28 @@ for mobile applications.&lt;/p&gt;
             </description>
             <pubDate>2015-11-21</pubDate>
             <guid>http://jeffgodwyll.com/talks/2015/native-vs-hybrid/</guid>
+        </item>
+        <item>
+            <author>Jeffrey Godwyll</author>
+            <title>3 in 1 - App Engine, Flask, Cloud Endpoints</title>
+            <link>http://jeffgodwyll.com/talks/2015/app-engine-flask-endpoints/</link>
+            <description>&lt;p&gt;Building scalable web applications by deploying flask on App Engine, while
+touching on the usefulness of Cloud Endpoints for API engineering.&lt;/p&gt;
+&lt;p&gt;This was presented at GDG Accra&#39;s 2015 DevFest that took place on November 21st,
+2015.&lt;/p&gt;
+&lt;h2&gt;Presentation&lt;/h2&gt;
+&lt;p&gt;&lt;iframe src=&#34;https://docs.google.com/presentation/d/11QxVubj7zux2qtvDH2FmiKCH-XU90-diy3HPLh64mfk/embed?start=false&amp;loop=false&amp;delayms=3000&#34; frameborder=&#34;0&#34; width=&#34;640&#34; height=&#34;389&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;h3&gt;Extras&lt;/h3&gt;
+&lt;p&gt;More about the event can be found in the following posts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.gdgghana.com/gdg-devfest-accra-2015/&#34;&gt;GDG DevFest Accra 2015&lt;/a&gt;, by
+  GDG Ghana&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.techkiosk.org/devfest-ghana-2015/&#34;&gt;DevFest, Ghana 2015&lt;/a&gt;, by P.K.
+  Opoku&lt;/li&gt;
+&lt;/ul&gt;
+            </description>
+            <pubDate>2015-11-21</pubDate>
+            <guid>http://jeffgodwyll.com/talks/2015/app-engine-flask-endpoints/</guid>
         </item>
         <item>
             <author>Jeffrey Godwyll</author>
