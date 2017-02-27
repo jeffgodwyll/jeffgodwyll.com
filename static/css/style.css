@@ -341,6 +341,15 @@ kbd {
 .contents section.carnet {
   width: 48%;
 }
+.posts_header {
+  line-height: 0px;
+  padding-bottom: 19px;
+}
+.read_time {
+  font-weight: 100;
+  font-size: medium;
+  font-style: italic;
+}
 .sidebar {
   position: absolute;
   top: 10%;

@@ -1,7 +1,11 @@
 <article lang="{{ page.lang or "en" }}" class="{{ page.section }}" itemscope itemtype="http://schema.org/{{ item_type or "BlogPosting" }}">
     <link itemprop="url" href="{{ url_for("page", path=page.path) }}">
-    <header>
-        <h2 itemprop="name"><a href="{{ url_for("page", path=page.path) }}">{{ page.title }}</a></h2>
+    <header class="posts_header">
+      <h2 itemprop="name"><a href="{{ url_for("page", path=page.path) }}">{{ page.title }}</a>
+      </h2>
+      {% if page.section == 'posts'%}
+        <span class="read_time">{{ page.body | read_time}} min read</span>
+      {% endif %}
     {%- if page.subtitle -%}
         <h3>{{ page.subtitle }}</h3>
     {%- endif -%}

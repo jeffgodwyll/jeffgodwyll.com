@@ -13,7 +13,7 @@ from flask_frozen import Freezer
 from flaskext.flatpages import FlatPages
 from flaskext.markdown import Markdown
 # from flaskext.assets import Environment as AssetManager
-from unicodedata import normalize
+from unicodedata import category, normalize
 
 # Configuration
 
@@ -123,6 +123,18 @@ def to_rfc2822(dt):
     formatted = dt.strftime("%a, %d %b %Y %H:%M:%S +0000")
     locale.setlocale(locale.LC_TIME, current_locale)
     return formatted
+
+
+@app.template_filter()
+def read_time(text, words_per_min=250):
+    """Estimate reading time, medium-style"""
+    # remove punctuations
+    text = ''.join(character for character in text
+                   if not category(character).startswith('P'))
+    num_words = len(text.split())
+    # round to nearest whole number
+    average_time = (num_words + words_per_min // 2) // words_per_min
+    return 1 if average_time == 0 else average_time
 
 
 ###############################################################################
