@@ -1,5 +1,3 @@
-application: jeffgodwyll
-version: live
 runtime: python27
 api_version: 1
 threadsafe: yes
@@ -54,5 +52,6 @@ skip_files:
 - ^(.*/)?.*/RCS/.*$
 - ^(.*/)?\..*$
 - ^siteEnv$
+- ^env$
 - ^\.git$
 - ^\.ropeproject$
