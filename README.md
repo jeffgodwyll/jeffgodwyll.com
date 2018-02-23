@@ -60,10 +60,17 @@ Now that that's out of the way, to deploy the application:
 
 1. Use the [Admin Console](https://appengine.google.com) to create a
    project/app id. (App id and project id are identical)
+2. Edit `Makefile` and replace `PROJECT_ID` variable with your project id
 3. [Deploy the application](https://developers.google.com/appengine/docs/python/tools/uploadinganapp) with
 
    ```
-   appcfg.py -A <your-project-id> --oauth2 update .
+   make deploy
+   ```
+
+   or
+
+   ```
+   gcloud app deploy --project <<YOUR_PROJECT_ID>>
    ```
 4. Congratulations!  Your site is now live at your-app-id.appspot.com
 
