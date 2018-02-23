@@ -4,3 +4,4 @@ lib/
 siteEnv/
 env/
 static/acme-challenge/
+static/.webassets*

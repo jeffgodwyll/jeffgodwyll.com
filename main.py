@@ -13,6 +13,8 @@ from flask_flatpages import FlatPages
 from flaskext.markdown import Markdown
 from unicodedata import category, normalize
 
+import assets
+
 # Configuration
 
 if os.environ.get('SERVER_SOFTWARE', '').startswith('Development'):
@@ -21,7 +23,6 @@ else:
     DEBUG = False
 
 BASE_URL = 'http://jeffgodwyll.com'
-# ASSETS_DEBUG = DEBUG
 FLATPAGES_AUTO_RELOAD = True
 FLATPAGES_EXTENSION = '.md'
 FLATPAGES_ROOT = 'pages'
@@ -32,12 +33,12 @@ SECTION_MAX_LINKS = 12
 
 app = Flask(__name__)
 app.config.from_object(__name__)
+assets.init(app)
 pages = FlatPages(app)
 freezer = Freezer(app)
 markdown_manager = Markdown(app,
                             extensions=['fenced_code'],
                             output_format='html5',)
-# asset_manager = AssetManager(app)
 
 # social profiles
 with open("./social.yaml", "r") as f:
