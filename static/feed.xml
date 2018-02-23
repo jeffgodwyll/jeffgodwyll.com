@@ -5,8 +5,8 @@
         <link>http://jeffgodwyll.com/</link>
         <description>Jeffrey Godwyll's personal site.</description>
         <language>en-us</language>
-        <pubDate>2016-11-27 22:31:08.787994</pubDate>
-        <lastBuildDate>2016-11-27 22:31:08.787994</lastBuildDate>
+        <pubDate>2018-02-23 23:03:14.308833</pubDate>
+        <lastBuildDate>2018-02-23 23:03:14.308833</lastBuildDate>
         <copyright>Copyright 2015 Jeffrey Godwyll</copyright>
         <author>
             <name>Jeffrey Godwyll</name>
@@ -20,20 +20,24 @@
             <link>http://jeffgodwyll.com/posts/2016/dotfile-goodness-vim/</link>
             <description>&lt;p&gt;This post focuses on Vim and is a part of a series of posts describing my
 development environment: zsh, Vim, tmux, etc.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh3.googleusercontent.com/f2mD6BI3t2ox4UiD5hsGd_f4G6SxQmc3KbNSgLzmeMBDF2u7dHdJ6183-rZI90G-j1mhJt7t7GLJ5R6HqtBDiQ5Orz4V8NTB7NSjdID7kkyFfDL7gdSCJTozOIxBTNXvuY4b6TB06-OchhZGI5WlzSDUk6ejmPGCgoMoDU59Gdda3ccBG7zgj2BFJ_2UBV1LxxEk5Jt-7-FawLZ1jFSQg6Jf06MuVZu7N5CTX4Q65SOPB9SOtiMgAuzgnh6e4uB-22ZhqGrAhRn5VSfkVDTciHWqXlSeFImUyIvG8I8KOPBX7_jWAwAlaZ642wyIFq5ha4zMp-bHGFnQsUBzBc8-im5YLdMzXq5J628XooPqs4Wnybyva-PTcLnR39OkkGn6a4v8U6auPMfT4zETeQu1bDMbUE0CbVQiMUfbLHrSEHp_FuT70EjEMhn9sypmb3xRuwb6q3p4nFoX3p7SfgjHfWHLgIV6HngXUwrtsiQmcpROWUCGMB3YyQVBJqMgI-hXwe6uySz0Uu_xpEmdAvukFVdir4hiIfxk4PRqqAPu9J1OIFwxN1jmXcrnBB5TPVvPAfyU6FzPzh1Kxg55yS-ao-xUEWbo48i6VybqEQf33CihK_Ac6Q=w2290-h1800-no&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://storage.googleapis.com/jeffgodwyll.appspot.com/dotfile-goodness/vim.png&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;This is my primary motivation for this post:&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh3.googleusercontent.com/7VCKhYj5PK9UpFbl1AIZhYMkcANYvu9ueeNC67GEB2VKLU-Fwq2Kucn5iC8oq1cIbjwjESYC-TZSyZAiv1NXIwmvbu7GjxAdjaLUoZcAwPqyCqctMoAbQEmy-GsVg-Nb2T7Ia5kFGyh56k-eKtIUdNmvfWowsBeLhH3pz8fRTfyybP2SBXysE6SQeV5WRvip1kguYAidFvXJhq8Fj-Odyda1_s1XmpxZJ3F_3WnDfpb8DqrRvZdbKcGXD9xti_WMYgeWl6J2IwnPkuws_KOh57hdKOpm5FSy13eqlWaI3cS_I6YH_1qdAoiABCuyPH85zsWdY67hLNG4OT367vwUuu-1yoQt6XHz2t7OSqmvJTu0ypCgBbrJDFRoNVk1psLRlZIf0FIr6A7-eXX76EYR9vMAXO0ZQWAiijEbJpSV7jcQgG1JNri9YX-CWGN9JtMrB6M6psOVJwGaVnHI_w9pHkwoQ9X8GEdKY1qAD26feVyiNc56fsdY1PMR31KefeMnmCcdQ2CYMTtiPjikJCOLMv5W_kebxiZOGWvGgYltkEwh9XqEZ2Qp5Nq_xYq5LiC0ZbyeEHEIVurdkT0q5qTXKlA5B4YyyabJOk2Cwd6XQ7aXJwivbQ=w2838-h1800-no&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://storage.googleapis.com/jeffgodwyll.appspot.com/dotfile-goodness/slack.png&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;So let&#39;s get started&lt;/p&gt;
 &lt;h3&gt;⇛ Installing Vim (optional)&lt;/h3&gt;
 &lt;p&gt;Chances are you already have Vim on your system if you&#39;re on a Unix or Unix-like
 system.&lt;/p&gt;
 &lt;p&gt;On a Mac, you can get the most recent version of Vim with &lt;a href=&#34;http://brew.sh/&#34;&gt;Homebrew&lt;/a&gt;,
 the one and only package manager :p.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ brew install vim
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ brew install vim
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Ubuntu:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo apt-get install vim
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo apt-get install vim
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;h3&gt;⇛ Vim Modes&lt;/h3&gt;
 &lt;p&gt;People in the Vi(m) community do not really agree on how many modes there are,
 but hey let me add to the &lt;del&gt;confusion&lt;/del&gt;/debate.&lt;/p&gt;
@@ -110,8 +114,10 @@ href=&#34;https://twitter.com/iamdevloper/status/435555976687923200&#34;&gt;Febr
 enough. It&#39;s by far the quickest way to get familiar with basic key movements,
 verbs, etc. etc...&lt;/p&gt;
 &lt;p&gt;It comes as part of the vim installation process. Just invoke it at the terminal:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ vimtutor
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ vimtutor
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;h3&gt;⇛ General Customizations&lt;/h3&gt;
 &lt;p&gt;I always remap my &lt;kbd&gt;⇪&lt;/kbd&gt; into an extra &lt;kbd&gt;esc&lt;/kbd&gt; key. I don&#39;t use the
 caps lock key anyway.&lt;/p&gt;
@@ -121,11 +127,15 @@ On a Mac, I achieve something similar with a combination of
 &lt;h3&gt;⇛ My Vim Configuration&lt;/h3&gt;
 &lt;p&gt;In this section I&#39;ll attempt at explaining some of the general settings I&#39;ve set
 up in my &lt;a href=&#34;https://github.com/jeffgodwyll/dotfiles/blob/master/.vimrc&#34;&gt;vimrc&lt;/a&gt;–Vim&#39;s config file.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ vim ~/.vimrc
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ vim ~/.vimrc
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Within vim, I also remap &lt;kbd&gt;;&lt;/kbd&gt; to &lt;kbd&gt;:&lt;/kbd&gt; in normal mode.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;nnoremap ; :
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;nnoremap ; :
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;blockquote&gt;
 &lt;p&gt;not using the mouse in vim is so 1970. in the 1980 we also stop moving around
 with the arrow keys 😎 beat that!
@@ -134,7 +144,7 @@ with the arrow keys 😎 beat that!
 &lt;p&gt;It helps to just get rid of the mouse. While at it, get rid of the arrow keys as
 well. You&#39;ll become a pro in moving with the &#34;right&#34; keys in no time at all.&lt;/p&gt;
 &lt;p&gt;Adding this to your &lt;code&gt;.vimrc&lt;/code&gt; disables the arrow keys in insert and normal mode&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;nnoremap &amp;lt;up&amp;gt; &amp;lt;nop&amp;gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;nnoremap &amp;lt;up&amp;gt; &amp;lt;nop&amp;gt;
 nnoremap &amp;lt;down&amp;gt; &amp;lt;nop&amp;gt;
 nnoremap &amp;lt;left&amp;gt; &amp;lt;nop&amp;gt;
 nnoremap &amp;lt;right&amp;gt; &amp;lt;nop&amp;gt;
@@ -142,38 +152,54 @@ inoremap &amp;lt;up&amp;gt; &amp;lt;nop&amp;gt;
 inoremap &amp;lt;down&amp;gt; &amp;lt;nop&amp;gt;
 inoremap &amp;lt;left&amp;gt; &amp;lt;nop&amp;gt;
 inoremap &amp;lt;right&amp;gt; &amp;lt;nop&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Although I don&#39;t agree with the mouse part, it can come in handy:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;set mouse=a
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;set mouse=a
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Some sane defaults for searching:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;set hlsearch    &#34; highlight searches &#34;
-set ignorecase  &#34; ignore case &#34;
-set smartcase   &#34; smart search &#34;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;set hlsearch    &amp;quot; highlight searches &amp;quot;
+set ignorecase  &amp;quot; ignore case &amp;quot;
+set smartcase   &amp;quot; smart search &amp;quot;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;With both &lt;code&gt;ignorecase&lt;/code&gt; and &lt;code&gt;smartcase&lt;/code&gt; set, if a pattern contains an uppercase
 letter, the returned search becomes case sensitive, otherwise it isn&#39;t. Comes in
 pretty handy.&lt;/p&gt;
 &lt;p&gt;Show status line:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;set laststatus=2
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;set laststatus=2
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Show line numbers:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;set number
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;set number
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Show row and column:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;set ruler
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;set ruler
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Smarter backspacing:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;set backspace=indent,eol,start
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;set backspace=indent,eol,start
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;I make use of the &lt;code&gt;&amp;lt;leader&amp;gt;&lt;/code&gt; key as a prefix key for a number of custom key mappings
 so as not to mess too much with Vim&#39;s defaults. By default this is mapped to
 &lt;kbd&gt;\&lt;/kbd&gt;.&lt;/p&gt;
 &lt;p&gt;It&#39;s a good idea to use the &lt;code&gt;&amp;lt;leader&amp;gt;&lt;/code&gt;, as it&#39;s a way of extending the
 power of vim shortcuts, in fact many plugins create their own mappings that
 start with the &lt;code&gt;leader&lt;/code&gt;. But &lt;kbd&gt;\&lt;/kbd&gt; is awkward to reach so I remap it.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;let mapleader = &#34;,&#34;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;let mapleader = &amp;quot;,&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;That way if you have a map of &lt;code&gt;&amp;lt;leader&amp;gt;jd&lt;/code&gt;, you can perform that action with
 &lt;kbd&gt;,&lt;/kbd&gt;&lt;kbd&gt;j&lt;/kbd&gt;&lt;kbd&gt;d&lt;/kbd&gt;&lt;/p&gt;
 &lt;h4&gt;Plugins FTW!&lt;/h4&gt;
@@ -184,31 +210,37 @@ a plugin for it :)&lt;/p&gt;
 but then allows you to never think about the process of managing plugins ever
 once it&#39;s set up. Just plug &#39;em in, even personal plugins.&lt;/p&gt;
 &lt;p&gt;Installing Vundle:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Once you&#39;ve added a plugin to your config, you can install it in vim with:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;:PluginInstall
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;:PluginInstall
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;My Vim configuration is heavily geared towards Python Development, but there&#39;s
 some love thrown in there for JavaScript, CSS, HTML, TypeScript(read: Angular2)
 and Markdown. Oh and Java when I&#39;m feeling tipsy at times :D&lt;/p&gt;
 &lt;p&gt;For appearances, I manage my colours myself, but you can easily use one of the
 many colour scheme plugins available. If the terminal is capable of displaying
 &#39;colours&#39;, all 256 of them, then I load my custom colour scheme:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;if &amp;amp;t_Co &amp;gt;= 256 || has(&#34;gui_running&#34;)
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;if &amp;amp;t_Co &amp;gt;= 256 || has(&amp;quot;gui_running&amp;quot;)
     color mustang
 endif
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;And to install a plugin is super simple. Lots of &lt;a href=&#34;https://github.com/jeffgodwyll/dotfiles/blob/master/.vimrc#L191&#34;&gt;examples here&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/bling/vim-airline&#34;&gt;vim-airline&lt;/a&gt;, a better status line.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;let g:airline_theme = &#39;laederon&#39;
+&lt;li&gt;&lt;a href=&#34;https://github.com/bling/vim-airline&#34;&gt;vim-airline&lt;/a&gt;, a better status line.&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;let g:airline_theme = &amp;#39;laederon&amp;#39;
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#virtualenv#enabled = 1
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;For File Navigation:&lt;/p&gt;
@@ -219,18 +251,22 @@ let g:airline#extensions#virtualenv#enabled = 1
   some other plugins I&#39;ve set up ;). It intelligently knows where to look for
   the root of the project you&#39;re currently working in. You can extend it too.
   It&#39;s just awesome.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;let g:ctrlp_show_hidden = 1
-let g:ctrlp_working_path_mode = &#39;r&#39;  &#34; r=nearest.git,.hg,.svn,.bzr,_darcs dirs&#34;
-let g:ctrlp_open_new_file = &#39;v&#39;  &#34; in a new vertical split&#34;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;let g:ctrlp_show_hidden = 1
+let g:ctrlp_working_path_mode = &amp;#39;r&amp;#39;  &amp;quot; r=nearest.git,.hg,.svn,.bzr,_darcs dirs&amp;quot;
+let g:ctrlp_open_new_file = &amp;#39;v&amp;#39;  &amp;quot; in a new vertical split&amp;quot;
 
 nmap &amp;lt;leader&amp;gt;p :CtrlP&amp;lt;cr&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/scrooloose/nerdtree&#34;&gt;NERDTree&lt;/a&gt;, for file navigation&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&#34; toggle nerdtree file/folder tree &#34;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;quot; toggle nerdtree file/folder tree &amp;quot;
 nmap &amp;lt;C-n&amp;gt;&amp;lt;C-t&amp;gt; :NERDTreeToggle&amp;lt;CR&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/majutsushi/tagbar&#34;&gt;tagbar&lt;/a&gt;, for improved code outlines / navigations.&lt;/p&gt;
@@ -240,10 +276,12 @@ nmap &amp;lt;C-n&amp;gt;&amp;lt;C-t&amp;gt; :NERDTreeToggle&amp;lt;CR&amp;gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/davidhalter/jedi-vim&#34;&gt;jedi-vim&lt;/a&gt;, awesome Python autocompletion with Vim&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;let g:jedi#goto_command = &#39;&amp;lt;leader&amp;gt;jd&#39;  &#34; goto definition or assignment
-let g:jedi#goto_assignments_command = &#39;&amp;lt;leader&amp;gt;jg&#39;  &#34; goto assignments
-let g:jedi#rename_command = &#39;&amp;lt;leader&amp;gt;jr&#39; &#34; rename variables
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;let g:jedi#goto_command = &amp;#39;&amp;lt;leader&amp;gt;jd&amp;#39;  &amp;quot; goto definition or assignment
+let g:jedi#goto_assignments_command = &amp;#39;&amp;lt;leader&amp;gt;jg&amp;#39;  &amp;quot; goto assignments
+let g:jedi#rename_command = &amp;#39;&amp;lt;leader&amp;gt;jr&amp;#39; &amp;quot; rename variables
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/mitsuhiko/vim-jinja&#34;&gt;vim-jinja&lt;/a&gt;, jinja support.&lt;/p&gt;
@@ -285,14 +323,16 @@ let g:jedi#rename_command = &#39;&amp;lt;leader&amp;gt;jr&#39; &#34; rename vari
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/Valloric/MatchTagAlways&#34;&gt;MatchTagAlways&lt;/a&gt;, always highlight tag pairs. Makes it easier to find
   closing tags in html-like filetypes.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;let g:mta_filetypes = {
-    \ &#39;html&#39;: 1,
-    \ &#39;xhtml&#39;: 1,
-    \ &#39;xml&#39;: 1,
-    \ &#39;jinja&#39;: 1,
-    \ &#39;htmljinja&#39;: 1,
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;let g:mta_filetypes = {
+    \ &amp;#39;html&amp;#39;: 1,
+    \ &amp;#39;xhtml&amp;#39;: 1,
+    \ &amp;#39;xml&amp;#39;: 1,
+    \ &amp;#39;jinja&amp;#39;: 1,
+    \ &amp;#39;htmljinja&amp;#39;: 1,
     \}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/mattn/emmet-vim&#34;&gt;emmet-vim&lt;/a&gt;, html code completion.&lt;/p&gt;
@@ -357,8 +397,10 @@ Encrypt CA (or any other CA that speaks the ACME protocol) that can automate
 the tasks of obtaining certificates and configuring webservers to use them.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Next is to obtain a certificate using the manual plugin like so:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo ./letsencrypt-auto -a manual certonly
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo ./letsencrypt-auto -a manual certonly
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;We&#39;ll be prompted for a couple of things, like the domain names we&#39;re
 generating the cert(s) for, and  getting our IP logged.&lt;/p&gt;
 &lt;p&gt;Last but not least, we&#39;ll be presented with a challenge, the most crucial
@@ -379,56 +421,72 @@ Press &lt;kbd&gt;ENTER&lt;/kbd&gt; to continue
 content from a special directory within our app and ensure they match
 correspondingly.&lt;/p&gt;
 &lt;p&gt;For example in our GAE project directory, we could do the following:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ mkdir -p well-known/acme-challenge/
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ mkdir -p well-known/acme-challenge/
 
-$ echo &#34;odebEMaSagM3xRblm_hmcPvnpCFdEsTBDrpaHyw6Q_I.du6Wm_JOQBK08bH0MzKjuVzNbozezAthZBONRGcghDI&#34; &amp;gt; well-known/acme-challenge/odebEMaSagM3xRblm_hmcPvnpCFdEsTBDrpaHyw6Q_I
-&lt;/code&gt;&lt;/pre&gt;
+$ &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;odebEMaSagM3xRblm_hmcPvnpCFdEsTBDrpaHyw6Q_I.du6Wm_JOQBK08bH0MzKjuVzNbozezAthZBONRGcghDI&amp;quot;&lt;/span&gt; &amp;gt; well-known/acme-challenge/odebEMaSagM3xRblm_hmcPvnpCFdEsTBDrpaHyw6Q_I
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;And then the challenge can be handled in a number of ways, like for my flask GAE
 apps, I prefer to create a simple flask route to help with current and future
 challenges&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;from flask import Flask, send_from_directory
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;flask&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Flask&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;send_from_directory&lt;/span&gt;
 
-app = Flask(__name__)
+&lt;span class=&#34;n&#34;&gt;app&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Flask&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;vm&#34;&gt;__name__&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 
-@app.route(&#39;/.well-known/acme-challenge/&amp;lt;path:path&amp;gt;&#39;)
-def acme_challenge(path):
-    return send_from_directory(&#39;well-known/acme-challenge&#39;,
-                               path, mimetype=&#39;text/plain&#39;)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&#34;nd&#34;&gt;@app.route&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;/.well-known/acme-challenge/&amp;lt;path:path&amp;gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;acme_challenge&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;send_from_directory&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;well-known/acme-challenge&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+                               &lt;span class=&#34;n&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;mimetype&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;text/plain&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;This means the challenges will be stored in a directory structure similar to:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;.
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;.
 ├── app.yaml
 ├── main.py
 └── well-known
     └── acme-challenge
             └── odebEMaSagM3xRblm_hmcPvnpCFdEsTBDrpaHyw6Q_I
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;If we happen to be using a different runtime, running a static site on GAE or we
 just love using &lt;code&gt;yaml&lt;/code&gt;, we can as well handle this in our &lt;code&gt;app.yaml&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;handlers:
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;handlers:
 - url: /.well-known/acme-challenge/(.*)
   mime_type: text/plain
   static_files: well-known/acme-challenge/\1
   upload: well-known/acme-challenge/.*
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Upload all changes to our live environment and test that we can reach the
 endpoint:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ appcfg.py update .
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ appcfg.py update .
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Head back to our Let&#39;s Encrypt console, hit &lt;kbd&gt;enter&lt;/kbd&gt; to verify the
 challenge and get the certs generated.&lt;/p&gt;
 &lt;p&gt;If successful, the certificates will then reside in &lt;code&gt;/etc/letsencrypt/live/&amp;lt;path_to_site&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;We&#39;ll then convert our &lt;code&gt;privkey.pem&lt;/code&gt; into an &lt;a href=&#34;https://en.wikipedia.org/wiki/RSA_(cryptosystem)&#34;&gt;RSA&lt;/a&gt; private key for use in the
 &lt;a href=&#34;https://console.developers.google.com/appengine/settings/certificates&#34;&gt;Google Cloud Developers Console&lt;/a&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ opennssl rsa -in privkey.pem -out rsa.pem
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ opennssl rsa -in privkey.pem -out rsa.pem
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;First, copy &lt;code&gt;fullchain.pem&lt;/code&gt; into the
 &lt;a href=&#34;https://console.developers.google.com/appengine/settings/certificates&#34;&gt;Google Cloud Developers Console SSL Certificates Section&lt;/a&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ xclip -sel clip &amp;lt; fullcain.pem
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ xclip -sel clip &amp;lt; fullcain.pem
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Same for &lt;code&gt;rsa.pem&lt;/code&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ xclip -sel clip &amp;lt; rsa.pem
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ xclip -sel clip &amp;lt; rsa.pem
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;&lt;img alt=&#34;Google Cloud Dev Console&#34; src=&#34;https://lh3.googleusercontent.com/qPqpny-bowhMhKjB-eM43wOwR_siBIwASlr0qVoCsE8EUWklbXEdtty7IpFDIlm3dHzYr9LjDGZF=w1359-h641-no&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Enable &lt;code&gt;https&lt;/code&gt; and voilà!&lt;/p&gt;
 &lt;p&gt;Okay, not exactly done because if you took note from the very beginning I said
@@ -519,54 +577,68 @@ worth, I think it&#39;s awesome.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Create virtualenv with a desired name and activate it. I use &lt;code&gt;env&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ virtualenv env
-$ source env/bin/activate
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ virtualenv env
+$ &lt;span class=&#34;nb&#34;&gt;source&lt;/span&gt; env/bin/activate
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Symlink the virtualenv&#39;s site packages to the &lt;code&gt;lib&lt;/code&gt; folder&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ ln -s env/lib/python2.7/site-packages lib
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ ln -s env/lib/python2.7/site-packages lib
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;After, you should have a top level structure resembling something like this:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;.
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;.
 ├── appengine_config.py
 ├── app.yaml
 ├── env
 ├── lib -&amp;gt; env/lib/python2.7/site-packages
 ├── main.py
 └── requirements.txt
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;pip install your packages. They get auto added into the &lt;code&gt;lib&lt;/code&gt; folder as well
    For example to install Flask you can just use:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ pip install flask
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ pip install flask
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;This works well with a &lt;a href=&#34;https://pip.pypa.io/en/latest/user_guide.html#requirements-files&#34;&gt;requirement&#39;s file&lt;/a&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ pip install -r requirements.txt
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ pip install -r requirements.txt
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Even better this allows you to move about with your requirements file that I&#39;m
 sure you&#39;ve come to love and just can&#39;t live without.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Edit or create &lt;code&gt;appengine_config.py&lt;/code&gt; to enable vendoring&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;from google.appengine.ext import vendor
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;google.appengine.ext&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;vendor&lt;/span&gt;
 
-# Add any libraries installed in the &#34;lib&#34; folder.
-vendor.add(&#39;lib&#39;)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&#34;c1&#34;&gt;# Add any libraries installed in the &amp;quot;lib&amp;quot; folder.&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;vendor&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;add&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;lib&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;In the skip files section of your &lt;code&gt;app.yaml&lt;/code&gt; be sure to skip the upload of
    your  virtual environment as shown on the last line in the following example&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;skip_files:
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;skip_files:
 - ^(.*/)?#.*#$
 - ^(.*/)?.*~$
 - ^(.*/)?.*\.py[co]$
 - ^(.*/)?.*/RCS/.*$
 - ^(.*/)?\..*$
-- ^env$ #virtual environment&#39;s folder
-&lt;/code&gt;&lt;/pre&gt;
+- ^env$ #virtual environment&amp;#39;s folder
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Once the packages are properly set up for App Engine to access, you can just
@@ -624,8 +696,10 @@ The Debian package installs some &lt;code&gt;manifest.json&lt;/code&gt; files in
 &lt;code&gt;/etc/opt/chrome/native-messaging-hosts/&lt;/code&gt; but Chromium looks in 
 &lt;code&gt;/etc/chromium/native-messaging-hosts/&lt;/code&gt;. That said, you could probably try 
 symlinking the appropriate files into place. For example:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo ln -s /etc/opt/chrome /etc/chromium
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo ln -s /etc/opt/chrome /etc/chromium
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Next do these in Chrome installed on Ubuntu or any other 
 &lt;a href=&#34;http://distrowatch.com/search.php?basedon=Debian&amp;amp;status=Active&#34;&gt;Debian derivatives&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;At the time of writing this, there&#39;s no official rpm installable. But there&#39;s
@@ -657,8 +731,10 @@ so I&#39;ll rather you download the host service&lt;/p&gt;
 &lt;li&gt;For 32bit systems: &lt;a href=&#34;http://dl.google.com/linux/direct/chrome-remote-desktop_current_i386.deb&#34;&gt;http://dl.google.com/linux/direct/chrome-remote-desktop_current_i386.deb&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;So let&#39;s install with &lt;code&gt;dpkg&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo dpkg -i /path/to/chrome-remote*.deb
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo dpkg -i /path/to/chrome-remote*.deb
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;OK nice. You now have the Chrome Remote Host Service installed.&lt;/p&gt;
 &lt;p&gt;Do you have a preferred editor? Use it for the following instructions. I&#39;ll be 
 using &lt;a href=&#34;http://en.wikipedia.org/wiki/Vim_(text(editor)&#34;&gt;Vim&lt;/a&gt;, not that it makes 
@@ -677,27 +753,37 @@ but I&#39;m yet to be convinced I can be as productive with it on a
 touchscreen as I usually will since I &#39;chromote&#39; from my nexus 7 quite often. 
 So instead I prefer to install a lightweight desktop environment before
 continuing. I&#39;ll be using &lt;a href=&#34;http://www.xfce.org/&#34;&gt;XFCE&lt;/a&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo apt-get install xfce4 xfce4-terminal
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo apt-get install xfce4 xfce4-terminal
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Edit your &lt;code&gt;.profile&lt;/code&gt; file in your home directory and add 
 &lt;code&gt;export CHROME_REMOTE_DESKTOP_DEFAULT_DESKTOP_SIZES=1024x768&lt;/code&gt; to the end of 
 the file. (Or better the resolution of your android device or the device you&#39;ll
 be using so that things fit into screen. It&#39;s frustrating scrolling around) &lt;/p&gt;
 &lt;p&gt;So if Vim is your editor, just open your &lt;code&gt;~/.profile&lt;/code&gt; with it: &lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ vim ~/.profile
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ vim ~/.profile
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;And add the following to the end of that file and save&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;export CHROME_REMOTE_DESKTOP_DEFAULT_DESKTOP_SIZES=1024x768
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;export CHROME_REMOTE_DESKTOP_DEFAULT_DESKTOP_SIZES=1024x768
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Create a file called &lt;code&gt;.chrome-remote-desktop-session&lt;/code&gt; in your home directory. 
 This should be a shell script that starts our preferred desktop environment, 
 XFCE.&lt;/p&gt;
 &lt;p&gt;For example:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ vim ~/.chrome-remote-desktop-session
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ vim ~/.chrome-remote-desktop-session
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Edit the file to contain this line at the beginning&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;exec /usr/sbin/lightdm-session &#34;startxfce4&#34;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;exec /usr/sbin/lightdm-session &amp;quot;startxfce4&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Remember to save your changes.&lt;/p&gt;
 &lt;h3&gt;Start the Host Service&lt;/h3&gt;
 &lt;p&gt;Again for the other platforms, the service should already be running in the
@@ -715,9 +801,11 @@ being interfered with. The primary executable is named &lt;code&gt;remoting_host
 &lt;/blockquote&gt;
 &lt;p&gt;For Linux folks let&#39;s now stop and start the session with the following still
 in the terminal:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo /etc/init.d/chrome-remote-desktop stop
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo /etc/init.d/chrome-remote-desktop stop
 $ sudo /etc/init.d/chrome-remote-desktop start
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;h3&gt;Enable Remote Connections&lt;/h3&gt;
 &lt;p&gt;Open the Chrome Remote Desktop web app.&lt;/p&gt;
 &lt;ol&gt;
@@ -741,49 +829,75 @@ and voilà. You can start using your remote machine :)&lt;/p&gt;
 , I usually run into Ubuntu users who sometimes have issues installing 
 or reinstalling Google Chrome. This post is to help fill that void.&lt;/p&gt;
 &lt;h2&gt;Some Prerequisites&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo apt-get purge google-chrome-stable
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo apt-get purge google-chrome-stable
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;and then&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo apt-get autoremove
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo apt-get autoremove
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Now we&#39;ll first install some necessary libraries for Chrome.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo apt-get install libxss1 libappindicator1 libindicator7
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo apt-get install libxss1 libappindicator1 libindicator7
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;h2&gt;Let&#39;s download Chrome&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt; For 64 bit system: &lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Stable:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Beta:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ wget https://dl.google.com/linux/direct/google-chrome-beta_current_amd64.deb
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ wget https://dl.google.com/linux/direct/google-chrome-beta_current_amd64.deb
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Dev/Unstable:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ wget https://dl.google.com/linux/direct/google-chrome-unstable_current_amd64.deb
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ wget https://dl.google.com/linux/direct/google-chrome-unstable_current_amd64.deb
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;&lt;strong&gt; For 32-bit system: &lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Stable:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Beta:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ wget https://dl.google.com/linux/direct/google-chrome-beta_current_i386.deb
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ wget https://dl.google.com/linux/direct/google-chrome-beta_current_i386.deb
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Dev/Unstable:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ wget https://dl.google.com/linux/direct/google-chrome-unstable_current_i386.deb
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ wget https://dl.google.com/linux/direct/google-chrome-unstable_current_i386.deb
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;h2&gt;Install and Run Chrome:&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;$ sudo dpkg -i google-chrome*.deb
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo dpkg -i google-chrome*.deb
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Installing it this way ensures that a PPA is added to your system so that 
 Google Chrome receives the latest updates whenever you check for system updates.&lt;/p&gt;
 &lt;p&gt;Now run Chrome with&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ google-chrome-stable
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ google-chrome-stable
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;or &lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ google-chrome-beta
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ google-chrome-beta
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;or &lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ google-chrome-unstable
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ google-chrome-unstable
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;depending on what you installed.&lt;/p&gt;
 &lt;p&gt;Happy Browsing!!!&lt;/p&gt;
             </description>
@@ -850,7 +964,7 @@ App Engine.&lt;/p&gt;
 &lt;h2&gt;Code for demo&lt;/h2&gt;
 &lt;p&gt;Reposting from https://gist.github.com/jeffgodwyll/6300282.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;app.yaml&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# The Configuration File
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# The Configuration File
 
 application: your_app_id
 version: 1
@@ -868,20 +982,24 @@ handlers:
 
 libraries:
 - name: webapp2
-  version: &#34;2.5.1&#34;
-&lt;/code&gt;&lt;/pre&gt;
+  version: &amp;quot;2.5.1&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;&lt;code&gt;main.py&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# The main.py file is our controller where the core application logic goes
+&lt;div class=&#34;codehilite&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;# The main.py file is our controller where the core application logic goes&lt;/span&gt;
 
-import webapp2
+&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;webapp2&lt;/span&gt;
 
-class MainHandler(webapp2.RequestHandler):
-    def get(self):
-        self.response.write(&#39;Hello world!&#39;)
+&lt;span class=&#34;k&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;MainHandler&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;webapp2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;RequestHandler&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+    &lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;get&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;bp&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+        &lt;span class=&#34;bp&#34;&gt;self&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;response&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;write&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Hello world!&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 
-app = webapp2.WSGIApplication([(&#39;/&#39;, MainHandler)],
-                              debug=True)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&#34;n&#34;&gt;app&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;webapp2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;WSGIApplication&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;([(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;/&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;MainHandler&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)],&lt;/span&gt;
+                              &lt;span class=&#34;n&#34;&gt;debug&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;bp&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;h2&gt;Video&lt;/h2&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;&lt;p&gt;Google AppEngine by Jeffrey Godwyll: &lt;a href=&#34;http://t.co/ALmCk6u9B6&#34;&gt;http://t.co/ALmCk6u9B6&lt;/a&gt; via &lt;a href=&#34;https://twitter.com/YouTube&#34;&gt;@YouTube&lt;/a&gt;&lt;/p&gt;&amp;mdash; DevCongress (@DevCongress) &lt;a href=&#34;https://twitter.com/DevCongress/status/443903694716018688&#34;&gt;March 13, 2014&lt;/a&gt;&lt;/blockquote&gt;
             </description>
@@ -892,27 +1010,21 @@ app = webapp2.WSGIApplication([(&#39;/&#39;, MainHandler)],
             <author>Jeffrey Godwyll</author>
             <title>Google Africa Communities Summit – GSummit2013</title>
             <link>http://jeffgodwyll.com/posts/2013/google-africa-communities-summit/</link>
-            <description>&lt;p&gt;&lt;em&gt;reposted with some personal touch and info ;) from the &lt;a href=&#34;http://jackiemoraa.blogspot.com/2013/08/gsummit2013.html?spref=bl&#34;&gt;That&#39;s so Jackie Blog&lt;/a&gt;&lt;/em&gt;&lt;br /&gt;
-&lt;/p&gt;
+            <description>&lt;p&gt;&lt;em&gt;reposted with some personal touch and info ;) from the &lt;a href=&#34;http://jackiemoraa.blogspot.com/2013/08/gsummit2013.html?spref=bl&#34;&gt;That&#39;s so Jackie Blog&lt;/a&gt;&lt;/em&gt;  &lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh5.googleusercontent.com/ILFuO-X5zsfpEVjAAxecue8sF6Dzgfg99iT10SGChPI=w630-h227-no&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;The Google Student Ambassador Summit is an event that took place in Nairobi during the first week of July. It was an incredible opportunity to visit Kenya and experience a touch of its great and well-documented culture. Overall, it was an experience I won&#39;t ever forget =] &lt;/p&gt;
 &lt;p&gt;The main purpose of this summit was to introduce the new class of Google Student Ambassadors (GSAs) in Sub Saharan Africa (SSA).  This class constituted of about 150 students from over 80 universities around Africa. I was part of them representing team Ghana. &lt;/p&gt;
 &lt;p&gt;Apart from the GSAs, in attendance were also the GBGs and GDGs, &lt;a href=&#34;https://www.google.com/landing/gbg/&#34;&gt;Google Business Groups&lt;/a&gt; and &lt;a href=&#34;https://plus.google.com/104693551891691428892&#34;&gt;Google Developer Group&lt;/a&gt;s respectively. &lt;/p&gt;
 &lt;h3&gt;So, who is a GSA?&lt;/h3&gt;
 &lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;http://1.bp.blogspot.com/-5aRP-CuLcvE/UgnFpIqdQAI/AAAAAAAAB7w/jk7RtRBHz00/s320/20130703_132405.jpg&#34; /&gt;&lt;img alt=&#34;&#34; src=&#34;http://4.bp.blogspot.com/-9FtpUsyPU8E/UgognxqgXfI/AAAAAAAAB8Q/VYpzCP6aH1Y/s320/3.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;A &lt;a href=&#34;http://www.google.com/intl/en/jobs/students/proscho/programs/uscanada/ambassador/&#34;&gt;Google Student Ambassador&lt;/a&gt; is a student who acts as a liaison between Google and their university. They can be pursuing any major ranging from Computer Science, to Anthropology, to Business and even Zoology. Provided they are thrilled by new technology, are enthusiastic about Google, and are involved in their school communities. These ambassadors:  Learn about innovative Google products and programs, plan and host fun events on campus, act as a campus contact for Google teams and help Google better understand each university’s culture.&lt;br /&gt;
-&lt;/p&gt;
-&lt;p&gt;The summit was a three day hands-on training on the Google products and tools for education. It took place at the &lt;a href=&#34;http://www.oshwalnairobi.org/&#34;&gt;Visa Oshwal Community Centre&lt;/a&gt;. The place was nicely decorated and looked very Googley :)&lt;br /&gt;
-&lt;/p&gt;
+&lt;p&gt;A &lt;a href=&#34;http://www.google.com/intl/en/jobs/students/proscho/programs/uscanada/ambassador/&#34;&gt;Google Student Ambassador&lt;/a&gt; is a student who acts as a liaison between Google and their university. They can be pursuing any major ranging from Computer Science, to Anthropology, to Business and even Zoology. Provided they are thrilled by new technology, are enthusiastic about Google, and are involved in their school communities. These ambassadors:  Learn about innovative Google products and programs, plan and host fun events on campus, act as a campus contact for Google teams and help Google better understand each university’s culture.  &lt;/p&gt;
+&lt;p&gt;The summit was a three day hands-on training on the Google products and tools for education. It took place at the &lt;a href=&#34;http://www.oshwalnairobi.org/&#34;&gt;Visa Oshwal Community Centre&lt;/a&gt;. The place was nicely decorated and looked very Googley :)  &lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;http://4.bp.blogspot.com/-Zvosq8zpW6k/Ugou_hyKoVI/AAAAAAAAB98/-KBl5xbLJXg/s320/DSC00855.JPG&#34; /&gt;&lt;img alt=&#34;&#34; src=&#34;http://1.bp.blogspot.com/-5CZC3QtfWmA/Ugol-KqTI8I/AAAAAAAAB9A/eZAH4jJlAf8/s320/DSC00824.JPG&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Different Googlers (people who work in Google), took to the stage to talk about the products they are most proficient in. We were also trained on how to host good events which are one of the key tasks of being a GSA. And that was tested on the final day of the summit where in groups of ten, we were to demonstrate how to host an event! That was a hilarious demonstration. The best three teams were awarded with Google swag. They never told us, but I’m sure my group (group 7) came in fourth :)&lt;br /&gt;
-&lt;/p&gt;
+&lt;p&gt;Different Googlers (people who work in Google), took to the stage to talk about the products they are most proficient in. We were also trained on how to host good events which are one of the key tasks of being a GSA. And that was tested on the final day of the summit where in groups of ten, we were to demonstrate how to host an event! That was a hilarious demonstration. The best three teams were awarded with Google swag. They never told us, but I’m sure my group (group 7) came in fourth :)  &lt;/p&gt;
 &lt;p&gt;In between speakers we had an opportunity to stretch and relax with coffee breaks and dance breaks. Shout out to &lt;a href=&#34;http://plus.google.com/109099002910738870200&#34;&gt;+Lethabo Ntshudisane&lt;/a&gt; who was probably the most memorable dancer of them all! He can bust a move. 
-Every night we had different activities to do, from bowling, playing pool, to watching a movie (&lt;a href=&#34;http://www.youtube.com/embed/cdnoqCVUo&#34;&gt;The internship&lt;/a&gt;) at the Planet Media Cinema.&lt;br /&gt;
-&lt;/p&gt;
+Every night we had different activities to do, from bowling, playing pool, to watching a movie (&lt;a href=&#34;http://www.youtube.com/embed/cdnoqCVUo&#34;&gt;The internship&lt;/a&gt;) at the Planet Media Cinema.  &lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh3.googleusercontent.com/44tjbmhiqWpC7-jv-TfFALInC7JkSvpUsdBkwul5-vc=w276-h207-p-no&#34; /&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh3.googleusercontent.com/_YfQijkqJwM7GiMo8U-IKlijzbgrHZV_s3Nm9ghJjsE=w317-h211-p-no&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Then there was the carnival where we got to indulge our inner children, let go and have fun. There was cotton candy, ice cream, music, games and of course, crazy pictures.&lt;br /&gt;
-&lt;/p&gt;
+&lt;p&gt;Then there was the carnival where we got to indulge our inner children, let go and have fun. There was cotton candy, ice cream, music, games and of course, crazy pictures.  &lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;http://1.bp.blogspot.com/-RbNgVag2WNQ/Ugo2Mq92VeI/AAAAAAAAB-8/QrelVHsdu-Q/s320/P7050118.JPG&#34; /&gt;&lt;img alt=&#34;&#34; src=&#34;http://1.bp.blogspot.com/-hW2FmeQ4JMc/Ugp51R4LNYI/AAAAAAAACAE/xW_DjtHMq3c/s320/IMG_4992+%25281%2529.JPG&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;But the crème of it all was the cultural night which was on the last night. It was held at Panari Hotel. &lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh5.googleusercontent.com/vAcgM4yoEoQHcYSFypat0Y4Lt-oelu9od5gW5y7Bhxk=w677-h508-no&#34; /&gt;&lt;/p&gt;
@@ -921,37 +1033,28 @@ Every night we had different activities to do, from bowling, playing pool, to wa
 &lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh5.googleusercontent.com/eWXXVWCrPunVPxnR_dhC4WjbaR5NZbtNO-H0aVFvv14p=w295-h196-p-no&#34; /&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh3.googleusercontent.com/p0evbh691Gbw9fY-vJ-jrLNp4osVOfAPW7xl3DYZ8Tic=w296-h196-p-no&#34; /&gt;&lt;/p&gt;
 &lt;h3&gt;Where we stayed&lt;/h3&gt;
 &lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh3.googleusercontent.com/OorH-3snDMcnvBL8Wa3eDEDDoMIBleNBfbNZxAdvP2g=w239-h179-p-no&#34; /&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh6.googleusercontent.com/-KfIEiGvhI529QCT7I1JT3WdBdQdas_RXZOx-mI2f6I=w239-h179-p-no&#34; /&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh5.googleusercontent.com/qycO22e-KyeNHdeO2JAz1q4tVg87cfbGKX856GRTNFQ=w239-h179-p-no&#34; /&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh6.googleusercontent.com/eYtLMXwCquUVRCpTflNcssSVhCqlsezD59SciDIiPPM=w240-h179-p-no&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;We were all checked in the &lt;a href=&#34;http://www.sunsafaris.com/city/kenya/nairobi/southern-sun-mayfair-hotel.html&#34;&gt;Southern Sun Mayfair&lt;/a&gt; which is one of the most historic hotels in Nairobi. It is a beautiful facility which is situated very close to the city center. The rooms were beautiful and had many features ranging from satellite TV, Designated work space, Phone and fax facilities, Tea and Coffee makers, and the most notable of all...High Speed WiFi. Sigh!&lt;br /&gt;
-&lt;/p&gt;
+&lt;p&gt;We were all checked in the &lt;a href=&#34;http://www.sunsafaris.com/city/kenya/nairobi/southern-sun-mayfair-hotel.html&#34;&gt;Southern Sun Mayfair&lt;/a&gt; which is one of the most historic hotels in Nairobi. It is a beautiful facility which is situated very close to the city center. The rooms were beautiful and had many features ranging from satellite TV, Designated work space, Phone and fax facilities, Tea and Coffee makers, and the most notable of all...High Speed WiFi. Sigh!  &lt;/p&gt;
 &lt;h3&gt;What we ate&lt;/h3&gt;
 &lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh6.googleusercontent.com/tw6g1ACExHR88AhZvOGkKQk6KxPX8YkYnGt5hLdn0os=w287-h214-p-no&#34; /&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh6.googleusercontent.com/NzRgVnSEJWfosXLV6CJzMjPDKBKDsgSj7byW22rfXos=w295-h221-p-no&#34; /&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh4.googleusercontent.com/846DTn4uTrdxjdXj5S-jlcphms5otsfk-SD0WpUrAZo=w278-h208-p-no&#34; /&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh6.googleusercontent.com/l2Gi6lvtPuRkTHj9jttvVt1rewBFifWLSwxATnEq4_c=w278-h208-p-no&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Breakfast was a delight. It was served at the hotels dining area. It was a buffet so you can only imagine! Meat comprised about 2/3 of everyone’s plate with the occasional bread and muffin on the side. This was particularly so because lunch was served at Visa Oshwal, a Hindu facility, hence no meat! We went vegetarian, at least that was during the day. &lt;/p&gt;
-&lt;p&gt;A special shout out to &lt;a href=&#34;http://plus.google.com/106126739496626736178&#34;&gt;+charz maina&lt;/a&gt;  and &lt;a href=&#34;http://plus.google.com/118007882295551881495&#34;&gt;+betty mutimba&lt;/a&gt;  who took it upon themselves to direct and take out the GSAs to enjoy the city life in Nairobi. They are fully accountable for all the sleepy people we had during the days&#39; training! Haha :)&lt;br /&gt;
-&lt;/p&gt;
-&lt;p&gt;Congratulations to team South Africa that came in first in the overall challenge. Followed by team Cote d&#39;Ivoire which came in second. Team Kenya came in third and it tied with Cameroon, props guys. #gafricamoonshot&lt;br /&gt;
-&lt;/p&gt;
+&lt;p&gt;A special shout out to &lt;a href=&#34;http://plus.google.com/106126739496626736178&#34;&gt;+charz maina&lt;/a&gt;  and &lt;a href=&#34;http://plus.google.com/118007882295551881495&#34;&gt;+betty mutimba&lt;/a&gt;  who took it upon themselves to direct and take out the GSAs to enjoy the city life in Nairobi. They are fully accountable for all the sleepy people we had during the days&#39; training! Haha :)  &lt;/p&gt;
+&lt;p&gt;Congratulations to team South Africa that came in first in the overall challenge. Followed by team Cote d&#39;Ivoire which came in second. Team Kenya came in third and it tied with Cameroon, props guys. #gafricamoonshot  &lt;/p&gt;
 &lt;p&gt;Some more pics:&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh5.googleusercontent.com/0Z31N-7lpD8HbZ8Dk5e7jARnND8jmEU1ksIi_EZ_y6U=w295-h196-p-no&#34; /&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh3.googleusercontent.com/kKzURjGZ9FiKJNxf0_1IUyeR30aSyckisAi0_sPQKuI=w296-h196-p-no&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh5.googleusercontent.com/vAYCe2srV9BCQzRGpwaTdgWRNRIALcn4itD24fnj6UV2=w295-h196-p-no&#34; /&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh3.googleusercontent.com/-vYT8ngetZSTQtXorKuUTiUWQUiFoKgm3yUS7T-pRWKK=w295-h196-p-no&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;This post would not be complete without the mention of bus #3! Bus 3 members, you guys are awesome. I doubt any other bus had more fun than us. A big thank you to the outgoing GSAs &lt;a href=&#34;http://plus.google.com/108332843114643572647&#34;&gt;+Chris C&#39;otewa&lt;/a&gt; and &lt;a href=&#34;http://plus.google.com/100996606089034065747&#34;&gt;+joshua eyaru&lt;/a&gt; who took their time to show us around and guide us through the process. And the Googlers are awesome, they taught us well. Plus they can dance too ( &lt;a href=&#34;http://plus.google.com/103703210853891175248&#34;&gt;+Chukwuemeka Afigbo&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/107682226479034681299&#34;&gt;+Jeminatu Alabi-Isama&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/115514920001019253626&#34;&gt;+Tayib Fall&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/110866627929241642909&#34;&gt;+Giacomo Gnecchi Ruscone&lt;/a&gt; ... I saw ya&#39;ll! Hehe...)&lt;br /&gt;
-&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;http://3.bp.blogspot.com/-Zan_7UNtdkE/UgtbTC9OLbI/AAAAAAAACCY/em5BwPgqJnM/s1600/DSC_1573.JPG&#34; /&gt;&lt;br /&gt;
-&lt;/p&gt;
-&lt;p&gt;I told you they danced :)&lt;br /&gt;
-&lt;/p&gt;
-&lt;p&gt;What we shared with each other and obtained during the summit is truly irreplaceable. We learnt and gained a lot of insight from the training. The experience was remarkable. Apart from that, we all made so many new friends across the borders. And the fire of keeping in touch is still burning strongly. I miss everyone! Much love goes out to &lt;a href=&#34;http://plus.google.com/106222820904874996888&#34;&gt;+Success Maake&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/114930243151372848667&#34;&gt;+Jake Neethling&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/105417451871778492621&#34;&gt;+Jason Botha&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/106487511364381768049&#34;&gt;+chibi mosiea&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/117520497033022011982&#34;&gt;+Emmanuel Chenze&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/103915977016289071033&#34;&gt;+Victor Mutunga Mutua&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/108384905178708488948&#34;&gt;+Jeffrey Godwyll&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/102629321330263822422&#34;&gt;+Nonhlanhla Mkwanazi&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/109932349709645133287&#34;&gt;+Saviour Gidi&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/107995755490910332655&#34;&gt;+Jackson Isack&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/109296919415120548148&#34;&gt;+LAWAL MOSHOOD&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/115148644007815970302&#34;&gt;+Chintan Gohel&lt;/a&gt; (you answered all the questions dude, making us look bad!!) &lt;a href=&#34;http://plus.google.com/103650860072197253334&#34;&gt;+Pinky Mokemane&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/109003121971525566466&#34;&gt;+Shadrach David&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/107139999182708684839&#34;&gt;+Dorothy Elorm&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/113602065875380870586&#34;&gt;+cliff Ombiru&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/111794527651820423114&#34;&gt;+OUEDRAOGO DANIEL KENANIA&lt;/a&gt;&lt;a href=&#34;http://plus.google.com/110136822959156076600&#34;&gt;+Lubega Ham&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/116735401445764620796&#34;&gt;+Laban Ndwaru&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/107095832508293266731&#34;&gt;+IKANE Challengee&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/104331315977161485966&#34;&gt;+Abebe Assefa&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/101912600013554438050&#34;&gt;+Christina Sukop&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/102169718137328736666&#34;&gt;+Ajah David&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/117586534268425815900&#34;&gt;+ADESOJI BELLO&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/112161580732901971909&#34;&gt;+Nana Mensah&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/111907950527037974493&#34;&gt;+Khalifa Qwami&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/109209724553746475980&#34;&gt;+Gilbert Bosomtwe&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/103988343970732812435&#34;&gt;+Caleb Mbakwe&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/115377049039581120580&#34;&gt;+Aida Bezarediet&lt;/a&gt;  &lt;a href=&#34;http://plus.google.com/113375950149684624825&#34;&gt;+iyanuoluwa bolarinwa&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/101645673956934058670&#34;&gt;+Kesho Kioko&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/106534543095533361229&#34;&gt;+Dickens Otieno&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/116438631050479491591&#34;&gt;+Beryl Obiero&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/106435455784647221752&#34;&gt;+Ankwasa Bernadine&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/102169335847123046528&#34;&gt;+Ian Duncan m&lt;/a&gt;  &lt;a href=&#34;http://plus.google.com/111562008317324675279&#34;&gt;+Stephen Mudibo&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/117394749890609855034&#34;&gt;+Kate Njenga&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/101407893890157001619&#34;&gt;+Roderick KERRY OYUGA&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/106493639017148008313&#34;&gt;+Walter NGOUAMO&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/105972893874700092118&#34;&gt;+Emmanuel Osinaike&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/102781440230010907892&#34;&gt;+Timothy Mwirabua&lt;/a&gt;. Forgive me for not mentioning every one but we are sooo many, I couldn&#39;t have gotten all the names in. But just know...I got you all :)&lt;br /&gt;
-&lt;/p&gt;
+&lt;p&gt;This post would not be complete without the mention of bus #3! Bus 3 members, you guys are awesome. I doubt any other bus had more fun than us. A big thank you to the outgoing GSAs &lt;a href=&#34;http://plus.google.com/108332843114643572647&#34;&gt;+Chris C&#39;otewa&lt;/a&gt; and &lt;a href=&#34;http://plus.google.com/100996606089034065747&#34;&gt;+joshua eyaru&lt;/a&gt; who took their time to show us around and guide us through the process. And the Googlers are awesome, they taught us well. Plus they can dance too ( &lt;a href=&#34;http://plus.google.com/103703210853891175248&#34;&gt;+Chukwuemeka Afigbo&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/107682226479034681299&#34;&gt;+Jeminatu Alabi-Isama&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/115514920001019253626&#34;&gt;+Tayib Fall&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/110866627929241642909&#34;&gt;+Giacomo Gnecchi Ruscone&lt;/a&gt; ... I saw ya&#39;ll! Hehe...)  &lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;http://3.bp.blogspot.com/-Zan_7UNtdkE/UgtbTC9OLbI/AAAAAAAACCY/em5BwPgqJnM/s1600/DSC_1573.JPG&#34; /&gt;  &lt;/p&gt;
+&lt;p&gt;I told you they danced :)  &lt;/p&gt;
+&lt;p&gt;What we shared with each other and obtained during the summit is truly irreplaceable. We learnt and gained a lot of insight from the training. The experience was remarkable. Apart from that, we all made so many new friends across the borders. And the fire of keeping in touch is still burning strongly. I miss everyone! Much love goes out to &lt;a href=&#34;http://plus.google.com/106222820904874996888&#34;&gt;+Success Maake&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/114930243151372848667&#34;&gt;+Jake Neethling&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/105417451871778492621&#34;&gt;+Jason Botha&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/106487511364381768049&#34;&gt;+chibi mosiea&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/117520497033022011982&#34;&gt;+Emmanuel Chenze&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/103915977016289071033&#34;&gt;+Victor Mutunga Mutua&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/108384905178708488948&#34;&gt;+Jeffrey Godwyll&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/102629321330263822422&#34;&gt;+Nonhlanhla Mkwanazi&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/109932349709645133287&#34;&gt;+Saviour Gidi&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/107995755490910332655&#34;&gt;+Jackson Isack&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/109296919415120548148&#34;&gt;+LAWAL MOSHOOD&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/115148644007815970302&#34;&gt;+Chintan Gohel&lt;/a&gt; (you answered all the questions dude, making us look bad!!) &lt;a href=&#34;http://plus.google.com/103650860072197253334&#34;&gt;+Pinky Mokemane&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/109003121971525566466&#34;&gt;+Shadrach David&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/107139999182708684839&#34;&gt;+Dorothy Elorm&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/113602065875380870586&#34;&gt;+cliff Ombiru&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/111794527651820423114&#34;&gt;+OUEDRAOGO DANIEL KENANIA&lt;/a&gt;&lt;a href=&#34;http://plus.google.com/110136822959156076600&#34;&gt;+Lubega Ham&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/116735401445764620796&#34;&gt;+Laban Ndwaru&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/107095832508293266731&#34;&gt;+IKANE Challengee&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/104331315977161485966&#34;&gt;+Abebe Assefa&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/101912600013554438050&#34;&gt;+Christina Sukop&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/102169718137328736666&#34;&gt;+Ajah David&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/117586534268425815900&#34;&gt;+ADESOJI BELLO&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/112161580732901971909&#34;&gt;+Nana Mensah&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/111907950527037974493&#34;&gt;+Khalifa Qwami&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/109209724553746475980&#34;&gt;+Gilbert Bosomtwe&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/103988343970732812435&#34;&gt;+Caleb Mbakwe&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/115377049039581120580&#34;&gt;+Aida Bezarediet&lt;/a&gt;  &lt;a href=&#34;http://plus.google.com/113375950149684624825&#34;&gt;+iyanuoluwa bolarinwa&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/101645673956934058670&#34;&gt;+Kesho Kioko&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/106534543095533361229&#34;&gt;+Dickens Otieno&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/116438631050479491591&#34;&gt;+Beryl Obiero&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/106435455784647221752&#34;&gt;+Ankwasa Bernadine&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/102169335847123046528&#34;&gt;+Ian Duncan m&lt;/a&gt;  &lt;a href=&#34;http://plus.google.com/111562008317324675279&#34;&gt;+Stephen Mudibo&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/117394749890609855034&#34;&gt;+Kate Njenga&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/101407893890157001619&#34;&gt;+Roderick KERRY OYUGA&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/106493639017148008313&#34;&gt;+Walter NGOUAMO&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/105972893874700092118&#34;&gt;+Emmanuel Osinaike&lt;/a&gt; &lt;a href=&#34;http://plus.google.com/102781440230010907892&#34;&gt;+Timothy Mwirabua&lt;/a&gt;. Forgive me for not mentioning every one but we are sooo many, I couldn&#39;t have gotten all the names in. But just know...I got you all :)  &lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Are you on the line? :)&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Presenting &lt;a href=&#34;http://plus.google.com/105335914835472595238&#34;&gt;+Google Student Ambassadors Sub-Saharan-Africa&lt;/a&gt; of year 2013-2014&lt;br /&gt;
-&lt;/p&gt;
+&lt;p&gt;Presenting &lt;a href=&#34;http://plus.google.com/105335914835472595238&#34;&gt;+Google Student Ambassadors Sub-Saharan-Africa&lt;/a&gt; of year 2013-2014  &lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;&#34; src=&#34;https://lh3.googleusercontent.com/--Ztq5OXcfUw/Ud7IqBFuyLI/AAAAAAAASqk/JamY2AQYtYQ/w1039-h536-no/DSC_7176.jpg&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Theme song: &lt;a href=&#34;http://www.youtube.com/watch?v=sBoV1VSpKLo&#34;&gt;Kukere-Iyanya&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Hashtag: &lt;a href=&#34;https://plus.google.com/explore/gsummit2013&#34;&gt;#gsummit2013&lt;/a&gt; It trended the whole time during the summit.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Doing cool things that matter!&lt;br /&gt;
-&lt;/p&gt;
+&lt;p&gt;Doing cool things that matter!  &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Happy Days! =]&lt;/p&gt;
             </description>
@@ -963,8 +1066,7 @@ Every night we had different activities to do, from bowling, playing pool, to wa
             <title>Literacy in Ghana</title>
             <link>http://jeffgodwyll.com/posts/2013/literacy-in-ghana/</link>
             <description>&lt;p&gt;&lt;em&gt;Data about the level of literacy of the people of Ghana is readily available on the web. Sadly even reputable sources like the Ghana Statistical Service (http://www.statsghana.gov.gh/edu_stats.html) fail to provide visual representation as to the actual locations especially those with an alarming rate of illiteracy. Hence my map is to bridge this gap and help volunteers as well as the government see this and act accordingly. See the full map &lt;a href=&#34;https://mapsengine.google.com/map/edit?mid=zG-UjNDkH-eY.k47JbOCF-bIY&#34;&gt;HERE&lt;/a&gt;&lt;br /&gt;
-&lt;/em&gt;&lt;br /&gt;
-&lt;/p&gt;
+&lt;/em&gt;  &lt;/p&gt;
 &lt;iframe src=&#34;https://mapsengine.google.com/map/u/0/embed?mid=zG-UjNDkH-eY.k47JbOCF-bIY&#34; width=&#34;640&#34; height=&#34;480&#34;&gt;&lt;/iframe&gt;
             </description>
             <pubDate>2013-06-23</pubDate>
@@ -974,13 +1076,10 @@ Every night we had different activities to do, from bowling, playing pool, to wa
             <author>Jeffrey Godwyll</author>
             <title>Good C++ Practices</title>
             <link>http://jeffgodwyll.com/posts/2013/good-practices/</link>
-            <description>&lt;p&gt;&#34;Refactored&#34; or “forked” from http://www.cplusplus.com/forum/lounge/6195/&lt;br /&gt;
-&lt;/p&gt;
+            <description>&lt;p&gt;&#34;Refactored&#34; or “forked” from http://www.cplusplus.com/forum/lounge/6195/  &lt;/p&gt;
 &lt;p&gt;You might want to check the original out or just go by these “commandments” and write better C++ code in general. These good practices will in one way or the other save you some headache like the ones I get at times &lt;/p&gt;
-&lt;p&gt;1. Always use header guards.&lt;br /&gt;
-&lt;/p&gt;
-&lt;p&gt;2. Always follow The Standard.&lt;br /&gt;
-&lt;/p&gt;
+&lt;p&gt;1. Always use header guards.  &lt;/p&gt;
+&lt;p&gt;2. Always follow The Standard.  &lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Never include any header that&#39;s not one of these:&lt;/p&gt;
 &lt;ul&gt;
@@ -988,55 +1087,38 @@ Every night we had different activities to do, from bowling, playing pool, to wa
 &lt;li&gt;A header of a library you&#39;re using or &lt;/li&gt;
 &lt;li&gt;A system API header. &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Never include compiler-specific headers. Compilers come and go, but the language and the systems stay.&#34;&lt;br /&gt;
-&lt;/p&gt;
+&lt;p&gt;Never include compiler-specific headers. Compilers come and go, but the language and the systems stay.&#34;  &lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;3. Do not &lt;code&gt;#include&lt;/code&gt; cpp files in other cpp files (Especially when using IDEs).&lt;br /&gt;
-&lt;/p&gt;
+&lt;p&gt;3. Do not &lt;code&gt;#include&lt;/code&gt; cpp files in other cpp files (Especially when using IDEs).  &lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;It&#39;s generally a better idea to use headers to declare class and function names, as multiple declarations don&#39;t cause the compiler to raise errors, while multiple definitions do.&lt;br /&gt;
-&lt;/p&gt;
+&lt;p&gt;It&#39;s generally a better idea to use headers to declare class and function names, as multiple declarations don&#39;t cause the compiler to raise errors, while multiple definitions do.  &lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;4. Use indentation.&lt;br /&gt;
-&lt;/p&gt;
+&lt;p&gt;4. Use indentation.  &lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;For example, I indent using tab spaces(soft tabs) or 4 spaces inside each block.&lt;br /&gt;
-&lt;/p&gt;
+&lt;p&gt;For example, I indent using tab spaces(soft tabs) or 4 spaces inside each block.  &lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;5. Adopt a naming convention and be consistent.&lt;br /&gt;
-&lt;/p&gt;
+&lt;p&gt;5. Adopt a naming convention and be consistent.  &lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;There are a whole bunch of advices out there for newbies but I feel the real advice should be: adopt a naming style and try to keep the naming consistent and meaningful especially when you are not the only one going to work with it. Remember not to touch reserved words. That’s about it.&lt;br /&gt;
-&lt;/p&gt;
+&lt;p&gt;There are a whole bunch of advices out there for newbies but I feel the real advice should be: adopt a naming style and try to keep the naming consistent and meaningful especially when you are not the only one going to work with it. Remember not to touch reserved words. That’s about it.  &lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;6. Use whitespace.&lt;br /&gt;
-&lt;/p&gt;
+&lt;p&gt;6. Use whitespace.  &lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;You know, for clarity! This is a no brainer really. Who wouldn’t use whitespace? Even text editors (except the crappy ones of course) and IDE’s include them whether you like it or YES ;p&lt;br /&gt;
-&lt;/p&gt;
+&lt;p&gt;You know, for clarity! This is a no brainer really. Who wouldn’t use whitespace? Even text editors (except the crappy ones of course) and IDE’s include them whether you like it or YES ;p  &lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;7. &#34;Functionize!&#34;&lt;br /&gt;
-&lt;/p&gt;
+&lt;p&gt;7. &#34;Functionize!&#34;  &lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Inheritance becomes a breeze + makes everything simpler. The reason I love java atm.&lt;br /&gt;
-&lt;/p&gt;
+&lt;p&gt;Inheritance becomes a breeze + makes everything simpler. The reason I love java atm.  &lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;8. Use &lt;code&gt;const&lt;/code&gt; correctly.&lt;br /&gt;
-&lt;/p&gt;
-&lt;p&gt;9. Include exceptions to handle runtime errors.&lt;br /&gt;
-&lt;/p&gt;
+&lt;p&gt;8. Use &lt;code&gt;const&lt;/code&gt; correctly.  &lt;/p&gt;
+&lt;p&gt;9. Include exceptions to handle runtime errors.  &lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;You probably don’t want your program to hang during runtime so just include them and be free. Oh and always ignore that little voice that likes to start sentences like &#34;why would anyone want to...&#34; and &#34;what kind of “mental nerd” would try to...”. Unless you the programmer is also the user or the only user, there&#39;s always someone who wants to do it, and a “mental nerd” who tries to do it. It&#39;s advisable to obey users and punish “mental nerds”. Oh and finally you the programmer, please try to think like a “mental nerd” would. It helps in dealing with them in general.&lt;br /&gt;
-&lt;/p&gt;
+&lt;p&gt;You probably don’t want your program to hang during runtime so just include them and be free. Oh and always ignore that little voice that likes to start sentences like &#34;why would anyone want to...&#34; and &#34;what kind of “mental nerd” would try to...”. Unless you the programmer is also the user or the only user, there&#39;s always someone who wants to do it, and a “mental nerd” who tries to do it. It&#39;s advisable to obey users and punish “mental nerds”. Oh and finally you the programmer, please try to think like a “mental nerd” would. It helps in dealing with them in general.  &lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;10. Ask for help and advice.&lt;br /&gt;
-&lt;/p&gt;
+&lt;p&gt;10. Ask for help and advice.  &lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;I believe this to be the best along with the next. Try to analyze what you&#39;ve put down for what it actually does and not what you expect it to do. Beginners (and not so beginners) all too often either fall into the habit of either asking for help the instant something isn&#39;t obvious, or spend days trying to solve a minor problem before asking for help. Remember the 30-minute-rule, &lt;a href=&#34;https://google.com&#34;&gt;google&lt;/a&gt; it or head over to &lt;a href=&#34;https://stackoverflow.com&#34;&gt;stackoverflow&lt;/a&gt;.&lt;br /&gt;
-&lt;/p&gt;
+&lt;p&gt;I believe this to be the best along with the next. Try to analyze what you&#39;ve put down for what it actually does and not what you expect it to do. Beginners (and not so beginners) all too often either fall into the habit of either asking for help the instant something isn&#39;t obvious, or spend days trying to solve a minor problem before asking for help. Remember the 30-minute-rule, &lt;a href=&#34;https://google.com&#34;&gt;google&lt;/a&gt; it or head over to &lt;a href=&#34;https://stackoverflow.com&#34;&gt;stackoverflow&lt;/a&gt;.  &lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;11. Take a break.&lt;br /&gt;
-&lt;/p&gt;
+&lt;p&gt;11. Take a break.  &lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;There’s the tendency to spend hours on end coding or figuring out what something does. It can be fun (like seriously). Just don&#39;t be afraid to stop and walk away for a few when something is kicking your butt. If you stay, your frustration grows and the answer gets further from your mind (at least it does for me). Be sure to keep a video game in or nearby the system where you do your coding so that can relax you during these periods. Something not too exciting is preferable (Although I delight in beating someone to an &#34;exciting&#34; game or 2 of FIFA). It&#39;s also probably better if you don&#39;t need to think too much to play it. &lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1064,22 +1146,18 @@ Every night we had different activities to do, from bowling, playing pool, to wa
             <description>&lt;blockquote&gt;
 &lt;p&gt;&#34;This whole grass-root activism of yours isn&#39;t changing the world, it&#39;s a 
 joke. Wanna change the world, you got to leave the living room&#34; 
-- From &lt;a href=&#34;https://plus.google.com/s/%23Continuum&#34;&gt;#Continuum&lt;/a&gt;.&lt;br /&gt;
-&lt;/p&gt;
+- From &lt;a href=&#34;https://plus.google.com/s/%23Continuum&#34;&gt;#Continuum&lt;/a&gt;.  &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Or by extension the conference room or wherever it is you are continually 
 preaching your stuff. &#39;LOL&#39; I know I just ruined a wonderful quote. Just 
-couldn&#39;t resist.&lt;br /&gt;
-&lt;/p&gt;
+couldn&#39;t resist.  &lt;/p&gt;
 &lt;p&gt;I have seen this first hand on quite a number of occasions. Which conference 
 won&#39;t we attend? How many motivational speeches won&#39;t we applaud? And yet we 
 are always at square one. Let&#39;s collaborate on something, anything, so long as 
-it isn&#39;t just talking up plans with no execution in sight.&lt;br /&gt;
-&lt;/p&gt;
+it isn&#39;t just talking up plans with no execution in sight.  &lt;/p&gt;
 &lt;p&gt;The number of amazing ideas shared in a presentation in class just got me 
 wondering about this really important topic. It&#39;s my hope that the many teams 
-that gave very brilliant presentations implement them.&lt;br /&gt;
-&lt;/p&gt;
+that gave very brilliant presentations implement them.  &lt;/p&gt;
 &lt;p&gt;My team is getting it done. Get it done too!&lt;/p&gt;
             </description>
             <pubDate>2013-04-07</pubDate>

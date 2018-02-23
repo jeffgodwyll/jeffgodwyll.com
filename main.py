@@ -250,11 +250,14 @@ def build():
 
     app.debug = False
     freezer.freeze()
-    print('Regenerating feeds and sitemap')
+    print('Regenerating feeds and sitemap...')
 
     subprocess.call('cp ./build/*.xml ./static/', shell=True)
-    print('Cleaning up')
+    print('Cleaning up...')
     subprocess.call('rm -rf ./build/', shell=True)
+
+    print('Bundling and minifying js and css files...')
+    assets.build()
     print('Done!')
 
 

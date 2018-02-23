@@ -28,7 +28,11 @@ def init(app=None):
         return bundles
 
 
-if __name__ == '__main__':
+def build():
     bundles = init()
     for bundle in bundles:
         bundle.build()
+
+
+if __name__ == '__main__':
+    build()
