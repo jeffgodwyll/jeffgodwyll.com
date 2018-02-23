@@ -3,7 +3,7 @@ date: 2015-04-24
 published: true
 tags: [chrome, chrome-remote-desktop]
 
-![Using Vim Over a Chrome Remote Session](https://lh3.googleusercontent.com/sDUSVwZIdUfFUVHYmabMVm1GFviBQshFhN4FNgNKLss=w683-h400-no Writing This Post in Vim Over a Chrome Remote Session)
+![Using Vim Over a Chrome Remote Session][vim_remote_img]
 
 
 <blockquote itemprop="description"> Chrome Remote Desktop allows you to remotely access one computer from another over the Internet. For example, you can use the app to securely access your files or applications from another computer problem. - <a href=https://support.google.com/chrome/answer/1649523?hl=en>Chrome Help Forum</a></blockquote>
@@ -182,3 +182,5 @@ Now, we've set up our machines to be accessed from literally anywhere. All
 we'll do from there is fire up the Android app or Chrome app from the 
 device we'll be using, connect to our box we've just set up, key in the PIN 
 and voilà. You can start using your remote machine :)
+
+[vim_remote_img]: https://lh3.googleusercontent.com/sDUSVwZIdUfFUVHYmabMVm1GFviBQshFhN4FNgNKLss=w683-h400-no "Writing This Post in Vim Over a Chrome Remote Session"
