@@ -5,14 +5,12 @@ import subprocess
 import argh
 import yaml
 
-# from argh import *
 from collections import OrderedDict
 from datetime import date, datetime
 from flask import Flask, render_template, abort, send_from_directory
 from flask_frozen import Freezer
-from flaskext.flatpages import FlatPages
+from flask_flatpages import FlatPages
 from flaskext.markdown import Markdown
-# from flaskext.assets import Environment as AssetManager
 from unicodedata import category, normalize
 
 # Configuration
