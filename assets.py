@@ -7,7 +7,7 @@ def init(app=None):
     with app.app_context():
         assets = Environment(app)
         assets.auto_build = False
-        assets.manifest = 'file'
+        assets.manifest = 'file:./manifest'
 
         css = Bundle(
             'css/style.css',
