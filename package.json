@@ -1,0 +1,28 @@
+{
+  "name": "jeffgodwyll.com",
+  "version": "0.0.1",
+  "description": "necessities for jeffgodwyll.com assets",
+  "main": " ",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/webpack",
+    "build:prod": "./node_modules/.bin/webpack -p",
+    "watch": "./node_modules/.bin/webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffgodwyll/jeffgodwyll.com.git"
+  },
+  "author": "Jeffrey Godwyll",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeffgodwyll/jeffgodwyll.com/issues"
+  },
+  "homepage": "https://github.com/jeffgodwyll/jeffgodwyll.com#readme",
+  "devDependencies": {
+    "webpack": "^4.5.0"
+  }
+}
