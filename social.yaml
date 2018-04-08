@@ -65,3 +65,7 @@ stackoverflow:
 youtube:
   value: https://www.youtube.com/channel/UC990eJ6DYVoFGczORyMfn9g
   label: Youtube
+
+500px:
+  value: https://500px.com/jeffgodwyll
+  label: 500px
