@@ -13,5 +13,5 @@ pycrypto==2.6.1
 PyYAML==3.12
 ssh==1.8.0
 webassets==0.12.1
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 wsgiref==0.1.2
