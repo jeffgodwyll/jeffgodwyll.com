@@ -10,7 +10,7 @@ Jinja2==2.10
 jsmin==2.2.2
 Markdown==2.6.11
 pycrypto==2.6.1
-PyYAML==3.12
+PyYAML==5.4
 ssh==1.8.0
 webassets==0.12.1
 Werkzeug==0.14.1
