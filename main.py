@@ -42,7 +42,7 @@ markdown_manager = Markdown(app,
 
 # social profiles
 with open("./social.yaml", "r") as f:
-    profiles = yaml.load(f.read())
+    profiles = yaml.safe_load(f)
 
 SOCIAL_PROFILES = OrderedDict(sorted(profiles.items()))
 
@@ -259,9 +259,12 @@ def build():
     print('Bundling and minifying js and css files...')
     assets.build()
     print('Done!')
+    
+def run():
+    app.run(debug=True)
 
 
 if __name__ == '__main__':
     parser = argh.ArghParser()
-    parser.add_commands([build])
+    parser.add_commands([build, run])
     parser.dispatch()

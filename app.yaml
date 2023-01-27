@@ -1,57 +1,34 @@
-runtime: python27
-api_version: 1
-threadsafe: yes
-
-# builtins:
-# - appstats: on
+runtime: python39
 
 handlers:
-- url: /favicon\.ico
-  static_files: favicon.ico
-  upload: favicon\.ico
+  - url: /favicon\.ico
+    static_files: favicon.ico
+    upload: favicon\.ico
 
-- url: /keybase.txt
-  static_files: stuff/keybase.txt
-  upload: stuff/keybase.txt
+  - url: /keybase.txt
+    static_files: stuff/keybase.txt
+    upload: stuff/keybase.txt
 
-- url: /.well-known/keybase.txt
-  static_files: stuff/.well-known/keybase.txt
-  upload: stuff/.well-known/keybase.txt
+  - url: /.well-known/keybase.txt
+    static_files: stuff/.well-known/keybase.txt
+    upload: stuff/.well-known/keybase.txt
 
-- url: /robots.txt
-  static_files: static/robots.txt
-  upload: static/robots.txt
+  - url: /robots.txt
+    static_files: static/robots.txt
+    upload: static/robots.txt
 
-- url: /humans.txt
-  static_files: static/humans.txt
-  upload: static/humans.txt
+  - url: /humans.txt
+    static_files: static/humans.txt
+    upload: static/humans.txt
 
-- url: /sitemap.xml
-  static_files: static/sitemap.xml
-  upload: static/sitemap.xml
+  - url: /sitemap.xml
+    static_files: static/sitemap.xml
+    upload: static/sitemap.xml
 
-- url: /feed.xml
-  static_files: static/feed.xml
-  upload: static/feed.xml
+  - url: /feed.xml
+    static_files: static/feed.xml
+    upload: static/feed.xml
 
-- url: .*
-  script: main.app
-  secure: always
-
-libraries:
-- name: jinja2
-  version: latest
-
-- name: PIL
-  version: latest
-
-skip_files:
-- ^(.*/)?#.*#$
-- ^(.*/)?.*~$
-- ^(.*/)?.*\.py[co]$
-- ^(.*/)?.*/RCS/.*$
-- ^(.*/)?\..*$
-- ^siteEnv$
-- ^env$
-- ^\.git$
-- ^\.ropeproject$
+  - url: .*
+    script: main.app
+    secure: always

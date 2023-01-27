@@ -1,0 +1,9 @@
+
+*.pyc
+.ropeproject/
+siteEnv/
+env/
+static/acme-challenge/
+static/.webassets*
+.git
+.gitignore
