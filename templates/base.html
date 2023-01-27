@@ -28,7 +28,7 @@
     <div class="container">
         <header class="main-title">
             <h1><a href="{{ url_for("index") }}">I'm <strong>Jeffrey Godwyll</strong></a></h1>
-            <small>Student. Computer Engineer. Web Dev.</small>
+            <small>Forever a Student</small>
         </header>
         <main class="contents" role="main">
             {% block contents %}
@@ -40,14 +40,14 @@
                 <li><img src="/static/img/jeff.png" alt="Jeff's ummm, forget it" style="height: 130px; border-radius: 100px; -webkit-border-radius: 100px; -moz-border-radius: 100px; -webkit-box-shadow: 0 0 10px rgb(0, 136, 204); float: none; border-collapse: separate"></li><br>
                 <li class="home"><a href="{{ url_for("index") }}" hreflang="en">Home</a></li>
                 <li class="posts"><a href="{{ url_for("section", section="posts") }}" hreflang="en">Posts</a></li>
-                <li class="projects"><a href="{{ url_for("projects") }}" hreflang="en">Projects</a></li>
+                <!-- <li class="projects"><a href="{{ url_for("projects") }}" hreflang="en">Projects</a></li> -->
                 <li class="talks"><a href="{{ url_for("section", section="talks") }}" hreflang="en">Talks</a></li>
                 <li class="about"><a href="{{ url_for("about") }}" hreflang="en">About</a></li>
             </ul>
         </nav>
         <footer class="site-footer" style="text-align: center;">
             <p>
-                &copy; 2015 Jeffrey Godwyll
+                &copy; <script>document.write(new Date().getFullYear())</script> Jeffrey Godwyll
                 | Proudly hosted on <a href="http://appengine.google.com">GAE</a>
                 | Feel free to <a href="{{ url_for("about") }}#contact">Contact me</a>
             </p>

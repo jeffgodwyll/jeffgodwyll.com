@@ -6,57 +6,40 @@
 {% block contents %}
 
 <article>
-{% filter markdown %}
-##<a name="aboutme">About Me</a>
+  {% filter markdown %}
+  <h3>
+    <a name="aboutme">About Me</a>
+  </h3>
 
-These days I lead the team in terms of technology at Wineloya Digital as CTO
-& act as Outreach Lead @ [GDG Ghana][gdg-ghana].
+  These days I help teams tick.
 
-In the past I've been a:
+  In the past I've been a:
 
-- Consultant Senior Applications Engineer @ MTN & Starbow Airlines(Adaptive Computer Solutions)
-- Software Engineer @ Vodafone on the demand and delivery team
-- Computer Engineer @ [University of Ghana][1]'s [Remote Sensing & Geographic Information Systems Labs][2].
-- Co-Founder/Lead Dev building [thelp](),
-- Backend guy at [NibbleIT](http://nibbleitconsult.com/),
-- Google Student Ambassador
-
-
-I majored in Computer Engineering @ [GTUC](http://gtuc.edu.gh).
-
-
-As a [TC](http://www.google.com/get/topcontributor/), I spend an hour or two
-these days on the Chrome Help Forum or Help on Social helping people with
-Chrome Linux and Android related issues.
-
-#### Random Facts
-
-- I love python more than any other language, even English ;).
-- I love the cloud(both), arduinos, and my terminal.
-- I [read](https://www.goodreads.com/user/show/32436986-jeffrey-godwyll) way more than I write.
-- In search of [lollipop moments](https://www.youtube.com/watch?v=hVCBrkrFrBE). I'll love to
-hear some of yours.
-
-```python
-other = {'aliases': ['rey12rey', 'jeffgodwyll'],
-         'biases': ['Manchester United Football Club', 'Python', 'Android', 'Anything Googly'],
-        }
-```
+  - Lead Backend Engineer at Effect Studios
+  - CTO at Wineloya Digital
+  - Outreach Lead @ [GDG Ghana][gdg-ghana]
+  - Consultant Senior Applications Engineer @ MTN & Starbow Airlines(Adaptive Computer Solutions)
+  - Software Engineer @ Vodafone on the demand and delivery team
+  - Computer Engineer @ [University of Ghana][1]'s [Remote Sensing & Geographic Information Systems Labs][2]
+  - Co-Founder/Lead Dev building [thelp]()
+  - Backend guy at [NibbleIT](http://nibbleitconsult.com/)
+  - Google Top Contributor (Product Expert)
+  - Google Student Ambassador
+  - Computer Engineering Major @ [GTUC](http://gtuc.edu.gh)
 
 
-[1]: http://ug.edu.gh/
-[2]: http://rsgislab.ug.edu.gh/
-[gdg-ghana]: https://developers.google.com/groups/chapter/117620641470438104052/
-[vodafone]: https://vodafone.com
-[MTN]: https://www.mtn.com/
-{% endfilter %}
+  [1]: http://ug.edu.gh/
+  [2]: http://rsgislab.ug.edu.gh/
+  [gdg-ghana]: https://developers.google.com/groups/chapter/117620641470438104052/
+  [vodafone]: https://vodafone.com
+  [MTN]: https://www.mtn.com/
+  {% endfilter %}
 </article>
 
 {% filter markdown %}
 ##<a name="contact">Contact</a>
 
-Start a conversation with me via [Email](mailto:jeffgodwyll@gmail.com?Subject=Hello Jeff!),
-[Google+](https://plus.google.com/+JeffreyGodwyll),
+Start a conversation with me via [Email](mailto:jeffgodwyll+website@gmail.com?Subject=Hello Jeff!),
 [Twitter](https://www.twitter.com/rey12rey), or
 [LinkedIn](http://www.linkedin.com/in/jeffreygodwyll).
 
@@ -70,14 +53,14 @@ Let me know what's on your mind!
 
 <h2><a name="profiles">Public Accounts of Mine on the Interwebs</a></h2>
 <ul class="socialurls">
-{% for account in accounts.items() %}
+  {% for account in accounts.items() %}
   <li>
     <a href="{{ account[1].value }}">
       <img height=16 width=16 src="https://plus.google.com/_/favicon?domain={{ account[1].value }}" />
       {{ account[1].label }}
     </a>
   </li>
-{% endfor %}
+  {% endfor %}
 </ul>
 
 {% endblock contents %}
