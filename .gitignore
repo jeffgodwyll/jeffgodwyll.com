@@ -3,6 +3,7 @@ lib/
 .ropeproject/
 siteEnv/
 env/
+.venv/
 static/acme-challenge/
 static/.webassets*
 build/
