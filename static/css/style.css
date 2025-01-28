@@ -172,7 +172,6 @@ kbd {
 .main-title {
   margin-left: 300px;
   margin-top: 56px;
-  padding-bottom: 14px;
 }
 .main-title h1 {
   font-size: 56px;
@@ -352,7 +351,7 @@ kbd {
 }
 .sidebar {
   position: absolute;
-  top: 10%;
+  top: 56px;
   width: 250px;
   padding-right: 15px;
   border-right: solid;
