@@ -5,8 +5,8 @@
         <link>http://jeffgodwyll.com/</link>
         <description>Jeffrey Godwyll's personal site.</description>
         <language>en-us</language>
-        <pubDate>2023-01-19 01:12:14.144627</pubDate>
-        <lastBuildDate>2023-01-19 01:12:14.144627</lastBuildDate>
+        <pubDate>2025-01-28 02:24:29.696902</pubDate>
+        <lastBuildDate>2025-01-28 02:24:29.696902</lastBuildDate>
         <copyright>Copyright 2015 Jeffrey Godwyll</copyright>
         <author>
             <name>Jeffrey Godwyll</name>
@@ -749,7 +749,7 @@ or reinstalling Google Chrome. This post is to help fill that void.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$ sudo apt-get install libxss1 libappindicator1 libindicator7
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;Let&#39;s download Chrome&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt; For 64 bit system: &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;** For 64 bit system: **&lt;/p&gt;
 &lt;p&gt;Stable:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 &lt;/code&gt;&lt;/pre&gt;
@@ -759,7 +759,7 @@ or reinstalling Google Chrome. This post is to help fill that void.&lt;/p&gt;
 &lt;p&gt;Dev/Unstable:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$ wget https://dl.google.com/linux/direct/google-chrome-unstable_current_amd64.deb
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt; For 32-bit system: &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;** For 32-bit system: **&lt;/p&gt;
 &lt;p&gt;Stable:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$ wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb
 &lt;/code&gt;&lt;/pre&gt;

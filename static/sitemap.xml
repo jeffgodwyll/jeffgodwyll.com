@@ -3,35 +3,35 @@
     <!-- homepage -->
     <url>
         <loc>http://jeffgodwyll.com/</loc>
-        <lastmod>2023-01-19</lastmod>
+        <lastmod>2025-01-28</lastmod>
         <changefreq>hourly</changefreq>
         <priority>1</priority>
     </url>
     <!-- posts -->
     <url>
         <loc>http://jeffgodwyll.com/posts/</loc>
-        <lastmod>2023-01-01</lastmod>
+        <lastmod>2025-01-01</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <!-- projects -->
     <url>
         <loc>http://jeffgodwyll.com/projects</loc>
-        <lastmod>2023-01-01</lastmod>
+        <lastmod>2025-01-01</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <!-- talks -->
     <url>
         <loc>http://jeffgodwyll.com/talks/</loc>
-        <lastmod>2023-01-01</lastmod>
+        <lastmod>2025-01-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <!-- about -->
     <url>
         <loc>http://jeffgodwyll.com/about/</loc>
-        <lastmod>2023-01-01</lastmod>
+        <lastmod>2025-01-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1</priority>
     </url>
