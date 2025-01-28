@@ -10,33 +10,9 @@ twitter:
   value: https://www.twitter.com/@rey12rey
   label: Twitter 
 
-coderbits:
-  value: https://coderbits.com/jeffgodwyll
-  label: Coderbits
-
-openhub:
-  value: https://www.openhub.net/accounts/jeffgodwyll
-  label: OpenHub
-
-quizup:
-  value: https://www.quizup.com/profiles/342881888585284400
-  label: QuizUp
-
 goodreads:
   value: https://www.goodreads.com/user/show/32436986-jeffrey-godwyll
   label: Goodreads
-
-google+:
-  value: https://plus.google.com/+JeffreyGodwyll
-  label: Google+
-
-instagram:
-  value: https://instagram.com/jeffgodwyll
-  label: Instagram
-
-deezer:
-  value: http://www.deezer.com/profile/590350931
-  label: Deezer
 
 keybase:
   value: https://keybase.io/jeffgodwyll
@@ -46,25 +22,9 @@ hn:
   value: https://news.ycombinator.com/user?id=rey12rey
   label: Hacker News
 
-lastfm:
-  value: http://www.last.fm/user/rey12rey
-  label: Lastfm
-
-quora:
-  value: http://www.quora.com/Jeffrey-Godwyll
-  label: Quora
-
-readthedocs:
-  value: https://readthedocs.org/profiles/jeffgodwyll/
-  label: Read the Docs
-
 stackoverflow:
   value: http://stackoverflow.com/users/2295256/jeffrey-godwyll
   label: StackOverflow
-
-youtube:
-  value: https://www.youtube.com/channel/UC990eJ6DYVoFGczORyMfn9g
-  label: Youtube
 
 500px:
   value: https://500px.com/jeffgodwyll
