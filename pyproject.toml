@@ -1,0 +1,7 @@
+[project]
+name = "jeffgodwyll-com"
+version = "0.1.0"
+description = "Personal website and blog built with Flask on Google App Engine. A Python web application that can also be converted to a static site."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
