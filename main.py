@@ -110,7 +110,7 @@ def slugify(text, delim="-"):
         word = normalize("NFKD", word).encode("ascii", "ignore")
         if word:
             result.append(word)
-    return unicode(delim.join(result))
+    return str(delim.join(word.decode("ascii") for word in result))
 
 
 ###############################################################################
