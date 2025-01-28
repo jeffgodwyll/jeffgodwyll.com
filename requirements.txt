@@ -7,4 +7,4 @@ Flask-Markdown==0.3
 Flask==2.2.5
 Frozen-Flask==0.18
 jsmin==3.0.1
-PyYAML==6.0
+PyYAML==6.0.2
