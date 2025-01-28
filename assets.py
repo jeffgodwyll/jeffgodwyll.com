@@ -7,22 +7,24 @@ def init(app=None):
     with app.app_context():
         assets = Environment(app)
         assets.auto_build = False
-        assets.manifest = 'file'
+        assets.manifest = "file"
 
         css = Bundle(
-            'css/style.css',
-            'js/libs/prettify/*.css',
-            filters='cssmin', output='css/styles.min.css',
+            "css/style.css",
+            "js/libs/prettify/*.css",
+            filters="cssmin",
+            output="css/styles.min.css",
         )
-        assets.register('css', css)
+        assets.register("css", css)
 
         js = Bundle(
-            'js/app.js',
-            'js/libs/prettify/*.js',
-            'js/libs/jquery-1.7.1.min.js',
-            filters='jsmin', output='js/main.min.js'
+            "js/app.js",
+            "js/libs/prettify/*.js",
+            "js/libs/jquery-1.7.1.min.js",
+            filters="jsmin",
+            output="js/main.min.js",
         )
-        assets.register('js', js)
+        assets.register("js", js)
 
         bundles = [css, js]
         return bundles
@@ -34,5 +36,5 @@ def build():
         bundle.build()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     build()
